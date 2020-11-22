@@ -1,8 +1,321 @@
-.color {
-  color: red;
+.navbarContainer {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: rtl;
+  top: 0;
+  left: 0;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
 }
 
-.strong {
+.navbarContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 37px 0px 0px 0px;
+}
+
+.navbarNavigation {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  height: 100%;
+  padding: 0px 0px 0px 9.375rem;
+}
+
+.navbarNavigationItems {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 26px;
+}
+
+.navbarNavigationItems a {
+  color: #000000;
+  text-decoration: none;
+  padding: 0;
+  border-bottom: 2px solid transparent;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+
+.navbarNavigationItems a:hover,
+a:active,
+a.active {
+  border-bottom: 2px solid #1894FF;
+  color: #1894FF;
+  padding-bottom: 17px;
+  text-decoration: none;
   font-weight: bold;
+}
+
+.navbarNavigationItems a.not-active {
+  padding-bottom: 17px;
+}
+
+.navbarButton {
+  width: 170px;
+  height: 52px;
+  border-radius: 10px;
+  background-color: #E6F3FF;
+  border: none;
+  margin: 27px 0px 0px 139px;
+  color: #1894FF;
+}
+
+.navbarButtonSeparator {
+  display: none;
+}
+
+.navbarBurgerCross,
+.navbarBurgerCrossDisable,
+.navbarBurgerBars,
+.navbarBurgerBarsDisable {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbarContent {
+    position: absolute;
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin-top: 8rem;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 1.2rem;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .navbarNavigation {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    direction: rtl;
+    width: 100%;
+    height: auto;
+    display: -ms-flexbox;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .navbarNavigationItems {
+    padding: 32px 2rem 2rem 0;
+    height: 30px;
+  }
+  .navbarNavigationItems a {
+    color: #000000;
+    vertical-align: middle;
+    margin-right: 1rem;
+  }
+  .navbarNavigationItems a:hover,
+  a:active,
+  a.active {
+    border-bottom: none;
+  }
+  .navbarNavigationItems a.active,
+  a:hover,
+  a:active {
+    border-right: 4px solid #1894FF;
+    color: #1894FF;
+    padding-right: 0.7rem;
+    border-radius: 3px;
+  }
+  .navbarContentActive {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .navbarButton {
+    margin: 0 3rem 0 auto;
+    display: block;
+    font-size: 1.2rem;
+    width: 11rem;
+    height: 3.5rem;
+  }
+  .navbarButtonSeparator {
+    display: block;
+    width: 88%;
+    border: solid 0.5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 0 auto 3rem auto;
+  }
+  .navbarBurgerCross,
+  .navbarBurgerBars {
+    display: block;
+    cursor: pointer;
+    padding: 35px 0px 0px 38px;
+    font-size: 32px;
+    color: #1894ff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .navbarBurgerBarsDisable,
+  .navbarBurgerCrossDisable {
+    display: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+}
+
+.backDrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  padding: 30px 140px 0px 0px;
+  cursor: pointer;
+}
+
+.logo p {
+  margin: 10px 10px;
+}
+
+@media (min-width: 1450px) and (max-width: 2000px) {
+  .logo {
+    padding: 35px 4rem 0px 0px;
+  }
+  .navbarNavigation {
+    padding: 37px 0px 0px 13rem;
+  }
+  .navbarButton {
+    margin: 27px 0px 0px 8rem;
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1450px) {
+  .logo {
+    padding: 35px 3rem 0px 0px;
+  }
+  .navbarNavigation {
+    padding: 37px 0px 0px 7rem;
+  }
+  .navbarButton {
+    margin: 27px 0px 0px 90px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .logo {
+    padding: 35px 2rem 0px 0px;
+  }
+  .navbarNavigation {
+    padding: 37px 0px 0px 4.5rem;
+  }
+  .navbarNavigationItems {
+    padding: 0px 15px;
+  }
+  .navbarButton {
+    margin: 27px 0px 0px 2.5rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .logo {
+    padding: 35px 15px 0px 0px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .logo {
+    padding: 35px 5px 0px 0px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 360px) {
+  .logo {
+    padding: 35px 5px 0px 0px;
+  }
+  .navbarContent {
+    font-size: 1rem;
+  }
+  .navbarNavigation {
+    padding: 0px 0px 0px 1rem;
+  }
+  .navbarBurgerCross,
+  .navbarBurgerBars {
+    padding: 30px 0px 0px 5px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 280px) {
+  .navbarContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    margin-top: 10rem;
+  }
+  .logo {
+    padding: 35px 5px 0px 0px;
+  }
+  .navbarContent {
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  .navbarNavigation {
+    padding: 0px 0px 0px 1rem;
+  }
+  .navbarBurgerCross,
+  .navbarBurgerBars {
+    padding: 0px 0px 0px 5px;
+  }
+  .navbarNavigationItems {
+    padding: 1rem 0rem 2rem 0;
+  }
+  .navbarButton {
+    margin: 0 1rem 0 auto;
+  }
 }
 /*# sourceMappingURL=index.css.map */
