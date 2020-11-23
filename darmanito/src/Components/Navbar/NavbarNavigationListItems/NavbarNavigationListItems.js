@@ -2,7 +2,7 @@ const NavbarNavigationListItems = [
     {
       title: "صفحه اصلی",
       href: "/",
-      active: true,
+      active: false,
     },
     {
       title: "درباره ما",

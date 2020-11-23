@@ -1,5 +1,20 @@
+@font-face {
+    src: url("../Fonts/Yekan.ttf");
+    font-family: Yekan;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    src: url("../Fonts/Yekan.ttf");
+    font-family: Yekan;
+}
+
 @import './Component/Navbar/navbar';
 @import './Component//UI/backDrop';
 @import './Component/UI/logo';
+@import './Component/Main/application';
+@import './Component/Main/about';
 
 @import './Component/Navbar/navbarResponsive';

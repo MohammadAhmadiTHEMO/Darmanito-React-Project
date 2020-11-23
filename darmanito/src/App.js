@@ -1,11 +1,11 @@
 import React, { Component , Fragment } from 'react';
 
 import "tachyons" ;
-// import {Route, Switch} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {Route, Switch} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';  
 
 import Navbar from './Components/Navbar/Navbar';
-// import Main from './pages/Main';
+import Main from './Components/Main/Main';
 // import AboutUs from './pages/AboutUs';
 // import ContactUs from './pages/ContactUs';
 // import FAQ from './pages/FAQ';
@@ -21,14 +21,14 @@ class App extends Component {
     return (
       <Fragment>
           <Navbar />
-       {/*<Switch>
+      <Switch>
       <Route exact path="/" component={Main}/>
-      <Route exact path="/about-us" component={AboutUs}/>
+      {/* <Route exact path="/about-us" component={AboutUs}/>
       <Route exact path="/contact-us" component={ContactUs}/>
       <Route exact path="/faq" component={FAQ}/>
       <Route exact path="/RegisterPharmacy" component={RegisterPharmacy}/>
-      <Route exact path="/TermAndConditions" component={TermAndConditions}/>
-    </Switch> */}
+      <Route exact path="/TermAndConditions" component={TermAndConditions}/> */}
+      </Switch>
       </Fragment>
     );
   }

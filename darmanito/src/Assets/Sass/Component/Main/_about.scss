@@ -1,0 +1,59 @@
+@import '../../Foundation/colors';
+
+// About Desktop Mode :
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+    padding: 350px 0px 0 0;
+    justify-content: space-evenly;
+}
+.aboutImage {
+    float: right;
+}
+.aboutItems {
+    display: flex;
+    flex-flow: column;
+    padding: 2rem 0rem;
+}
+.aboutTextsItems {
+    text-align: right;
+    & h3 {
+        width: 128px;
+        height: 27px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        border-radius: 2px;
+        color : $epiBlue-color;
+        border-right: solid 4px $green-color;
+    }
+    & p {
+        width: 536px;
+        height: 65px;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.25;
+        letter-spacing: normal;
+        text-align: right;
+        color: $black-textColor;
+    }
+}
+.aboutImageStyle {
+    width: 80px;
+    height: 80px;
+    margin: 50px 0px 13.5px 70px;
+    padding: 24px 23px 23px 24px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
+    background-color: $white-color;
+}
+.ic {
+    margin: 0 0px 0px 73px;
+}
+.aboutImagesItems {
+    display: flex;
+}

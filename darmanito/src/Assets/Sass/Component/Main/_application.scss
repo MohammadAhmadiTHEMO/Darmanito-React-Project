@@ -1,0 +1,57 @@
+@import '../../Foundation/colors';
+
+
+// Application Desktop Mode :
+
+.application {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ .applicationItems {
+    display: flex;
+    flex-flow: column;
+ }
+ .applicationTextsItems {
+    float: right;
+    text-align: right;
+    padding: 205px 0px 0px 0px;
+    & h1 {
+        color : $blue-color;
+        padding : 122px 0px 0px 0px;
+     }
+ }
+ .applicationImage {
+    float: left;    
+    padding : 205px 0px 0px 0px;
+ }
+ 
+ .applicationButtonItems {
+    direction: rtl;
+ }
+
+ .applicationButtonsStyleItems {
+    display: inline-block;
+    background-color: $blue-color;
+    width: 170px;
+    height: 52px;
+    margin: 0 0 0 14px;
+    border: none;
+    color: $white-color;
+    text-align: center; 
+    font-size: 18px;
+    cursor: pointer;    
+    border-radius: 10px;
+ }
+
+ .applicationButtonsStyleItems-withoutColor , .withoutColor {
+    @extend .applicationButtonsStyleItems ;
+        background-color: $white-color;
+        border: solid 1px $blue-color;
+        text-decoration: none;
+        color: $blue-color;
+ }
+
+ // Application Responsive Mode :
+
+ 

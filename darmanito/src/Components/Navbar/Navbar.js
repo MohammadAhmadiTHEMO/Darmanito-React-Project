@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import 'tachyons';
 
 import Logo from '../UI/Logo';
-import navbarNavigationListItems from './NavbarNavigationItems/NavbarNavigationListItems';
+import navbarNavigationListItems from './NavbarNavigationListItems/NavbarNavigationListItems';
 
 
 const Navbar = () => {
@@ -57,9 +57,6 @@ const Navbar = () => {
                 }
                 onClick={drawgerToggle}
             ></i>
-            {/* <NavigationItems/>
-            <Button/>
-            <DrawerToggle clicked={props.DrawerToggleClicked}/> */}
         </header>
     );
 }
