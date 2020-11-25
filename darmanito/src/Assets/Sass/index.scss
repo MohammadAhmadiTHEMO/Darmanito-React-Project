@@ -11,10 +11,20 @@
     font-family: Yekan;
 }
 
-@import './Component/Navbar/navbar';
+@import './Component/Header/navbar';
 @import './Component//UI/backDrop';
 @import './Component/UI/logo';
 @import './Component/Main/application';
 @import './Component/Main/about';
+@import './Component/Main/possibilities';
+@import './Component/Main/appDownload';
+@import './Component/UI/sibAppLogoButton';
+@import './Component/UI/bazzarLogoButton';
+@import './Component/UI/androidLogoButton';
+@import './Component/Main/register';
+@import './Component/Footer/support';
+@import './Component/Footer/footer';
 
-@import './Component/Navbar/navbarResponsive';
+
+
+@import './Component/Header/navbarResponsive';

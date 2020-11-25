@@ -1,0 +1,77 @@
+@import '../../Foundation/colors';
+
+//
+
+.mainRegisterContainer {
+    display: flex;
+    padding: 1% 5% 180px 5%;
+    justify-content: center;
+    }
+    .mainRegister {
+        display: flex;
+        justify-content: space-around;
+        width: 85%;
+        height: 430px;
+        box-shadow: 0 0 20px rgba($blue-color, .2);
+        border-radius: 20px;
+        &__img {
+            width: auto;
+            height: 350px;
+            align-self: flex-end;
+            padding: 35px 0 0 50px;
+        }
+        &__info {
+            direction: rtl;
+            align-self: center;
+            text-align: right;
+            padding: 70px 75px 60px 50px;
+            &__title {
+                color: $epiBlue-color;
+                border-right: 4px solid $green-color;
+                padding-right: 1rem;
+                width: 266px;
+                height: 27px;
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 35px;
+            }
+            &__description {
+                width: 491px;
+                height: 81px;
+            }
+            &__input {
+                background-color: $smokeWhite-color;
+                width: 500px;
+                height: 65px;
+                border-radius: 10px;
+                border: none;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                &__input {
+                    width: 300px;
+                    height: 2.5rem;
+                    background-color: $smokeWhite-color;
+                    border: none;
+                }
+                &__input:focus {
+                    outline: none;
+                }
+                &__button {
+                    width: 130px;
+                    height: 45px;
+                    background-color: $blue-color;
+                    color: $white-color;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 10px;
+                }
+                &__button:focus {
+                    outline: none;
+                }
+    
+            }
+        }
+    
+    }
