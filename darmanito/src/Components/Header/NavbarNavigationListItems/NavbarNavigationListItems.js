@@ -6,17 +6,17 @@ const NavbarNavigationListItems = [
     },
     {
       title: "درباره ما",
-      href: "/",
+      href: "/AboutUs",
       active: false,
     },
     {
       title: "تماس با ما",
-      href: "/",
+      href: "/ContactUs",
       active: false,
     },
     {
       title: "عضویت داروخانه ها",
-      href: "/",
+      href: "/RegisterPharmacy",
       active: false,
     },
     // {

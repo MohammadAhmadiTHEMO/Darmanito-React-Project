@@ -12,8 +12,10 @@
 }
 
 @import './Component/Header/navbar';
+
 @import './Component//UI/backDrop';
 @import './Component/UI/logo';
+
 @import './Component/Main/application';
 @import './Component/Main/about';
 @import './Component/Main/possibilities';
@@ -22,8 +24,20 @@
 @import './Component/UI/bazzarLogoButton';
 @import './Component/UI/androidLogoButton';
 @import './Component/Main/register';
+
 @import './Component/Footer/support';
 @import './Component/Footer/footer';
+
+@import './Component/AboutUs/aboutUs';
+
+@import './Component/RegisterPharmacy/body';
+@import './Component/RegisterPharmacy/bodyCards';
+@import './Component/RegisterPharmacy/bodyServices';
+@import './Component/RegisterPharmacy/bodyStatics';
+
+@import './Component/ContactUs/contactUs';
+@import './Component/UI/blueCover';
+@import './Component/UI/map';
 
 
 

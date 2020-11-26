@@ -1,0 +1,72 @@
+
+
+.messageForm {
+    flex: .5;
+    text-align: right;
+    padding: 0 0 130px 0;
+}
+.messageForm__form__label {
+    height: 16px;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+}
+.messageForm__form__input {
+    width: 444px;
+    height: 46px;
+    margin: 0 0 25px;
+    padding: 13px 10px 12px 309px;
+    border-radius: 10px;
+    border: solid 1px $separator-color;
+}
+.messageForm__form__input:focus {
+    border: 2px solid $blue-color;
+    outline: none;
+}
+.messageForm__form__input::placeholder,
+.messageForm__form__textarea::placeholder {
+    color: #c7c7c7;
+}
+.messageForm__form__textarea {
+    width: 444px;
+    height: 174px;
+    margin: 12px 0 0;
+    padding: 13px 0px 142px 264px;
+    border-radius: 10px;
+    border: solid 1px $separator-color;
+}
+.messageForm__form__textarea:focus {
+    border: 2px solid $blue-color;
+    outline: none;
+}
+.messageForm__form {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    padding: 165px 0 0 0;
+}
+.contactUsFormAndMap {
+    // flex: 1 0 35%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.messageForm__form__button {
+    width: 444px;
+    height: 52px;
+    margin: 36.5px 0 0 50.5px;
+    padding: 14.5px 191px 15.5px 187px;
+    border-radius: 8px;
+    border: solid 1px $blue-color;
+    background-color: $white-color;
+}
+.messageForm__form__button__text {
+    width: 66px;
+    height: 22px;
+    color: $blue-color;
+    font-weight: bold;
+    font-size: 16px;
+}

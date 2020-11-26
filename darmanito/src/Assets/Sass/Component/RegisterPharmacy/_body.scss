@@ -1,0 +1,68 @@
+@import '../../Foundation/colors';
+
+// Footer :
+
+.aboutUs {
+    &__header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        text-align: right;
+        margin: 170px 140px 180px 0;
+        &__textAndInput {
+            display: flex;
+            flex-direction: column;
+            direction: rtl;
+            width: 40%;
+            padding: 40px 0 0 0;
+            &__input {
+                background-color: $smokeWhite-color;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 10px;
+                margin-left: auto;
+                width: 500px;
+                height: 65px;
+                background-color: #f9f9f9;
+                &__input {
+                    background-color: $smokeWhite-color;
+                    border: none;
+                    width: 250px;
+                    height: 3rem;
+                }
+                &__input:focus {
+                    outline: none;
+                }
+                &__button {
+                    background-color: $blue-color;
+                    color: $white-color;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                    width: 130px;
+                    height: 45px;
+                }
+                &__button:focus {
+                    outline: none;
+                }
+            }
+            &__title {
+                color: $blue-color;
+                margin: 22px 0;
+                width: 405px;
+                height: 110px;
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 1.87;
+            }
+            &__description {
+                color: $gray-textColor;
+                width: 444px;   
+                height: 104px;
+                margin: 0 0 30px 0;
+            }
+        }
+
+    }
+}

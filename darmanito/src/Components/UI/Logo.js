@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from '../../Assets/Images/UI/logo.svg';
+
 import 'tachyons';
+
+import logo from '../../Assets/Images/UI/logo.svg';
 
 const Logo = () => {
     return (

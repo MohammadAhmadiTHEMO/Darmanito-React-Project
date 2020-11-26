@@ -1,4 +1,5 @@
 import React from 'react';
+
 import AboutImage from './AboutImage/AboutImage';
 import AboutItems from './AboutItems/AboutItems';
 

@@ -1,4 +1,4 @@
-import NavbarNavigationItems from '../../Navbar/NavbarNavigationListItems/NavbarNavigationListItems';
+import NavbarNavigationItems from '../../Header/NavbarNavigationListItems/NavbarNavigationListItems';
 
 const footerPages = [...NavbarNavigationItems];
 const footerServices = [
