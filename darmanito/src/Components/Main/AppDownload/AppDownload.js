@@ -1,35 +1,38 @@
 import React from 'react';
 
-import mobileDemoPic from '../../../Assets/Images/Main/appDownload.svg';
+import appDownload from '../../../Assets/Images/Main/appDownload.svg';
 
 import SibAppLogoButton from '../../UI/SibAppLogoButton';
 import BazarLogoButton from '../../UI/BazzarLogoButton';
 import AndroidLogoButton from '../../UI/AndroidLogoButton';
 
-const MainDownload = () => {
+const AppDownload = () => {
+    const Style = {
+        backgroundColor: "#2361b5"
+    };
     return(
-        <div className="mainDownloadContainer">
-            <div className="mainDownload">
-                <div className="mainDownload__info">
-                    <h2 className="mainDownload__info__title">دانلود اپلیکیشن درمانیتو</h2>
-                    <p className="mainDownload__info__description">برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.</p>
-                    <div className="mainDownload__info__input">
-                        <button className="mainDownload__info__input__button">بفرست</button>
-                        <input type="text" placeholder="شماره همراه را وارد کنید 09912515020" className="mainDownload__info__input__input"/>
+        <div className="appDownload-Container">
+            <div className="appDownload">
+                <div className="appDownload-Info">
+                    <h2 className="appDownload-Info-Title">دانلود اپلیکیشن درمانیتو</h2>
+                    <p className="appDownload-Info-Description">برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.</p>
+                    <div className="appDownload-Info-Input">
+                        <button className="appDownload-Info-Input-Button">بفرست</button>
+                        <input className="appDownload-Info-Input-Input" type="text" placeholder="شماره همراه را وارد کنید 09912515020" />
                     </div>
-                    <div className="mainDownload__icons">
+                    <div className="appDownload-Icons">
                         <AndroidLogoButton
-                        backgroundColor="#2361B5"/>
+                        backgroundColor={Style.backgroundColor}/>
                         <BazarLogoButton
-                        backgroundColor="#2361B5"/>
+                        backgroundColor={Style.backgroundColor}/>
                         <SibAppLogoButton
-                        backgroundColor="#2361B5"/>
+                        backgroundColor={Style.backgroundColor}/>
                     </div>
                 </div>
-                <img className="mainDownload__img" src={mobileDemoPic} alt="mobile application"/>
+                <img className="appDownload-Image" src={appDownload} alt="Mobile Application"/>
             </div>
         </div>
     );
 }
 
-export default MainDownload;
+export default AppDownload;

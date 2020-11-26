@@ -7,42 +7,43 @@ import BazarLogoButton from '../UI/BazzarLogoButton';
 import SibAppLogoButton from '../UI/SibAppLogoButton';
 
 const Footer = () => {
+    const Style = {
+        backgroundColor: "#000000"
+    };
     return(
-        <div className="footer section">
-            
-            <div className="footer__branding">
+        <div className="footer">
+            <div className="footer-Main">
                 <Logo />
-                <h3 className="footer__branding__title">سوپر اپلیکیشن درمان و سلامت</h3>
-                <p className="footer__branding__copyright">تمام حقوق مادی و معنوی این سایت متعلق به درماینیتو است.</p>
-                <div className="footer__branding__socialNetwork">
-                    <i className="footer__branding__socialNetwork__linkedin fab fa-linkedin-in"></i>
-                    <i className="footer__branding__socialNetwork__twitter fab fa-twitter"></i>
-                    <i className="footer__branding__socialNetwork__instagram footer__branding__socialNetwork__linkedin_active fab fa-instagram"></i>
+                <h3 className="footer-Main-Title">سوپر اپلیکیشن درمان و سلامت</h3>
+                <p className="footer-Main-Copyright">تمام حقوق مادی و معنوی این سایت متعلق به درماینیتو است.</p>
+                <div className="footer-Main-SocialNetwork">
+                    <i className="footer-Main-SocialNetwork-Linkedin fab fa-linkedin-in"></i>
+                    <i className="footer-Main-SocialNetwork-Twitter fab fa-twitter"></i>
+                    <i className="footer-Main-SocialNetwork-Instagram SocialNetwork-Active fab fa-instagram"></i>
                 </div>
             </div>
 
-            <div className="footer__pages">
-                <p className="footer__pages__title"><strong>خدمات درمانیتو </strong></p>
-                <ul className="footer__pages__items">
+            <div className="footer-Pages">
+                <p className="footer-Pages-Title">خدمات درمانیتو </p>
+                <ul className="footer-Pages-Items">
                 {footerServices.map((item,index) => 
-                        <li className={item.active===true ? "footer__pages__items__item footer__pages__items__item__active" :"footer__pages__items__item p2"} key={index}>{item.title}</li>)}
+                        <li className={item.active===true ? "footer-Pages-Items-Item item-Active" :"footer-Pages-Items-Item"} key={index}>{item.title}</li>)}
                 </ul>
             </div>
 
-            <div className="footer__services">
-                <p className="footer__services__title"><strong> صفحات درمانیتو</strong></p>
-                <ul className="footer__services__items">
+            <div className="footer-Services">
+                <p className="footer-Services-Title"> صفحات درمانیتو</p>
+                <ul className="footer-Services-Items">
                     {footerPages.map((item,index) => 
-                        <li className="footer__services__items__item p2" key={index}>{item.title}</li>)}
+                        <li className="footer-Services-Items-Item" key={index}>{item.title}</li>)}
                 </ul>
             </div>
 
-
-            <div className="footer__download">
-                <p className="footer__download__title"><strong>دانلود درمانیتو</strong></p>
-                <div className="footer__download__icons">
-                    <BazarLogoButton backgroundColor="black" href="https://cafebazaar.ir/install"/>
-                    <SibAppLogoButton backgroundColor="black" href="https://sibapp.com"/>
+            <div className="footer-Download">
+                <p className="footer-Download-Title">دانلود درمانیتو</p>
+                <div className="footer-Download-Icons">
+                    <BazarLogoButton backgroundColor={Style.backgroundColor} href="https://cafebazaar.ir/install"/>
+                    <SibAppLogoButton backgroundColor={Style.backgroundColor} href="https://sibapp.com"/>
                 </div>
             </div>
         </div>

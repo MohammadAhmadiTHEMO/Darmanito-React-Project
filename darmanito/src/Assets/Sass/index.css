@@ -580,7 +580,7 @@ a.active {
   }
 }
 
-.mainDownloadContainer {
+.appDownload-Container {
   background-color: #1894FF;
   padding: 3% 5% 0 5%;
   margin: 230px 0 160px 0;
@@ -588,7 +588,7 @@ a.active {
   height: 612px;
 }
 
-.mainDownload {
+.appDownload {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -598,29 +598,24 @@ a.active {
   text-align: right;
 }
 
-.mainDownload__img {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.mainDownload__info {
+.appDownload-Info {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   padding: 0 0 40px 0;
 }
 
-.mainDownload__info__title {
+.appDownload-Info-Title {
   color: #ffffff;
   font-size: 24px;
 }
 
-.mainDownload__info__description {
+.appDownload-Info-Description {
   color: #ffffff;
   margin: 1rem 0 2rem 0;
 }
 
-.mainDownload__info__input {
+.appDownload-Info-Input {
   background-color: #ffffff;
   width: 500px;
   height: 65px;
@@ -640,18 +635,18 @@ a.active {
   margin: 1rem 0 2rem 0;
 }
 
-.mainDownload__info__input__input {
+.appDownload-Info-Input-Input {
   width: 300px;
   height: 2.5rem;
   border: none;
   background-color: #ffffff;
 }
 
-.mainDownload__info__input__input:focus {
+.appDownload-Info-Input-Input:focus {
   outline: none;
 }
 
-.mainDownload__info__input__button {
+.appDownload-Info-Input-Button {
   width: 100px;
   height: 45px;
   background-color: #1894FF;
@@ -662,11 +657,11 @@ a.active {
   cursor: pointer;
 }
 
-.mainDownload__info__input__button:focus {
+.appDownload-Info-Input-Button:focus {
   outline: none;
 }
 
-.mainDownload__icons {
+.appDownload-Icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -770,7 +765,7 @@ a.active {
   outline: none;
 }
 
-.mainRegisterContainer {
+.register-Container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -780,7 +775,7 @@ a.active {
           justify-content: center;
 }
 
-.mainRegister {
+.register {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,7 +788,7 @@ a.active {
   border-radius: 20px;
 }
 
-.mainRegister__img {
+.register-Image {
   width: auto;
   height: 350px;
   -ms-flex-item-align: end;
@@ -801,7 +796,7 @@ a.active {
   padding: 35px 0 0 50px;
 }
 
-.mainRegister__info {
+.register-Info {
   direction: rtl;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -810,7 +805,7 @@ a.active {
   padding: 70px 75px 60px 50px;
 }
 
-.mainRegister__info__title {
+.register-Info-Title {
   color: #2361B5;
   border-right: 4px solid #00DE9A;
   padding-right: 1rem;
@@ -821,12 +816,12 @@ a.active {
   margin-bottom: 35px;
 }
 
-.mainRegister__info__description {
+.register-Info-Description {
   width: 491px;
   height: 81px;
 }
 
-.mainRegister__info__input {
+.register-Info-Input {
   background-color: #f9f9f9;
   width: 500px;
   height: 65px;
@@ -842,18 +837,18 @@ a.active {
           align-items: center;
 }
 
-.mainRegister__info__input__input {
+.register-Info-Input-Input {
   width: 300px;
   height: 2.5rem;
   background-color: #f9f9f9;
   border: none;
 }
 
-.mainRegister__info__input__input:focus {
+.register-Info-Input-Input:focus {
   outline: none;
 }
 
-.mainRegister__info__input__button {
+.register-Info-Input-Button {
   width: 130px;
   height: 45px;
   background-color: #1894FF;
@@ -864,7 +859,7 @@ a.active {
   border-radius: 10px;
 }
 
-.mainRegister__info__input__button:focus {
+.register-Info-Input-Button:focus {
   outline: none;
 }
 
@@ -888,7 +883,7 @@ a.active {
   margin: 0 0 85px 0;
 }
 
-.support__text {
+.support-Text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,15 +893,15 @@ a.active {
   padding: 50px 140px 52px 0;
 }
 
-.support__text__body {
+.support-Text-Body {
   margin: 0;
 }
 
-.support__text__title {
+.support-Text-Title {
   margin: 0;
 }
 
-.support__button {
+.support-Button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -930,37 +925,31 @@ a.active {
   margin: 40px 0 40px 140px;
 }
 
-.support__button__img {
+.support-Button-Image {
   width: 24px;
   height: 26.2px;
 }
 
-.support__button__text {
+.support-Button-Text {
   margin: 0;
 }
 
-.support__button__text__a {
-  color: white;
+.support-Button-Text-a,
+.support-Button-Text-a:hover {
+  color: #ffffff;
   text-decoration: none;
   margin-right: 1rem;
 }
 
-.support__button:focus {
+.support-Button:focus {
   outline: none;
 }
 
-.support__button__img {
+.support-Button-Image {
   width: 24px;
 }
 
 @media screen and (max-width: 700px) {
-  .support__text {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    justify-items: center;
-  }
   .support {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -969,7 +958,14 @@ a.active {
     text-align: center;
     height: 150px;
   }
-  .support__button {
+  .support-Text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+  }
+  .support-Button {
     margin-top: 1rem;
   }
 }
@@ -986,14 +982,14 @@ a.active {
   text-align: right;
 }
 
-.footer__branding {
+.footer-Main {
   -ms-flex-item-align: auto;
       -ms-grid-row-align: auto;
       align-self: auto;
   direction: rtl;
 }
 
-.footer__download {
+.footer-Download {
   -ms-flex-item-align: auto;
       -ms-grid-row-align: auto;
       align-self: auto;
@@ -1001,11 +997,13 @@ a.active {
   padding: 20px 0 0 0;
 }
 
-.footer__download__title {
+.footer-Download-Title {
   margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.footer__download__icons {
+.footer-Download-Icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1018,7 +1016,7 @@ a.active {
   gap: 1rem;
 }
 
-.footer__services {
+.footer-Services {
   -ms-flex-item-align: auto;
       -ms-grid-row-align: auto;
       align-self: auto;
@@ -1026,33 +1024,37 @@ a.active {
   padding: 20px 0 0 0;
 }
 
-.footer__services__items {
+.footer-Services-Title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-Services-Items {
   list-style: none;
 }
 
-.footer__services__items__item {
+.footer-Services-Items-Item {
   color: #000000;
   cursor: pointer;
   color: #616161;
-  cursor: pointer;
   font-size: 14px;
   height: 19px;
   margin: 30px 0;
 }
 
-.footer__pages__items__item:hover,
-.footer__services__items__item:hover,
-.footer__pages__items__item__active {
+.footer-Pages-Items-Item:hover,
+.footer-Services-Items-Item:hover,
+.item-Active {
   font-weight: bold;
   border-right: 4px solid #00DE9A;
   padding-right: .5rem;
   -webkit-transition: .3s ease;
   transition: .3s ease;
   border-radius: 2px;
-  color: #2361B5;
+  color: #2361B5 !important;
 }
 
-.footer__pages {
+.footer-Pages {
   direction: rtl;
   -ms-flex-item-align: auto;
       -ms-grid-row-align: auto;
@@ -1060,17 +1062,17 @@ a.active {
   padding: 20px 0 0 0;
 }
 
-.footer__pages__items {
+.footer-Pages-Items {
   list-style: none;
 }
 
-.footer__pages__title {
+.footer-Pages-Title {
   font-size: 16px;
   font-weight: bold;
   margin: 0 0 0 92px;
 }
 
-.footer__pages__items__item {
+.footer-Pages-Items-Item {
   color: #616161;
   cursor: pointer;
   font-size: 14px;
@@ -1078,7 +1080,7 @@ a.active {
   margin: 30px 0;
 }
 
-.footer__branding__copyright {
+.footer-Main-Copyright {
   direction: rtl;
   margin-bottom: 3rem;
   width: 256px;
@@ -1087,14 +1089,14 @@ a.active {
   font-size: 14px;
 }
 
-.footer__branding__title {
+.footer-Main-Title {
   direction: rtl;
   font-size: 14px;
   font-weight: bold;
   padding: 0 127px 0 0;
 }
 
-.footer__branding__socialNetwork {
+.footer-Main-SocialNetwork {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1109,9 +1111,9 @@ a.active {
   padding: 0 127px 90px 0;
 }
 
-.footer__branding__socialNetwork__instagram,
-.footer__branding__socialNetwork__twitter,
-.footer__branding__socialNetwork__linkedin {
+.footer-Main-SocialNetwork-Instagram,
+.footer-Main-SocialNetwork-Twitter,
+.footer-Main-SocialNetwork-Linkedin {
   font-size: 24px;
   height: auto;
   color: #000000;
@@ -1120,25 +1122,25 @@ a.active {
   padding: 30px 0 0 0;
 }
 
-.footer__branding__socialNetwork__instagram:hover,
-.footer__branding__socialNetwork__twitter:hover,
-.footer__branding__socialNetwork__linkedin:hover,
-.footer__branding__socialNetwork__linkedin_active {
+.footer-Main-SocialNetwork-Instagram:hover,
+.footer-Main-SocialNetwork-Twitter:hover,
+.footer-Main-SocialNetwork-Linkedin:hover,
+.socialNetwork-Active {
   color: #1894FF;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 @media screen and (max-width: 1100px) {
-  .footer__download {
+  .footer-Download {
     display: none;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .footer__download,
-  .footer__pages,
-  .footer__services {
+  .footer-Download,
+  .footer-Pages,
+  .footer-Services {
     display: none;
   }
   .footer .logo {
@@ -1149,9 +1151,9 @@ a.active {
     text-align: right;
   }
   .footer,
-  .footer__branding__title,
-  .footer__branding__copyright,
-  .footer__branding__socialNetwork {
+  .footer-Main-Title,
+  .footer-Main-Copyright,
+  .footer-Main-SocialNetwork {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

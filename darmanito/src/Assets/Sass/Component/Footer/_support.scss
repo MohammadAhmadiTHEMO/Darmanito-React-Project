@@ -12,20 +12,20 @@
     width: 100%;
     margin: 0 0 85px 0;
 }
-.support__text {
+.support-Text {
     display: flex;
     gap: 1rem;
     direction: rtl;
     color: $white-color;
     padding: 50px 140px 52px 0;
-    &__body {
+    &-Body {
         margin: 0;
     }
-    &__title {
+    &-Title {
         margin: 0;
     }
 }
-.support__button {
+.support-Button {
     display: flex;
     flex-direction: row;
     direction: rtl;
@@ -38,36 +38,37 @@
     background-color: $epiBlue-color;
     cursor: pointer;
     margin: 40px 0 40px 140px;
-    &__img {
+    &-Image {
         width: 24px;
         height: 26.2px;
     }
 }
-.support__button__text {
+.support-Button-Text {
     margin: 0;
 }
-.support__button__text__a {
-    color: white;
+.support-Button-Text-a,
+.support-Button-Text-a:hover {
+    color: $white-color;
     text-decoration: none;
     margin-right: 1rem;
 }
-.support__button:focus {
+.support-Button:focus {
     outline: none;
 }
-.support__button__img {
+.support-Button-Image {
     width: 24px;
 }
 @media screen and (max-width: 700px) {
-    .support__text {
-        flex-direction: column;
-        justify-items: center;
-    }
     .support {
         flex-direction: column;
         text-align: center;
         height: 150px;
     }
-    .support__button {
+    .support-Text {
+        flex-direction: column;
+        justify-items: center;
+    }
+    .support-Button {
         margin-top: 1rem;
     }
 }

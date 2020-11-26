@@ -1,6 +1,6 @@
 @import '../../Foundation/colors';
 
-//
+// Footer :
 
 .footer {
     display: flex;
@@ -8,72 +8,77 @@
     place-content: space-evenly;
     text-align: right;
 }
-.footer__branding {
+.footer-Main {
     align-self: auto;
     direction: rtl; 
 }
-.footer__download {
+.footer-Download {
     align-self: auto;
     direction: rtl;
-    padding: 20px 0 0 0;
+    padding: 20px 0 0 0;    
 }
-.footer__download__title {
+.footer-Download-Title {
     margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: bold;
 }
-.footer__download__icons {
+.footer-Download-Icons {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
 }
-.footer__services {
+.footer-Services {
     align-self: auto;
     direction: rtl;
     padding: 20px 0 0 0;
 }
-.footer__services__items {
+.footer-Services-Title {
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-Services-Items {
     list-style: none;
 }
-.footer__services__items__item {
+.footer-Services-Items-Item {
     color: $black-textColor;
     cursor: pointer;
     color: #616161;
-    cursor: pointer;
     font-size: 14px;
     height: 19px;
     margin: 30px 0;
 }
-.footer__pages__items__item:hover,
-.footer__services__items__item:hover,
-.footer__pages__items__item__active {
+.footer-Pages-Items-Item:hover,
+.footer-Services-Items-Item:hover,
+.item-Active {
     font-weight: bold;
     border-right: 4px solid $green-color;
     padding-right: .5rem;
     transition: .3s ease;
     border-radius: 2px;
-    color: $epiBlue-color;
+    color: $epiBlue-color !important;
 }
-.footer__pages {
+.footer-Pages {
     direction: rtl;
     align-self: auto;
     padding: 20px 0 0 0;
 }
-.footer__pages__items {
+.footer-Pages-Items {
     list-style: none;
 }
-.footer__pages__title {
+.footer-Pages-Title {
     font-size: 16px;
     font-weight: bold;
     margin: 0 0 0 92px;
 }
-.footer__pages__items__item {
+.footer-Pages-Items-Item {
     color: #616161;
     cursor: pointer;
     font-size: 14px;
     height: 19px;
     margin: 30px 0;
 }
-.footer__branding__copyright {
+.footer-Main-Copyright {
     direction: rtl;
     margin-bottom: 3rem;
     width: 256px;
@@ -81,23 +86,23 @@
     margin: 0 127px 0 0;
     font-size: 14px;
 }
-.footer__branding__title{
+.footer-Main-Title{
     direction: rtl;
     font-size: 14px;
     font-weight: bold;
     padding: 0 127px 0 0;
 }
 
-.footer__branding__socialNetwork {
+.footer-Main-SocialNetwork {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     float: right;
     padding: 0 127px 90px 0;
 }
-.footer__branding__socialNetwork__instagram,
-.footer__branding__socialNetwork__twitter,
-.footer__branding__socialNetwork__linkedin {
+.footer-Main-SocialNetwork-Instagram,
+.footer-Main-SocialNetwork-Twitter,
+.footer-Main-SocialNetwork-Linkedin {
     font-size: 24px;
     height: auto;
     color: $black-textColor;
@@ -105,25 +110,25 @@
     margin: .5rem;
     padding:  30px 0 0 0 ;
 }
-.footer__branding__socialNetwork__instagram:hover,
-.footer__branding__socialNetwork__twitter:hover,
-.footer__branding__socialNetwork__linkedin:hover,
-.footer__branding__socialNetwork__linkedin_active {
+.footer-Main-SocialNetwork-Instagram:hover,
+.footer-Main-SocialNetwork-Twitter:hover,
+.footer-Main-SocialNetwork-Linkedin:hover,
+.socialNetwork-Active {
     color: $blue-color;
     transition: 0.4s;
 }
 
 @media screen and(max-width:1100px)
 {
-    .footer__download {
+    .footer-Download {
         display: none;
     }
 }
 @media screen and(max-width:700px)
 {
-    .footer__download,
-    .footer__pages,
-    .footer__services {
+    .footer-Download,
+    .footer-Pages,
+    .footer-Services {
         display: none;
     }
     .footer .logo {
@@ -132,9 +137,9 @@
         text-align: right;
     }
     .footer,
-    .footer__branding__title,
-    .footer__branding__copyright,
-    .footer__branding__socialNetwork {
+    .footer-Main-Title,
+    .footer-Main-Copyright,
+    .footer-Main-SocialNetwork {
         justify-content: center;
         justify-items: center;
         text-align: center;
