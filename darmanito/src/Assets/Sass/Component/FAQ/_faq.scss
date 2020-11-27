@@ -1,0 +1,21 @@
+@import '../../Foundation/colors';
+
+// Footer :
+
+.faqPageMainSection {
+    direction: rtl;
+    &__title {
+            color: $epiBlue-color;
+            border-right: 4px solid $green-color;
+            direction: rtl;
+            padding-right: 1rem;
+            margin-bottom: 3rem;
+            width: 316px;
+            height: 27px;
+            font-size: 20px;
+            font-weight: bold;
+            margin: 90px 140px 0px 0;
+        }
+}
+
+

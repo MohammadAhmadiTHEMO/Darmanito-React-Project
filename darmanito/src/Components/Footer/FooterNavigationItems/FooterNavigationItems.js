@@ -1,25 +1,45 @@
-import NavbarNavigationItems from '../../Header/NavbarNavigationListItems/NavbarNavigationListItems';
-
-const footerPages = [...NavbarNavigationItems];
+const footerPages = [
+    
+      {
+        title: "درباره ما",
+        href: "/AboutUs",
+        active: false,
+      },
+      {
+        title: "تماس با ما",
+        href: "/ContactUs",
+        active: false,
+      },
+      {
+        title: "سوالات متداول",
+        href: "/FAQ",
+        active: false,
+      },
+      {
+        title: "قوانین و شرایط",
+        href: "/TermAndConditions",
+        active: false,
+      },
+];
 const footerServices = [
     {
         title: "داروخانه آنلاین",
-        href: "#online-pharmacy",
+        href: "/OnlinePharmacy",
         active: true
     },
     {
         title: "فروشگاه آنلاین",
-        href: "#online-market",
+        href: "/OnlineMarket",
         active: false
     },
     {
         title: "ویزیت آنلاین",
-        href: "#online-visit",
+        href: "/OnlineVisit",
         active: false
     },
     {
         title: "پرونده پزشکی",
-        href: "#health-record",
+        href: "/HealthRecord",
         active: false
     }];
 

@@ -1,0 +1,39 @@
+@import '../../Foundation/colors';
+
+// Footer :
+
+.FaqQuestionContainer {
+    direction: rtl;
+    cursor: pointer;
+    
+    &__question {
+        padding: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        color: $epiBlue-color;
+
+        &__minesIcon, &__plusIcon {
+            font-size: 1.2rem;
+            margin-left: 1.5rem;
+        }
+    }
+    &__answer {
+        padding-bottom: 1rem;
+        margin-right: 2rem;
+        &__text {
+            color: $gray-textColor;
+            border-right: 4px solid $green-color;
+            padding-right: 2rem;
+        }
+    }
+    &__line {
+        height: 1px;
+        width: 100%;
+        background-color: $cloudy-color;
+    }
+}
+
+.faqQuestionListContainer {
+    margin: 80px 170px 140px 0;
+    text-align: right;
+}

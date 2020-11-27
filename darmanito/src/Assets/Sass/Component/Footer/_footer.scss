@@ -41,15 +41,16 @@
     list-style: none;
 }
 .footer-Services-Items-Item {
-    color: $black-textColor;
-    cursor: pointer;
-    color: #616161;
-    font-size: 14px;
     height: 19px;
     margin: 30px 0;
 }
-.footer-Pages-Items-Item:hover,
-.footer-Services-Items-Item:hover,
+.footer-Services-Items-Item-li {
+    color: #616161;
+    font-size: 14px;
+    text-decoration: none !important;
+}
+.footer-Pages-Items-Item-li:hover,
+.footer-Services-Items-Item-li:hover,
 .item-Active {
     font-weight: bold;
     border-right: 4px solid $green-color;
@@ -72,11 +73,13 @@
     margin: 0 0 0 92px;
 }
 .footer-Pages-Items-Item {
-    color: #616161;
-    cursor: pointer;
-    font-size: 14px;
     height: 19px;
     margin: 30px 0;
+}
+.footer-Pages-Items-Item-li {
+    color: #616161;
+    font-size: 14px;
+    text-decoration: none !important;
 }
 .footer-Main-Copyright {
     direction: rtl;

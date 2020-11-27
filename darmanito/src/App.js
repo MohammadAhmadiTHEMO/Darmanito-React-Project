@@ -8,12 +8,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './Components/Header/Navbar';
 import Main from './Components/Main/Main';
+import AboutUs from './Components/AboutUs/AboutUs';
 import ContactUs from './Components/ContactUs/ContactUs';
 import RegisterPharmacy from './Components/RegisterPharmacy/RegisterPharmacy';
-// import FAQ from './pages/FAQ';
-import AboutUs from './Components/AboutUs/AboutUs';
-// import TermAndConditions from './pages/TermAndConditions';
-// import Navbar from './components/Navbar';
+import FAQ from './Components/FAQ/FAQ';
+import TermAndConditions from './Components/TermAndConditions/TermAndConditions';
+import RegisterPharmacyForm from './Components/RegisterPharmacyForm/RegisterPharmacyForm';
 
 
 
@@ -28,9 +28,9 @@ class App extends Component {
           <Route exact path="/AboutUs" component={AboutUs}/>
           <Route exact path="/ContactUs" component={ContactUs}/>
           <Route exact path="/RegisterPharmacy" component={RegisterPharmacy}/>
-          {/* <Route exact path="/faq" component={FAQ}/>
-          
-          <Route exact path="/TermAndConditions" component={TermAndConditions}/> */}
+          <Route exact path="/faq" component={FAQ}/>
+          <Route exact path="/TermAndConditions" component={TermAndConditions}/>
+          <Route exact path="/OnlinePharmacy" component={RegisterPharmacyForm}/>
           </Switch>
       </Fragment>
     );

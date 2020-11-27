@@ -27,7 +27,14 @@ const Footer = () => {
                 <p className="footer-Pages-Title">خدمات درمانیتو </p>
                 <ul className="footer-Pages-Items">
                 {footerServices.map((item,index) => 
-                        <li className={item.active===true ? "footer-Pages-Items-Item item-Active" :"footer-Pages-Items-Item"} key={index}>{item.title}</li>)}
+                        <li className='footer-Pages-Items-Item'  key={index}>
+                                <a  className={item.active===true ?
+                                             "footer-Pages-Items-Item-li item-Active" 
+                                             :"footer-Pages-Items-Item-li"} 
+                                    href={item.href}>
+                                        {item.title}
+                                </a>
+                        </li>)}
                 </ul>
             </div>
 
@@ -35,7 +42,12 @@ const Footer = () => {
                 <p className="footer-Services-Title"> صفحات درمانیتو</p>
                 <ul className="footer-Services-Items">
                     {footerPages.map((item,index) => 
-                        <li className="footer-Services-Items-Item" key={index}>{item.title}</li>)}
+                        <li className='footer-Services-Items-Item' key={index}>
+                                <a className="footer-Services-Items-Item-li" 
+                                    href={item.href}>
+                                    {item.title}
+                                </a>
+                        </li>)}
                 </ul>
             </div>
 
