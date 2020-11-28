@@ -1,9 +1,9 @@
 import React from 'react';
 
-const BlueCover = props => {
+const BlueCover = (props) => {
     return(
-        <div className="textBanner">
-            <h2 className="textBanner__text">{props.text}</h2>
+        <div className="blueCover">
+            <h2 className="blueCover-Text">{props.text}</h2>
         </div>
     );
 }

@@ -1,18 +1,20 @@
 @import '../../Foundation/colors';
 
 .progressBarContainer {
-    width: 200px;
     display: flex;
     flex-direction: column;
     direction: ltr;
+    width: 168px;
+    height: 35px;
     &__label {
         direction: rtl;
-        font-size: 14px;
+        font-size: 13px;
     }
     &__progress {
         background-color: $green-color;
-        height: 10px;
         border-radius: 5px;
+        width: 168px;
+        height: 7px;
     }
     &__background {
         background-color: rgb(214, 214, 214);

@@ -13,18 +13,24 @@ const RegisterPharmacyDetail = (props) => {
                 address= 'درمانیتو - سرویس داروخانه - داروخانه شما'
                 img= {null}
                 isBoarding= {true}
+                borderSize={true}
+                directionLeft={false}
+                id= {shortid.generate()}/>
+                <Card
+                name= 'نام داروخانه شما'
+                address= 'درمانیتو - سرویس داروخانه - داروخانه شما'
+                img= {null}
+                isBoarding= {false}
+                borderSize={false}
+                directionLeft={false}
                 id= {shortid.generate()}/>
                 <Card
                 name= 'نام داروخانه شما'
                 address= 'درمانیتو - سرویس داروخانه - داروخانه شما'
                 img= {null}
                 isBoarding= {true}
-                id= {shortid.generate()}/>
-                <Card
-                name= 'نام داروخانه شما'
-                address= 'درمانیتو - سرویس داروخانه - داروخانه شما'
-                img= {null}
-                isBoarding= {true}
+                borderSize={false}
+                directionLeft={true}
                 id= {shortid.generate()}/>
             </div>
 

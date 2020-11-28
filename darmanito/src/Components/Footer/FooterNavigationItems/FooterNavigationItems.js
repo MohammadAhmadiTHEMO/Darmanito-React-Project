@@ -21,7 +21,9 @@ const footerPages = [
         active: false,
       },
 ];
+
 const footerServices = [
+  
     {
         title: "داروخانه آنلاین",
         href: "/OnlinePharmacy",

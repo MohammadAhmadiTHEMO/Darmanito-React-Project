@@ -1,15 +1,13 @@
 @import '../../Foundation/colors';
 
-.textBanner {
+.blueCover {
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: $coverBlue-color;
     color: $white-color;
     text-align: center;
     width: 100%;
     height: 120px;
-}
-.textBanner__text {
-    margin: auto;
+    &-Text {
+        margin: auto;
+    }
 }

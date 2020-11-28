@@ -9,7 +9,8 @@ const mainCards = [
         address: 'درمانیتو - سرویس داروخانه - داروخانه شما',
         image: null,
         isBoarding: true,
-        padding : true,
+        borderSize : true,
+        directionLeft : false ,
         id: shortid.generate()
     },
     {
@@ -17,15 +18,17 @@ const mainCards = [
         address: 'درمانیتو - سرویس داروخانه - داروخانه شما',
         image: null,
         isBoarding: false,
-        padding : false,
+        borderSize : false,
+        directionLeft : false ,
         id: shortid.generate()
     },
     {
         name: 'نام داروخانه شما',
         address: 'درمانیتو - سرویس داروخانه - داروخانه شما',
         image: null,
-        padding : false,
         isBoarding: true,
+        borderSize : false,
+        directionLeft : true ,
         id: shortid.generate()
     },
 ];
@@ -47,8 +50,9 @@ const AboutUsHeader = () => {
                                                 name={item.name}
                                                 address={item.address}
                                                 image={item.image}
-                                                padding={item.padding}
                                                 isBoarding={item.isBoarding}
+                                                borderSize={item.borderSize}
+                                                directionLeft={item.directionLeft}
                                                 key={item.id}/>)}
 
 

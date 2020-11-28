@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import 'tachyons';
 
 import Logo from '../UI/Logo';
-import navbarNavigationListItems from './NavbarNavigationListItems/NavbarNavigationListItems';
+import navigationItems from './NavbarNavigationListItems/NavbarNavigationListItems';
 
 
 const Navbar = () => {
@@ -12,48 +12,47 @@ const Navbar = () => {
     setSideDrawer((sideDrawer) => ({ Open: !sideDrawer.Open }));
 
     return (
-        <header className='navbarContainer'>
+        <header className='navbar'>
             <Logo/>
             <div className={
                  sideDrawer.Open
-                    ? "navbarContent navbarContentActive"   
-                    : "navbarContent"}>
+                    ? "navbar-Content navbar-Content-Active"   
+                    : "navbar-Content"}>
                     
-                <ul className="navbarNavigation">
-                    {navbarNavigationListItems.map((Item, index) => {
+                <ul className="navbar-Navigation">
+                    {navigationItems.map((navigationItems, index) => {
                         return (
-                            <li className="navbarNavigationItems" key={index}>
-                                <a
-                                href={Item.href}
-                                className={
-                                    Item.active
-                                    ? "navbarNavigationItems active"
-                                    : "navbarNavigationItems "}
-                                key={index}>
-                                {Item.title}
+                            <li className="navbar-Navigation-Items" key={index}>
+                                <a  href={navigationItems.href}
+                                    className={
+                                        navigationItems.active
+                                        ? "navbar-Navigation-Items active"
+                                        : "navbar-Navigation-Items "}
+                                    key={index}>
+                                        {navigationItems.title}
                                 </a>
                             </li>
                         );
                     })}
                 </ul>
 
-                <div className="navbarButtonSeparator"></div>
-                <button className="navbarButton b">دانلود درمانیتو</button>
+                <div className="navbar-Button-Separator"></div>
+                <button className="navbar-Button b">دانلود درمانیتو</button>
 
             </div>
             <i
                 className={
                 !sideDrawer.Open
-                    ? "navbarBurgerBars fa fa-bars"
-                    : "navbarBurgerBarsDisable fa fa-bars"
+                    ? "navbar-BurgerBars fa fa-bars"
+                    : "navbar-BurgerBarsDisable fa fa-bars"
                 }
                 onClick={drawgerToggle}
             ></i>
             <i
                 className={
                     sideDrawer.Open
-                    ? "navbarBurgerCross fa fa-times"
-                    : "navbarBurgerCrossDisable fa fa-times"
+                    ? "navbar-BurgerCross fa fa-times"
+                    : "navbar-BurgerCrossDisable fa fa-times"
                 }
                 onClick={drawgerToggle}
             ></i>

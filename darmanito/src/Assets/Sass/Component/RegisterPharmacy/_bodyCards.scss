@@ -14,6 +14,7 @@
     height: 125px;
     margin: 0 0 36px 66px;
     padding: 11px 24px 25px 16px;
+    background-color: white;
     &__profile {
         width: 50px;
         height: 50px;
@@ -74,6 +75,7 @@
     margin: 36px 66px 36px 132px;
     padding: 16px 17px 17px 8px;
     opacity: 0.5;
+    background-color: white;
     &__profile {
         width: 50px;
         height: 50px;
@@ -121,4 +123,7 @@
         height: 20px;
         padding: 4px 9px 0px 1px;
     }
+}
+.directionLeft {
+    margin: 36px 198px 0 0;
 }
