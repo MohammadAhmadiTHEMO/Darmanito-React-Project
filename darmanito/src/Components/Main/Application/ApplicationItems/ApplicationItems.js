@@ -2,16 +2,16 @@ import React from 'react';
 
 const ApplicationItems = () => {
     return (
-        <div className='applicationItems'>
-            <div className="applicationTextsItems">
+        <div className='application-Items'>
+            <div className="application-TextsItems">
                 <h1> اپلیکیشن درمانیتو</h1>
                 <p> درمانیتو، سامانه هوشمند درمان و سلامت </p>
             </div>
-            <div className="applicationButtonItems">
-                <button className="applicationButtonsStyleItems">
+            <div className="application-ButtonItems">
+                <button className="application-ButtonsStyleItems">
                     دانلود درمانیتو
                 </button>
-                <button className="applicationButtonsStyleItems-withoutColor">
+                <button className="application-ButtonsStyleItems-withoutColor">
                     عضویت داروخانه ها
                 </button>
             </div>

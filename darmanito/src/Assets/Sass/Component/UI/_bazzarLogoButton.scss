@@ -1,5 +1,6 @@
-.bazarButtonContainer
-{
+@import '../../Foundation/colors';
+
+.bazarButtonContainer {
     text-decoration: none;
 }
 .bazarButton {
@@ -7,16 +8,16 @@
     height: 55px;
     border: none;
     border-radius: 10px;
-    color: white;
+    color: $white-color;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
-    &__text {
+    &:focus {
+        border: none;
+        outline: none;
+    }
+    &-Text {
         margin: 0;
     }
-}
-.bazarButton:focus {
-    border: none;
-    outline: none;
 }

@@ -6,11 +6,11 @@ import bazarText from '../../Assets/Images/UI/bazzarText.svg';
 const BazarLogoButton = (props) => {
     
     return(
-        <a className="bazarButtonContainer" href={props.href} target="_blank" rel="noreferrer">
+        <a className="bazarButton-Container" href={props.href} target="_blank">
             <button className="bazarButton" style={{backgroundColor: props.backgroundColor}}>
-                <p className="bazarButton__text p2">دریافت از</p>
-                <img src={bazarText} alt="Bazar text" className="bazarButton__logoText"/>
-                <img src={bazarLogo} alt="Bazar logo" className="bazarButton__logo"/>
+                <p className="bazarButton-Text">دریافت از</p>
+                <img src={bazarText} alt="Bazar Text" />
+                <img src={bazarLogo} alt="Bazar Logo" />
             </button>
         </a>
     );

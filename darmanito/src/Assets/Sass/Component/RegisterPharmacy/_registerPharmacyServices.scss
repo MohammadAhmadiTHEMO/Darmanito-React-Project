@@ -1,30 +1,29 @@
 @import '../../Foundation/colors';
 
-// Footer :
+// Register Services :
 
-.aboutUsServices {
+.pharmacyServices {
     margin: 100px 140px;
     text-align: -webkit-right;
-    &__title {
+    &-Title {
         direction: rtl;
         color: $epiBlue-color;
         border-right: 4px solid $green-color;
-        color: #2361B5;
         padding-right: 30px;
         height: 27px;
         font-size: 20px;
         font-weight: bold;
     }
-    &__description {
+    &-Description {
         direction: rtl;
         margin: 23px 0 60px 0;
         height: 21px;
     }
-    &__cards {
+    &-Items {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        &__card {
+        &-Card {
             padding: 1.5rem;
             display: flex;
             flex-direction: column;
@@ -32,8 +31,8 @@
             height: 500px;
             border-radius: 50px;
             box-shadow: 0 0 50px 0 rgba(24, 148, 255, 0.1);
-            background-color: #ffffff;
-            &__img {
+            background-color: $white-color;
+            &-Image {
                 display: flex;
                 justify-content: center;
                 margin: 2.3rem auto;
@@ -43,7 +42,7 @@
                 height: 160.6px;
                 object-fit: contain;
             }
-            &__title {
+            &-Title {
                 color: $epiBlue-color;
                 direction: rtl;
                 height: 27px;
@@ -51,7 +50,7 @@
                 font-size: 20px;
                 font-weight: bold;
             }
-            &__description {
+            &-Description {
                 direction: rtl;
                 width: 401px;
                 height: 60px;
@@ -59,7 +58,7 @@
                 font-size: 14px;
                 font-weight: 300;
             }
-            &__button {
+            &-Button {
                 background-color: $blue-color;
                 color: $white-color;
                 font-weight: bold;
@@ -70,11 +69,13 @@
                 width: 170px;
                 height: 52px;
                 margin: 35px 115px 0 116px;
-                padding: 14px 61px 17px 
-            }
-            &__button:focus {
-                outline: none;
+                padding: 14px 61px 17px ;
+                &:focus {
+                    outline: none;
+                }
             }
         }
     }
 }
+
+// Responsive :

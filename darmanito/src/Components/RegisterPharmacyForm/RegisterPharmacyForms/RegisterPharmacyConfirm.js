@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from '../../RegisterPharmacy/Main/MainCards/BodyCards';
+import Card from '../../RegisterPharmacy/RegisterMain/RegisterMainCards/RegisterMainCards';
 import shortid from 'short-id';
 
 const RegisterPharmacyConfirm = (props) => {

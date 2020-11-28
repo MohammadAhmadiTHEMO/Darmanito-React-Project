@@ -1,4 +1,5 @@
 import React from 'react';
+
 import ApplicationDoctorImage from './ApplicationDoctorImage/ApplicationDoctorImage';
 import ApplicationItems from './ApplicationItems/ApplicationItems';
 

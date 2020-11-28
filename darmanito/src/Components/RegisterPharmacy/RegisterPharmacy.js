@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 
-import Main from './Main/Body';
-import MainStatics from './MainStatics/BodyStatics';
-import MainServices from './MainServices/BodyServices';
+import RegisterMain from './RegisterMain/RegisterMain';
+import RegisterPharmacyCounter from './RegisterPharmacyCounter/RegisterPharmacyCounter';
+import RegisterPharmacyServices from './RegisterPharmacyServices/RegisterPharmacyServices';
+
 import Support from '../Footer/Support/Support';
 import Footer from '../Footer/Footer';
 
@@ -10,9 +11,9 @@ import Footer from '../Footer/Footer';
 const RegisterPharmacy = () => {
     return (
         <Fragment>
-            <Main/>
-            <MainStatics/>
-            <MainServices/>
+            <RegisterMain/>
+            <RegisterPharmacyCounter/>
+            <RegisterPharmacyServices/>
             <Support/>
             <Footer/>
         </Fragment>

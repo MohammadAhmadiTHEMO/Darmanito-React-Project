@@ -8,9 +8,9 @@ const Logo = () => {
     return (
             <div className='logo'>
                 <img src={logo} alt='Darmanito-Logo' href='/'></img>
-                <div className='logoItems'>
-                    <p className='logoTittle f4 b'> درمانیتو </p>
-                    <p className='logoText f6'> همراه شما در درمان </p>
+                <div className='logo-Items'>
+                    <p className='f4 b'> درمانیتو </p>
+                    <p className='f6'> همراه شما در درمان </p>
                 </div>
             </div>
     );

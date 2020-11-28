@@ -1,5 +1,6 @@
-.androidButtonContainer
-{
+@import '../../Foundation/colors';
+
+.androidButton-Container {
     text-decoration: none;
 }
 .androidButton {
@@ -12,11 +13,11 @@
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
-    &__text {
+    &:focus {
+        border: none;
+        outline: none;
+    }
+    &-Text {
         margin: 0;
     }
-}
-.androidButton:focus {
-    border: none;
-    outline: none;
 }

@@ -3,7 +3,7 @@
 //
 
 
-.AboutUsHeaderCard {
+.registerMainCards {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,29 +14,21 @@
     height: 125px;
     margin: 0 0 36px 66px;
     padding: 11px 24px 25px 16px;
-    background-color: white;
-    &__profile {
-        width: 50px;
-        height: 50px;
-        padding: 5px;
-        background-color: $blue-color;
-        border-radius: 50%;
-        color: $white-color;
-    }
-    &__name {
+    background-color: $white-color;
+    &-Name {
         font-size: 20px;
         font-weight: bold;
         height: 27px;
         padding: 29px 22px 35px 89px;
     }
-    &__img {
+    &-Image {
         width: 75px;
         height: 75px;
     }
-    &__address {
+    &-Address {
         display: flex;
         flex-direction: row;
-        &__text {   
+        &-Text {   
             color: $gray-textColor;
             width: 200px;
             height: 16px;
@@ -44,14 +36,14 @@
             font-size: 12px;
             font-weight: normal;
         }
-        &__icon {
+        &-Icon {
             color: $green-color;
             width: 12px;
             height: 17.1px;
             margin: 1px 16px 0 15.8px;
         }
     }
-    &__boarding {
+    &-Boarding {
         font-size: 12px;
         background-color: $blue-color;
         border-radius: 10px;
@@ -63,7 +55,7 @@
     }
 
 }
-.AboutUsHeaderCard-notactive {
+.registerMainCards-NotActive {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -75,30 +67,22 @@
     margin: 36px 66px 36px 132px;
     padding: 16px 17px 17px 8px;
     opacity: 0.5;
-    background-color: white;
-    &__profile {
-        width: 50px;
-        height: 50px;
-        padding: 5px;
-        background-color: $blue-color;
-        border-radius: 50%;
-        color: $white-color;
-    }
-    &__name {
+    background-color: $white-color;
+    &-Name {
         font-size: 13px;
         font-weight: bold;
         height: 17px;
         margin: 0 10px 14px 0px;
     }
-    &__img {
+    &-Image {
         width: 52px;
         height: 53px;
         margin: 0 0 0 11px;
     }
-    &__address {
+    &-Address {
         display: flex;
         flex-direction: row;
-        &__text {   
+        &-Text {   
             color: $gray-textColor;
             width: 140px;
             height: 11px;
@@ -106,14 +90,14 @@
             font-size: 8px;
             font-weight: normal;
         }
-        &__icon {
+        &-Icon {
             color: $green-color;
             width: 8.4px;
             height: 11.9px;
             margin: 1px 2px 0 0px;
         }
     }
-    &__boarding {
+    &-Boarding {
         font-size: 8px;
         background-color: $blue-color;
         border-radius: 10px;

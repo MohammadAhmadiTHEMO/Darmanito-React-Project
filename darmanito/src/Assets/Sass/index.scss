@@ -30,10 +30,10 @@
 
 @import './Component/AboutUs/aboutUs';
 
-@import './Component/RegisterPharmacy/body';
-@import './Component/RegisterPharmacy/bodyCards';
-@import './Component/RegisterPharmacy/bodyServices';
-@import './Component/RegisterPharmacy/bodyStatics';
+@import './Component/RegisterPharmacy/registerMain';
+@import './Component/RegisterPharmacy/registerMainCards';
+@import './Component/RegisterPharmacy/registerPharmacyCounter';
+@import './Component/RegisterPharmacy/registerPharmacyServices';
 
 @import './Component/ContactUs/contactUs';
 @import './Component/UI/blueCover';

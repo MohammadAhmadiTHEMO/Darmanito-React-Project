@@ -3,7 +3,7 @@ import React from 'react'
 import NeshanMap from 'react-neshan-map-leaflet';
 
 
-function SimpleMap() {
+function LocationMap() {
   return (
       <NeshanMap
       options={{
@@ -46,6 +46,6 @@ function SimpleMap() {
   );
 }
 
-export default SimpleMap;
+export default LocationMap;
 
 

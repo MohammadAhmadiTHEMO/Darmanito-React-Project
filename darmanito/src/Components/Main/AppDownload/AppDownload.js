@@ -18,7 +18,9 @@ const AppDownload = () => {
                     <p className="appDownload-Info-Description">برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.</p>
                     <div className="appDownload-Info-Input">
                         <button className="appDownload-Info-Input-Button">بفرست</button>
-                        <input className="appDownload-Info-Input-Input" type="text" placeholder="شماره همراه را وارد کنید 09912515020" />
+                        <input className="appDownload-Info-Input-Input" 
+                               type="text" 
+                               placeholder="شماره همراه را وارد کنید 09912515020" />
                     </div>
                     <div className="appDownload-Icons">
                         <AndroidLogoButton
