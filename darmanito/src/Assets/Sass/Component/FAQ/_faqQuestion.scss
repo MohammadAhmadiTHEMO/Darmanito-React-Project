@@ -1,39 +1,40 @@
 @import '../../Foundation/colors';
 
-// Footer :
+// FAQ Questions :
 
-.FaqQuestionContainer {
+.FAQQuestion {
     direction: rtl;
     cursor: pointer;
     
-    &__question {
+    &-Title {
         padding: 1.5rem 0;
         display: flex;
         align-items: center;
         color: $epiBlue-color;
-
-        &__minesIcon, &__plusIcon {
+        &-MinesIcon,
+        &-PlusIcon {
             font-size: 1.2rem;
             margin-left: 1.5rem;
         }
     }
-    &__answer {
+    &-Texts {
         padding-bottom: 1rem;
         margin-right: 2rem;
-        &__text {
+        &-Text {
             color: $gray-textColor;
             border-right: 4px solid $green-color;
             padding-right: 2rem;
         }
     }
-    &__line {
+    &-Line {
         height: 1px;
         width: 100%;
         background-color: $cloudy-color;
     }
+    &-List {
+        margin: 80px 170px 140px 0;
+        text-align: right;
+    }
 }
 
-.faqQuestionListContainer {
-    margin: 80px 170px 140px 0;
-    text-align: right;
-}
+// Responsive :

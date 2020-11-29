@@ -2,9 +2,9 @@ import React from 'react';
 
 const FAQIcon = (props) => {
     return(
-        <div onClick={props.click} className={props.active ? "FaqIconContainer FaqIconContainer__active" : "FaqIconContainer" }>
-            <img className="FaqIconContainer__img" src={props.img} alt="alt"/>
-            <p className="FaqIconContainer__text p2">{props.text}</p>
+        <div onClick={props.click} className={props.active ? "FAQIcon FAQIcon-Active" : "FAQIcon" }>
+            <img className="FAQIcon-Image" src={props.image} alt="FAQ Icon"/>
+            <p className="FAQIcon-Text">{props.text}</p>
         </div>);
 }
 export default FAQIcon;

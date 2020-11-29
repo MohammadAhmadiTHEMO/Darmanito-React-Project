@@ -1,11 +1,12 @@
 @import '../../Foundation/colors';
 
-.RegisterPharmacyThirdFormContainer {
+// Register Pharmacy Third Form :
+
+.ThirdForms {
     display: flex;
     text-align: right;
-    &__cards {
+    &-Cards {
         width: 50%;
-        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -13,49 +14,92 @@
         background-color: $cloudy-color;
         padding: 145px 95px 85px;
     }
-    &__preview {
+    &-Preview {
         width: 50%;
         direction: rtl;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 145px 95px 85px;
-        &__placeName,
-        &__placePhone,
-        &__city,
-        &__district,
-        &__workingHours,
-        &__fullAddress,
-        &__fullName,
-        &__medicId {
+        padding: 80px 145px 80px 60px;
+        &-PlaceName,
+        &-PlacePhone,
+        &-City,
+        &-District,
+        &-WorkingHours,
+        &-FullAddress,
+        &-FullName,
+        &-MedicId {
+            &-Label {
+                font-size: 13px;
+                font-weight: 300;
+            }
+            &-Value {
+                font-size: 17px;
+                font-weight: normal;
+            }
             width: 30%;
             direction: rtl;
             margin: 1rem 0;
         }
-        &__fullAddress {
+        &-FullAddress {
             width: 90%;
             text-align: right;
         }
-        &__fullName,
-        &__medicId {
-            text-align: center;
+        &-FullName,
+        &-MedicId {
+            text-align: right;
             width: 50%;
         }
-        &__line {
-            width: 95%;
-            height: 2px;
-            margin: 1rem auto;
-            background-color: lightgray;
+        &-Line {
+            height: 0px;
+            margin: 5px 0 17px 0;
             border-radius: 5px;
+            width: 491px;
+            border: solid 0.5px rgba(0, 0, 0, 0.16);
         }
-        &__form {
+        &-Form {
             width: 90%;
-            margin: 2rem auto;
-            &__buttons {
-                width: 100%;
-                margin: 2rem auto;
-                
+            margin: 80px 0 0 0;
+            &-Buttons {
+                display: flex;
+                &-Submit {
+                    width: 170px;
+                    height: 52px;
+                    color: $white-color;
+                    background-color: $blue-color;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                    border-radius: 8px;
+                    border: 1px solid $blue-color;
+                    font-weight: bold;
+                    margin: 0 15px 0 0;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                &-EditButton {
+                    display: inline-flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 170px;
+                    height: 52px;
+                    color: $blue-color;
+                    background-color: $white-color;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    border-radius: 8px;
+                    border: 1px solid $blue-color;
+                    font-weight: bold;
+                    &:focus {
+                        outline: none;
+                    }
+                }
             }
         }
     }
 }
+
+// Responsive :

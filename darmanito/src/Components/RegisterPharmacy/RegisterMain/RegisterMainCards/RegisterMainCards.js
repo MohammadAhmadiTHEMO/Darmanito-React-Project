@@ -23,8 +23,10 @@ const RegisterMainCards = (props) => {
                         })()  }>
             <img className={props.borderSize === true 
                                                      ? "registerMainCards-Image" 
-                                                     : "registerMainCards-NotActive-Image" } src={registerPharmacy} 
-                                                                                            alt='Human'></img>
+                                                     : "registerMainCards-NotActive-Image" } 
+                                                     src={registerPharmacy} 
+                                                     alt='Human' 
+                                                     ></img>
             <div>
                 <h2 className={props.borderSize === true 
                                                      ? "registerMainCards-Name" 

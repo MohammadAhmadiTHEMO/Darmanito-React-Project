@@ -7,59 +7,59 @@ import pharmacy from '../../../Assets/Images/Main/pharmacy.svg';
 import onlineSchedule from '../../../Assets/Images/Main/onlineSchedule.svg';
 import onlineVisit from '../../../Assets/Images/Main/onlineVisit.svg';
 
-import FaqIcon from '../FAQIconList/FAQIcon/FAQIcon';
+import FAQIcon from '../FAQIconList/FAQIcon/FAQIcon';
 
 
-const FaqIconList = () => {
-    const [iconsStat, setIconsState] = useState(
+const FAQIconList = () => {
+    const [iconsList, setIconsList] = useState(
         [{
-            img: pharmacy ,
+            image: pharmacy ,
             text: "داروخانه",
-            isActive: true,
+            active: true,
             id: shortid.generate()
         }, {
-            img: market ,
+            image: market ,
             text: "فروشگاه ",
-            isActive: false,
+            active: false,
             id: shortid.generate()
         }, {
-            img: onlineVisit ,
+            image: onlineVisit ,
             text: "ویزیت آنلاین",
-            isActive: false,
+            active: false,
             id: shortid.generate()
         }, {
-            img: onlineSchedule ,
+            image: onlineSchedule ,
             text: "نوبت دهی آنلاین ",
-            isActive: false,
+            active: false,
             id: shortid.generate()
         }]);
 
     const activateIcon = (id) => {
-        const newStat = [];
-        for (const icon of iconsStat) {
+        const newIconList = [];
+        for (const icon of iconsList) {
             if (icon.id === id) {
-                icon.isActive = true;
-                newStat.push(icon)
+                icon.active = true;
+                newIconList.push(icon)
             } else {
-                icon.isActive = false;
-                newStat.push(icon)
+                icon.active = false;
+                newIconList.push(icon)
             }
         }
-        setIconsState(newStat);
+        setIconsList(newIconList);
     }
     return(
-        <div className="FaqIconListContainer">
-           { iconsStat.map((item , index) => {
-                return(<FaqIcon
-                    img={item.img}
-                    text={item.text}
-                    active={item.isActive}
+        <div className="FAQIcon-List">
+           { iconsList.map((iconsList , index) => {
+                return(<FAQIcon
+                    image={iconsList.image}
+                    text={iconsList.text}
+                    active={iconsList.active}
                     key={index}
-                    click={()=>activateIcon(item.id)}
+                    click={()=>activateIcon(iconsList.id)}
                 />);
             })}
         </div>
     );
 }
 
-export default FaqIconList;
+export default FAQIconList;

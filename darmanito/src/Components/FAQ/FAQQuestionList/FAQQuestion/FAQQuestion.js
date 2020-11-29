@@ -1,29 +1,30 @@
 import React, {useState} from 'react';
 
-const FaqQuestion = (props) => {
-    const [questionStat, setQuestionStat] = useState({isActive: false});
-    const switchQuestionStat = () => {
-        setQuestionStat({isActive: !questionStat.isActive})
-    }
+const FAQQuestion = (props) => {
+
+    const [questionList, setQuestionList] = useState({isActive: false});
+    const switchQuestionList = () => {
+        setQuestionList({isActive: !questionList.isActive})
+        }
 
     return(
-        <div key={props.id} className="FaqQuestionContainer" onClick={switchQuestionStat}>
-            <div className="FaqQuestionContainer__question">
-                {questionStat.isActive
-                    ? <i className="fa fa-minus FaqQuestionContainer__question__minesIcon"></i>
-                    : <i className="fa fa-plus FaqQuestionContainer__question__plusIcon"></i>
+        <div key={props.id} className="FAQQuestion" onClick={switchQuestionList}>
+            <div className="FAQQuestion-Title">
+                {questionList.isActive
+                    ? <i className="FAQQuestion-Title-MinesIcon fa fa-minus "></i>
+                    : <i className="FAQQuestion-Title-PlusIcon fa fa-plus "></i>
                 }
-                <p className="FaqQuestionContainer__question__text">{props.question}</p>
+                <p className="FAQQuestion-Title-Text">{props.title}</p>
             </div>
-            <div className="FaqQuestionContainer__answer">
-                {questionStat.isActive
-                    ? <p className="FaqQuestionContainer__answer__text p2">{props.answer}</p>
+            <div className="FAQQuestion-Texts">
+                {questionList.isActive
+                    ? <p className="FAQQuestion-Texts-Text">{props.text}</p>
                     : null
                 }
             </div>
-            <div className="FaqQuestionContainer__line"></div>
+            <div className="FAQQuestion-Line"></div>
         </div>
     );
 }
 
-export default FaqQuestion;
+export default FAQQuestion;

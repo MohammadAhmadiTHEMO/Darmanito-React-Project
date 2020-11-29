@@ -1,52 +1,53 @@
 import React from 'react';
 
-import Card from '../../RegisterPharmacy/RegisterMain/RegisterMainCards/RegisterMainCards';
-import ProgressBar from '../../UI/ProgressBar';
 import shortid from 'short-id';
+
+import Card from '../../RegisterPharmacy/RegisterMain/RegisterMainCards/RegisterMainCards';
+import ProgressBar from '../../UI/ProgressBar'; 
 
 const RegisterPharmacyDetail = (props) => {
     return(
-        <div className="RegisterPharmacySecondFormContainer ">
-            <div className="RegisterPharmacySecondFormContainer__cards">
+        <div className="SecoundForms ">
+            <div className="SecoundForms-Cards">
                 <Card
                 name= 'نام داروخانه شما'
                 address= 'درمانیتو - سرویس داروخانه - داروخانه شما'
-                img= {null}
-                isBoarding= {true}
+                image= {null}
+                active= {true}
                 borderSize={true}
                 directionLeft={false}
                 id= {shortid.generate()}/>
                 <Card
                 name= 'نام داروخانه شما'
                 address= 'درمانیتو - سرویس داروخانه - داروخانه شما'
-                img= {null}
-                isBoarding= {false}
+                image= {null}
+                active= {false}
                 borderSize={false}
                 directionLeft={false}
                 id= {shortid.generate()}/>
                 <Card
                 name= 'نام داروخانه شما'
                 address= 'درمانیتو - سرویس داروخانه - داروخانه شما'
-                img= {null}
-                isBoarding= {true}
+                image= {null}
+                active= {true}
                 borderSize={false}
                 directionLeft={true}
                 id= {shortid.generate()}/>
             </div>
 
-            <form className="RegisterPharmacySecondFormContainer__form">
-                <div className="RegisterPharmacySecondFormContainer__form__head">
-                    <h3 className="RegisterPharmacySecondFormContainer__form__title">عضویت به عنوان داروخانه</h3>
-                    <div className="RegisterPharmacySecondFormContainer__form__progressBar">
+            <form className="SecoundForms-Form">
+                <div className="SecoundForms-Form-Titles">
+                    <h3 className="SecoundForms-Form-Title">عضویت به عنوان داروخانه</h3>
+                    <div className="SecoundForms-Form-ProgressBar">
                         <ProgressBar
                         value={26}/>
                     </div>
                 </div>
-                <div className="RegisterPharmacySecondFormContainer__form__city">
-                    <label className="RegisterPharmacySecondFormContainer__form__city__label"
+                <div className="SecoundForms-Form-City">
+                    <label className="SecoundForms-Form-City-Label"
                     htmlFor="city">شهر</label>
                     <select onChange={props.formik.handleChange}
-                    className="RegisterPharmacySecondFormContainer__form__city__select" name="city">
+                    className="SecoundForms-Form-City-Select" name="city">
                     <option value={props.formik.values.city}>
                         {props.formik.values.city}</option>
                         <option value="تهران">
@@ -59,11 +60,11 @@ const RegisterPharmacyDetail = (props) => {
                             البرز</option>
                     </select>
                 </div>
-                <div className="RegisterPharmacySecondFormContainer__form__district">
-                    <label className="RegisterPharmacySecondFormContainer__form__district__label"
+                <div className="SecoundForms-Form-District">
+                    <label className="SecoundForms-Form-District-Label"
                     htmlFor="district">منطقه</label>
                     <select onChange={props.formik.handleChange}
-                    className="RegisterPharmacySecondFormContainer__form__district__select"
+                    className="SecoundForms-Form-District-Select"
                     name="district">
                         <option value={props.formik.values.district}>
                         {props.formik.values.district}</option>
@@ -73,14 +74,8 @@ const RegisterPharmacyDetail = (props) => {
                         <option value="4">منطقه چهار</option>
                     </select>
                 </div>
-            <button className="RegisterPharmacySecondFormContainer__form__button" onClick={props.nextStep}>تکمیل ثبت نام</button>
-            </form>
-    
-        {/* <div>Register pharmacy confirm
-                        <button onClick={props.nextStep}>next</button>
-            <button onClick={props.prevStep}>prev</button>
-        </div> */}
-    
+                <button className="SecoundForms-Form-Button" onClick={props.nextStep}>تکمیل ثبت نام</button>
+            </form>    
     </div>
 
     );

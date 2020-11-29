@@ -1,9 +1,11 @@
 @import '../../Foundation/colors';
 
-.RegisterPharmacyFirstFormContainer {
+// Register Pharmacy First Form :
+
+.FirstForms {
     display: flex;
     justify-content: center;
-    &__form {
+    &-Form {
         display: flex;
         flex-wrap: wrap;
         direction: rtl;
@@ -11,162 +13,158 @@
         margin: 80px 0 50px 0;
         text-align: right;
         justify-content: center;
-        &__error {
+        &-Error {
             height: 1rem;
             color: red;
             font-size: 14px;
         }
-        &__fullName {
+        &-FullName {
             display: flex;
             flex-direction: column;
             margin: .5rem 0 0 16px;
-            &__label {
+            &-Label {
                 font-size: 13px;
             }
-            &__input {
+            &-Input {
                 border-radius: 10px;
                 border: 1px solid $separator-color;
                 width: 352px;
                 height: 46px;
-
-                height: 2.5rem;
-            }
-            &__input:focus {
-                border: 1px solid $blue-color;
-                outline: none;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
             }
         }
-        &__medicId {
+        &-MedicId {
             display: flex;
             flex-direction: column;
             margin: .5rem 0 0 0px;
-            &__label {
+            &-Label {
                 font-size: 13px;
-                &__span {
+                &-Span {
                     color : $blue-color;
                 }
             }
-            &__input {
+            &-Input {
                 border-radius: 10px;
                 border: 1px solid $separator-color;
                 width: 352px;
                 height: 46px;
-
-                height: 2.5rem;
-            }
-            &__input:focus {
-                border: 1px solid $blue-color;
-                outline: none;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
             }
         }
-        &__placeName {
+        &-PlaceName {
             display: flex;
             flex-direction: column;
             margin: .5rem 0 0 16px;
-            &__label {
+            &-Label {
                 font-size: 13px;
             }
-            &__input {
+            &-Input {
                 border-radius: 10px;
                 border: 1px solid $separator-color;
                 width: 352px;
                 height: 46px;
-            }
-            &__input:focus {
-                border: 1px solid $blue-color;
-                outline: none;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
             }
         }
-        &__placePhone {
+        &-PlacePhone {
             display: flex;
             flex-direction: column;
             margin: .5rem 0 0 0px;
-            &__label {
+            &-Label {
                 font-size: 13px;
             }
-            &__input {
+            &-Input {
                 border-radius: 10px;
                 border: 1px solid $separator-color;
                 width: 352px;
                 height: 46px;
-            }
-            &__input:focus {
-                border: 1px solid $blue-color;
-                outline: none;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
             }
         }
-        &__city {
+        &-City {
             display: flex;
             flex-direction: column;
             margin: .5rem 0 0 16px;
-            &__label {
+            &-Label {
                 font-size: 13px;
             }
-            &__input {
+            &-Input {
                 border-radius: 10px;
                 border: 1px solid $separator-color;
                 width: 352px;
                 height: 46px;
-            }
-            &__input:focus {
-                border: 1px solid $blue-color;
-                outline: none;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
             }
         }
-        &__district {
+        &-District {
             display: flex;
             flex-direction: column;
             margin: .5rem 0 0 0px;
-            &__label {
+            &-Label {
                 font-size: 13px;
             }
-            &__input {
+            &-Input {
                 border-radius: 10px;
                 border: 1px solid $separator-color;
                 width: 352px;
                 height: 46px;
-            }
-            &__input:focus {
-                border: 1px solid $blue-color;
-                outline: none;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
             }
         }
-        &__fullAddress {
+        &-FullAddress {
             display: flex;
             flex-direction: column;
             margin: .5rem 0;
-            &__label {
+            &-Label {
                 font-size: 13px;
             }
-            &__input {
+            &-Input {
                 border-radius: 10px;
                 border: 1px solid $separator-color;
                 width: 720px;
                 height: 46px;
-            }
-            &__input:focus {
-                border: 1px solid $blue-color;
-                outline: none;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
             }
         }
-        &__timeSection {
+        &-TimeSection {
             display: flex;
             flex-direction: row;
         }
-        &__boarding {
+        &-Boarding {
             display: flex;
             flex-direction: column;
             margin: 0 0 0 150px;
             direction: ltr;
-            &__label {
+            &-Label {
                 font-size: 16px;
                 padding: 0 5px 0 0;
                 margin: 0;
             }
-            &__select {
+            &-Select {
                 display: flex;
             }
-            &__true {
+            &-True {
                 border: 1px solid $separator-color;
                 font-size: 14px;
                 border-radius: 10px;
@@ -178,24 +176,24 @@
                 direction: rtl;
                 width: 100px;
                 height: 40px;
-                &__label {
+                &-Label {
                     margin: 0 !important;
                 }
+                &-Active {
+                    border: 1px solid $blue-color;
+                    font-size: 14px;
+                    color: $blue-color;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    direction: rtl;
+                    width: 100px;
+                    height: 40px;
+                }
             }
-            &__true-active {
-                border: 1px solid $blue-color;
-                font-size: 14px;
-                color: $blue-color;
-                border-radius: 10px;
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: space-evenly;
-                align-items: center;
-                direction: rtl;
-                width: 100px;
-                height: 40px;
-            }
-            &__false {
+            &-False {
                 border: 1px solid $separator-color;
                 font-size: 14px;
                 border-radius: 10px;
@@ -207,63 +205,66 @@
                 direction: rtl;
                 width: 100px;
                 height: 40px;
-                &__label {
+                &-Label {
                     margin: 0 !important;
                 }
-            }
-            &__false-active {
-                border: 1px solid $blue-color;
-                font-size: 14px;
-                color: $blue-color;
-                border-radius: 10px;
-                display: flex;
-                flex-direction: row-reverse;
-                justify-content: space-evenly;
-                align-items: center;
-                direction: rtl;
-                width: 100px;
-                height: 40px;
+                &-Active {
+                    border: 1px solid $blue-color;
+                    font-size: 14px;
+                    color: $blue-color;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    direction: rtl;
+                    width: 100px;
+                    height: 40px;
+                }
             }
         }
-        &__workTimeRange {
+        &-WorkTime {
             display: flex;
             flex-direction: column;
-            &__label {
+            &-Label {
                 font-size: 13px;
             }
-            &__fromInput {
+            &-FromInput {
                 width: 168px;
                 height: 46px;
                 margin: 0 0 0 16px;
                 border-radius: 10px;
                 border: 1px solid $separator-color;
-
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
             }
-            &__toInput {
+            &-ToInput {
                 width: 168px;
                 height: 46px;
                 border-radius: 10px;
                 border: 1px solid $separator-color;
+                &:focus {
+                    border: 1px solid $blue-color;
+                    outline: none;
+                }
 
             }
-            &__fromInput:focus, &__toInput:focus {
-                border: 1px solid $blue-color;
-                outline: none;
-            }
         }
-        &__button {
+        &-Button {
             display: flex;
             flex-direction: row-reverse;
             justify-content: space-between;
             margin: 1rem 0;
         }
-        &__nextButton {
+        &-NextButton {
             flex-direction: row-reverse;
             display: flex;
-            &__button {
+            &-Button {
                 width: 170px;
                 height: 52px;
-                color: white;
+                color: $white-color;
                 background-color: $blue-color;
                 border: none;
                 cursor: pointer;
@@ -272,47 +273,45 @@
                 border: 1px solid $blue-color;
                 margin: 0 272px 0 0;
                 font-weight: bold;
-            }
-            &__button:focus {
-                outline: none;
+                &:focus {
+                    outline: none;
+                }
             }
         }
-        &__uploadButton {
+        &-UploadButton {
             flex-direction: row-reverse;
             display: flex;
-            &__button {
+            &-Button {
                 font-size: 14px;
-            }
-            &__button::-webkit-file-upload-button {
-                visibility: hidden;
-            }
-
-            &__button::before {
-                display: inline-flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-                content: "آپلود عکس داروخانه";
-                width: 170px;
-                height: 52px;
-                color: $blue-color;
-                background-color: white;
-                border: none;
-                cursor: pointer;
-                font-size: 14px;
-                border-radius: 8px;
-                border: 1px solid $blue-color;
-                font-weight: bold;
-            }
-            &__button:focus {
-                outline: none;
+                &::-webkit-file-upload-button {
+                    visibility: hidden;
+                }
+                &::before {
+                    display: inline-flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    content: "آپلود عکس داروخانه";
+                    width: 170px;
+                    height: 52px;
+                    color: $blue-color;
+                    background-color: $white-color;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    border-radius: 8px;
+                    border: 1px solid $blue-color;
+                    font-weight: bold;
+                }
+                &:focus {
+                    outline: none;
+                }
             }
         }
-
     }
 }
-.borderError,
-.borderError:focus
+.Error,
+.Error:focus
 {
     border: 1px solid red;
 }

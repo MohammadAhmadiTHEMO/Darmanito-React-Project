@@ -1,10 +1,10 @@
 @import '../../Foundation/colors';
 
-// Footer :
+// FAQ :
 
-.faqPageMainSection {
+.FAQ {
     direction: rtl;
-    &__title {
+    &-Title {
             color: $epiBlue-color;
             border-right: 4px solid $green-color;
             direction: rtl;

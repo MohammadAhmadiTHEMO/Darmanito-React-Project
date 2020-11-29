@@ -1,114 +1,118 @@
 import React from 'react';
+
+
 const RegisterPharmacy = (props) => {
 
-
-    const borderControl = (error, class_name) => error? class_name+" borderError" : class_name
+    const Control = (error, className) => error
+        ? className+" Error" 
+        : className
 
     return(
-        <div className="RegisterPharmacyFirstFormContainer">
-            <form className="RegisterPharmacyFirstFormContainer__form"
+        <div className="FirstForms">
+            <form className="FirstForms-Form"
             onSubmit={props.formik.onSubmit}>
 
-                <div className="RegisterPharmacyFirstFormContainer__form__fullName">
-                    <label className="RegisterPharmacyFirstFormContainer__form__fullName__label"
+                <div className="FirstForms-Form-FullName">
+                    <label className="FirstForms-Form-FullName-Label"
                     htmlFor="fullName"> نام و نام خانوادگی موسس</label>
-                    <input className={borderControl(props.formik.errors.fullName,"RegisterPharmacyFirstFormContainer__form__fullName__input")}
+                    <input className={Control(props.formik.errors.fullName,"FirstForms-Form-FullName-Input")}
                     value={props.formik.values.fullName} onChange={props.formik.handleChange} type="text" name="fullName"/>
-                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.fullName}</p>
+                    <p className="FirstForms-Form-Error">{props.formik.errors.fullName}</p>
                 </div>
 
-                <div className="RegisterPharmacyFirstFormContainer__form__medicId">
-                    <label className="RegisterPharmacyFirstFormContainer__form__medicId__label"
-                    htmlFor="medicId"> شماره نظام پزشکی <span className='RegisterPharmacyFirstFormContainer__form__medicId__label__span'>(فقط عدد) </span></label>
-                    <input className={borderControl(props.formik.errors.medicId,"RegisterPharmacyFirstFormContainer__form__medicId__input")}
+                <div className="FirstForms-Form-MedicId">
+                    <label className="FirstForms-Form-MedicId-Label"
+                    htmlFor="medicId"> شماره نظام پزشکی <span className='FirstForms-Form-MedicId-Label-Span'>(فقط عدد) </span></label>
+                    <input className={Control(props.formik.errors.medicId,"FirstForms-Form-MedicId-Input")}
                     value={props.formik.values.medicId} onChange={props.formik.handleChange} type="number" name="medicId"/>
-                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.medicId}</p>
+                    <p className="FirstForms-Form-Error">{props.formik.errors.medicId}</p>
                 </div>
 
-                <div className="RegisterPharmacyFirstFormContainer__form__placeName">
-                    <label className="RegisterPharmacyFirstFormContainer__form__placeName__label"
+                <div className="FirstForms-Form-PlaceName">
+                    <label className="FirstForms-Form-PlaceName-Label"
                     htmlFor="placeName">نام داروخانه / فروشگاه</label>
-                    <input className={borderControl(props.formik.errors.placeName,"RegisterPharmacyFirstFormContainer__form__placeName__input")}
+                    <input className={Control(props.formik.errors.placeName,"FirstForms-Form-PlaceName-Input")}
                     value={props.formik.values.placeName} onChange={props.formik.handleChange} type="text" name="placeName"/>
-                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.placeName}</p>
+                    <p className="FirstForms-Form-Error">{props.formik.errors.placeName}</p>
                 </div>
 
-                <div className="RegisterPharmacyFirstFormContainer__form__placePhone">
-                    <label className="RegisterPharmacyFirstFormContainer__form__placePhone__label"
+                <div className="FirstForms-Form-PlacePhone">
+                    <label className="FirstForms-Form-PlacePhone-Label"
                     htmlFor="placePhone">شماره داروخانه</label>
-                    <input className={borderControl(props.formik.errors.placePhone, "RegisterPharmacyFirstFormContainer__form__placePhone__input")}
+                    <input className={Control(props.formik.errors.placePhone, "FirstForms-Form-PlacePhone-Input")}
                     value={props.formik.values.placePhone} onChange={props.formik.handleChange} type="number" name="placePhone"/>
-                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.placePhone}</p>
+                    <p className="FirstForms-Form-Error">{props.formik.errors.placePhone}</p>
                 </div>
                 
-                <div className="RegisterPharmacyFirstFormContainer__form__city">
-                    <label className="RegisterPharmacyFirstFormContainer__form__city__label"
+                <div className="FirstForms-Form-City">
+                    <label className="FirstForms-Form-City-Label"
                     htmlFor="city">شهر</label>
-                    <input className={borderControl(props.formik.errors.city, "RegisterPharmacyFirstFormContainer__form__city__input")}
+                    <input className={Control(props.formik.errors.city, "FirstForms-Form-City-Input")}
                     value={props.formik.values.city} onChange={props.formik.handleChange} type="text" name="city"/>
-                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.city}</p>
+                    <p className="FirstForms-Form-Error">{props.formik.errors.city}</p>
                 </div>
 
-                <div className="RegisterPharmacyFirstFormContainer__form__district">
-                    <label className="RegisterPharmacyFirstFormContainer__form__district__label"
+                <div className="FirstForms-Form-District">
+                    <label className="FirstForms-Form-District-Label"
                     htmlFor="district">منطقه</label>
-                    <input className={borderControl(props.formik.errors.district, "RegisterPharmacyFirstFormContainer__form__district__input")}
+                    <input className={Control(props.formik.errors.district, "FirstForms-Form-District-Input")}
                     value={props.formik.values.district} onChange={props.formik.handleChange} type="text" name="district"/>
-                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.district}</p>
+                    <p className="FirstForms-Form-Error">{props.formik.errors.district}</p>
                 </div>
 
-                <div className="RegisterPharmacyFirstFormContainer__form__fullAddress">
-                    <label className="RegisterPharmacyFirstFormContainer__form__fullAddress__label"
+                <div className="FirstForms-Form-FullAddress">
+                    <label className="FirstForms-Form-FullAddress-Label"
                     htmlFor="fullAddress">آدرس دقیق</label>
-                    <input className={borderControl(props.formik.errors.fullAddress, "RegisterPharmacyFirstFormContainer__form__fullAddress__input")}
+                    <input className={Control(props.formik.errors.fullAddress, "FirstForms-Form-FullAddress-Input")}
                     value={props.formik.values.fullAddress} onChange={props.formik.handleChange} type="text" name="fullAddress"/>
-                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.fullAddress}</p>
+                    <p className="FirstForms-Form-Error">{props.formik.errors.fullAddress}</p>
                 </div>
 
-                <div className="RegisterPharmacyFirstFormContainer__form__timeSection">
-                    <div className="RegisterPharmacyFirstFormContainer__form__boarding">
-                        <p className="RegisterPharmacyFirstFormContainer__form__boarding__label">ساعات کاری</p>
-                        <div className="RegisterPharmacyFirstFormContainer__form__boarding__select">
-                            <div className="RegisterPharmacyFirstFormContainer__form__boarding__true">
-                                <label className="RegisterPharmacyFirstFormContainer__form__boarding__true__label"
+                <div className="FirstForms-Form-TimeSection">
+                    <div className="FirstForms-Form-Boarding">
+                        <p className="FirstForms-Form-Boarding-Label">ساعات کاری</p>
+                        <div className="FirstForms-Form-Boarding-Select">
+                            <div className="FirstForms-Form-Boarding-True">
+                                <label className="FirstForms-Form-Boarding-True-Label"
                                 htmlFor="isBoarding">شبانه روزی</label>
-                                <input className="RegisterPharmacyFirstFormContainer__form__boarding__true__input"
+                                <input className="FirstForms-Form-Boarding-True-Input"
                                 value={true} onChange={props.formik.handleChange} type="radio" name="isBoarding"/>
                             </div>
-                            <div className="RegisterPharmacyFirstFormContainer__form__boarding__false RegisterPharmacyFirstFormContainer__form__boarding__false-active">
-                                <label className="RegisterPharmacyFirstFormContainer__form__boarding__false__label"
+                            <div className="FirstForms-Form-Boarding-False FirstForms-Form-Boarding-False-Active">
+                                <label className="FirstForms-Form-Boarding-False-Label"
                                 htmlFor="isBoarding">روزانه</label>
-                                <input className="RegisterPharmacyFirstFormContainer__form__boarding__false__input"
+                                <input className="FirstForms-Form-Boarding-False-Input"
                                 value={false} onChange={props.formik.handleChange} checked="checked" type="radio" name="isBoarding"/>
                             </div>
                         </div>
-                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.isBoarding}</p>
+                    <p className="FirstForms-Form-Error">{props.formik.errors.isBoarding}</p>
                     </div>
 
-                    <div className="RegisterPharmacyFirstFormContainer__form__workTimeRange">
-                        <label className="RegisterPharmacyFirstFormContainer__form__workTimeRange__label"
+                    <div className="FirstForms-Form-WorkTime">
+                        <label className="FirstForms-Form-WorkTime-Label"
                         htmlFor="workTimeRange">ساعات کاری</label>
                         <div>
-                            <input className="RegisterPharmacyFirstFormContainer__form__workTimeRange__fromInput"
+                            <input className="FirstForms-Form-WorkTime-FromInput"
                             type="text" name="workTimeRangeFrom"/>
-                            <input className="RegisterPharmacyFirstFormContainer__form__workTimeRange__toInput"
+                            <input className="FirstForms-Form-WorkTime-ToInput"
                             type="text" name="workTimeRangeTo"/>
                         </div>
                     </div>
                 </div>
 
-                <div className="RegisterPharmacyFirstFormContainer__form__button">
-                    <div className="RegisterPharmacyFirstFormContainer__form__nextButton">
-                        <button className="RegisterPharmacyFirstFormContainer__form__nextButton__button" onClick={props.nextStep} 
+                <div className="FirstForms-Form-Button">
+                    <div className="FirstForms-Form-NextButton">
+                        <button className="FirstForms-Form-NextButton-Button" onClick={props.nextStep} 
                         disabled={props.formik.isValid? true: false}>مرحله بعد</button>
                     </div>
-                    <div className="RegisterPharmacyFirstFormContainer__form__uploadButton">
-                        <input type="file" className="RegisterPharmacyFirstFormContainer__form__uploadButton__button"
-                        accept="image/*" name='photo' value={props.formik.photo}  onChange={event => props.formik.setFieldValue('photo', URL.createObjectURL(event.currentTarget.files[0]))}/>
+                    <div className="FirstForms-Form-UploadButton">
+                        <input  type="file" 
+                                className="FirstForms-Form-UploadButton-Button"
+                                accept="image/*" name='photo' id='photo' value={props.formik.photo} 
+                                onChange={(event) => props.formik.setFieldValue('photo', window.URL.createObjectURL(event.currentTarget.files[0]))}/>
                     </div>
                 </div>
             </form>
-
         </div>
     );
 }

@@ -24,7 +24,7 @@ const RegisterPharmacyForm = () => {
           isBoarding: false,
           openingHour: 8,
           closingHour: 20,
-          photo: 0
+          photo: null
       },
       validationSchema: Yup.object({
         fullName: Yup.string()
@@ -44,8 +44,6 @@ const RegisterPharmacyForm = () => {
                      .required("فیلد اجباری است"),
         isBoarding: Yup.boolean()
                     .required("فیلد اجباری است"),
-        // openingHour: 8,
-        // closingHour: 20,
         photo: Yup.number()
                 .required("فیلد اجباری است")
       }),
@@ -64,7 +62,7 @@ const RegisterPharmacyForm = () => {
       let {step} = state;
       step = step > 2 || step <= 0
              ? 0
-             : step-1;
+             : step-2;
       return(setInfo({...state, step:step}));
     }
 

@@ -4,7 +4,6 @@ import shortid from 'short-id';
 
 import TermAndConditionsIcon from './TermAndConditionsIcon/TermAndConditionsIcon'
 
-
 const TermAndConditionsList = () => {
     const [terms, setTerms] = useState([
         {
@@ -21,58 +20,63 @@ const TermAndConditionsList = () => {
             
             کاربران هنگام ثبت سفارش باید اطلاعات دقیق و درست از محل سکونت خود و توضیحات مورد نظر و کامل برای ویژگی های سفارش بنویسند.
             `,
-            isActive: true,
+            active: true,
             id: shortid.generate()
         },
         {
             title:"قوانین داروخانه",
             description: `قوانین داروخانه`,
-            isActive: false,
+            active: false,
             id: shortid.generate()
         },
         {
             title:"قوانین فروشگاه",
             description: `قوانین فروشگاه`,
-            isActive: false,
+            active: false,
             id: shortid.generate()
         },
         {
             title:"قوانین مشاوره آنلاین",
             description: `قوانین مشاوره آنلاین`,
-            isActive: false,
+            active: false,
             id: shortid.generate()
         }
     ]);
 
     const switchTerm = (id) => {
-        const newTerms = terms.map((term) => {
-                term.id === id
-                ? term.isActive = true
-                : term.isActive = false;
-                return(term);
+        const newTerms = terms.map((terms) => {
+                terms.id === id
+                ? terms.active = true
+                : terms.active = false;
+                return(terms);
         });
         setTerms(newTerms);
     }
 
     return (
-        <div className="TermAndConditionsListContainer">
-            <h2 className="TermAndConditionsList__title">کاربران باید این توافق‌نامه را مطالعه و سپس اقدام به عضویت و ... نمایند</h2>
-            <div className="TermAndConditionsList__icon">
-            {terms.map((term, index) => {
+        <div className="TermAndConditionsList">
+            <h2 className="TermAndConditionsList-Title">کاربران باید این توافق‌نامه را مطالعه و سپس اقدام به عضویت و ... نمایند</h2>
+            <div className="TermAndConditionsList-Icon">
+            {terms.map((terms, index) => {
                 return(
                     <div key={index}>
                         <TermAndConditionsIcon
-                        title={term.title}
-                        active={term.isActive}
-                        key={term.id}
-                        click={()=> switchTerm(term.id)}/>
+                        title={terms.title}
+                        active={terms.active}
+                        key={terms.id}
+                        click={()=> switchTerm(terms.id)}/>
                     </div>
                 );
             })}
             </div>
-            <div className='TermAndConditionsList__descriptionContainer'>{terms.map((term)=> term.isActive
-                ? <p className="TermAndConditionsList__description" key={shortid.generate()} >{term.description}</p>
-                : null)}
+            <div className='TermAndConditionsList-Description'>
+                {terms.map((terms)=> 
+                    terms.active
+                    ? <p className="TermAndConditionsList-Description-Text" 
+                         key={shortid.generate()} >
+                             {terms.description}
+                    </p>
+                    : null)}
             </div>
         </div>
     );

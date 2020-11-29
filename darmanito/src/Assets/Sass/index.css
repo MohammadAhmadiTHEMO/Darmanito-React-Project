@@ -321,10 +321,100 @@
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 100%;
+  z-index: 2;
   left: 0;
   top: 0;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Modal {
+  position: fixed;
+  z-index: 5000;
+  background-color: #ffffff;
+  left: 32%;
+  top: 15%;
+  width: 536px;
+  height: 536px;
+  padding: 70px 92px 70.4px 87.5px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.Modal-Image {
+  width: 241px;
+  height: 171px;
+  margin: 0 55.5px 54px 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.Modal-Items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Modal-Items-Title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00de9a;
+}
+
+.Modal-Items-Text {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0 0 25px 0;
+}
+
+.Modal-Items-Button {
+  width: 352px;
+  height: 52px;
+  padding: 14px 153px 17px 152px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.5);
+  background-color: #1894FF;
+  border: none;
+  cursor: pointer;
+}
+
+.Modal-Items-Button-Text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none !important;
+}
+
+.Modal-Items-Button-Text:hover {
+  outline: none;
+  color: #ffffff;
+}
+
+.Active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.Not-Active {
+  -webkit-transform: translateY(-200vh);
+          transform: translateY(-200vh);
+  opacity: 0;
 }
 
 .logo {
@@ -1954,11 +2044,11 @@
   font-weight: bold;
 }
 
-.faqPageMainSection {
+.FAQ {
   direction: rtl;
 }
 
-.faqPageMainSection__title {
+.FAQ-Title {
   color: #2361B5;
   border-right: 4px solid #00DE9A;
   direction: rtl;
@@ -1971,7 +2061,7 @@
   margin: 90px 140px 0px 0;
 }
 
-.FaqIconContainer {
+.FAQIcon {
   -webkit-box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
           box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
   display: -webkit-box;
@@ -2000,26 +2090,26 @@
   transition: 0.5s;
 }
 
-.FaqIconContainer__img {
+.FAQIcon-Image {
   margin-bottom: 5px;
   width: 48.6px;
   height: 70px;
 }
 
-.FaqIconContainer__text {
+.FAQIcon-Text {
   color: #666666;
   height: 19px;
   font-size: 14px;
   font-weight: 500;
 }
 
-.FaqIconContainer__active {
+.FAQIcon-Active {
   opacity: 100%;
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
 
-.FaqIconListContainer {
+.FAQIcon-List {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2030,12 +2120,12 @@
   padding: 0 50px 0px 0;
 }
 
-.FaqQuestionContainer {
+.FAQQuestion {
   direction: rtl;
   cursor: pointer;
 }
 
-.FaqQuestionContainer__question {
+.FAQQuestion-Title {
   padding: 1.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2046,34 +2136,34 @@
   color: #2361B5;
 }
 
-.FaqQuestionContainer__question__minesIcon, .FaqQuestionContainer__question__plusIcon {
+.FAQQuestion-Title-MinesIcon, .FAQQuestion-Title-PlusIcon {
   font-size: 1.2rem;
   margin-left: 1.5rem;
 }
 
-.FaqQuestionContainer__answer {
+.FAQQuestion-Texts {
   padding-bottom: 1rem;
   margin-right: 2rem;
 }
 
-.FaqQuestionContainer__answer__text {
+.FAQQuestion-Texts-Text {
   color: #666666;
   border-right: 4px solid #00DE9A;
   padding-right: 2rem;
 }
 
-.FaqQuestionContainer__line {
+.FAQQuestion-Line {
   height: 1px;
   width: 100%;
   background-color: #E6F3FF;
 }
 
-.faqQuestionListContainer {
+.FAQQuestion-List {
   margin: 80px 170px 140px 0;
   text-align: right;
 }
 
-.TermAndConditionsIconContainer {
+.TermAndConditionsIcon {
   -webkit-box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
           box-shadow: 0 0 30px 0 rgba(24, 148, 255, 0.16);
   display: -webkit-box;
@@ -2103,7 +2193,7 @@
   transition: 0.5s;
 }
 
-.TermAndConditionsIconContainer__text {
+.TermAndConditionsIcon-Text {
   color: #666666;
   text-align: center;
   width: 100px;
@@ -2113,30 +2203,30 @@
   line-height: 2.63;
 }
 
-.TermAndConditionsIconContainer__active {
+.TermAndConditionsIcon-Active {
   opacity: 100%;
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
   color: #2361b5;
 }
 
-.TermAndConditionsListContainer {
+.TermAndConditionsList {
   direction: rtl;
 }
 
-.TermAndConditionsList__title {
+.TermAndConditionsList-Title {
   color: #2361B5;
   border-right: 4px solid #00DE9A;
   padding-right: 1rem;
   font-size: 20px;
   font-weight: bold;
-  width: 591px;
+  width: 575px;
   height: 28px;
   margin: 90px 140px 0px 0;
   border-radius: 3px;
 }
 
-.TermAndConditionsList__icon {
+.TermAndConditionsList-Icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2151,11 +2241,11 @@
   direction: ltr;
 }
 
-.TermAndConditionsList__descriptionContainer {
+.TermAndConditionsList-Description {
   text-align: -webkit-center;
 }
 
-.TermAndConditionsList__description {
+.TermAndConditionsList-Description-Text {
   direction: rtl;
   width: 920px;
   height: 373px;
@@ -2195,7 +2285,7 @@
   border-radius: 5px;
 }
 
-.RegisterPharmacyFirstFormContainer {
+.FirstForms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2204,7 +2294,7 @@
           justify-content: center;
 }
 
-.RegisterPharmacyFirstFormContainer__form {
+.FirstForms-Form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2219,13 +2309,13 @@
           justify-content: center;
 }
 
-.RegisterPharmacyFirstFormContainer__form__error {
+.FirstForms-Form-Error {
   height: 1rem;
   color: red;
   font-size: 14px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__fullName {
+.FirstForms-Form-FullName {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2236,24 +2326,23 @@
   margin: .5rem 0 0 16px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__fullName__label {
+.FirstForms-Form-FullName-Label {
   font-size: 13px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__fullName__input {
+.FirstForms-Form-FullName-Input {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
-  height: 2.5rem;
 }
 
-.RegisterPharmacyFirstFormContainer__form__fullName__input:focus {
+.FirstForms-Form-FullName-Input:focus {
   border: 1px solid #1894FF;
   outline: none;
 }
 
-.RegisterPharmacyFirstFormContainer__form__medicId {
+.FirstForms-Form-MedicId {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2264,28 +2353,27 @@
   margin: .5rem 0 0 0px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__medicId__label {
+.FirstForms-Form-MedicId-Label {
   font-size: 13px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__medicId__label__span {
+.FirstForms-Form-MedicId-Label-Span {
   color: #1894FF;
 }
 
-.RegisterPharmacyFirstFormContainer__form__medicId__input {
+.FirstForms-Form-MedicId-Input {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
-  height: 2.5rem;
 }
 
-.RegisterPharmacyFirstFormContainer__form__medicId__input:focus {
+.FirstForms-Form-MedicId-Input:focus {
   border: 1px solid #1894FF;
   outline: none;
 }
 
-.RegisterPharmacyFirstFormContainer__form__placeName {
+.FirstForms-Form-PlaceName {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2296,23 +2384,23 @@
   margin: .5rem 0 0 16px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__placeName__label {
+.FirstForms-Form-PlaceName-Label {
   font-size: 13px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__placeName__input {
+.FirstForms-Form-PlaceName-Input {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__placeName__input:focus {
+.FirstForms-Form-PlaceName-Input:focus {
   border: 1px solid #1894FF;
   outline: none;
 }
 
-.RegisterPharmacyFirstFormContainer__form__placePhone {
+.FirstForms-Form-PlacePhone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2323,23 +2411,23 @@
   margin: .5rem 0 0 0px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__placePhone__label {
+.FirstForms-Form-PlacePhone-Label {
   font-size: 13px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__placePhone__input {
+.FirstForms-Form-PlacePhone-Input {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__placePhone__input:focus {
+.FirstForms-Form-PlacePhone-Input:focus {
   border: 1px solid #1894FF;
   outline: none;
 }
 
-.RegisterPharmacyFirstFormContainer__form__city {
+.FirstForms-Form-City {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2350,23 +2438,23 @@
   margin: .5rem 0 0 16px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__city__label {
+.FirstForms-Form-City-Label {
   font-size: 13px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__city__input {
+.FirstForms-Form-City-Input {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__city__input:focus {
+.FirstForms-Form-City-Input:focus {
   border: 1px solid #1894FF;
   outline: none;
 }
 
-.RegisterPharmacyFirstFormContainer__form__district {
+.FirstForms-Form-District {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2377,23 +2465,23 @@
   margin: .5rem 0 0 0px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__district__label {
+.FirstForms-Form-District-Label {
   font-size: 13px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__district__input {
+.FirstForms-Form-District-Input {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__district__input:focus {
+.FirstForms-Form-District-Input:focus {
   border: 1px solid #1894FF;
   outline: none;
 }
 
-.RegisterPharmacyFirstFormContainer__form__fullAddress {
+.FirstForms-Form-FullAddress {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2404,23 +2492,23 @@
   margin: .5rem 0;
 }
 
-.RegisterPharmacyFirstFormContainer__form__fullAddress__label {
+.FirstForms-Form-FullAddress-Label {
   font-size: 13px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__fullAddress__input {
+.FirstForms-Form-FullAddress-Input {
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 720px;
   height: 46px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__fullAddress__input:focus {
+.FirstForms-Form-FullAddress-Input:focus {
   border: 1px solid #1894FF;
   outline: none;
 }
 
-.RegisterPharmacyFirstFormContainer__form__timeSection {
+.FirstForms-Form-TimeSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2430,7 +2518,7 @@
           flex-direction: row;
 }
 
-.RegisterPharmacyFirstFormContainer__form__boarding {
+.FirstForms-Form-Boarding {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2442,19 +2530,19 @@
   direction: ltr;
 }
 
-.RegisterPharmacyFirstFormContainer__form__boarding__label {
+.FirstForms-Form-Boarding-Label {
   font-size: 16px;
   padding: 0 5px 0 0;
   margin: 0;
 }
 
-.RegisterPharmacyFirstFormContainer__form__boarding__select {
+.FirstForms-Form-Boarding-Select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.RegisterPharmacyFirstFormContainer__form__boarding__true {
+.FirstForms-Form-Boarding-True {
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 14px;
   border-radius: 10px;
@@ -2477,11 +2565,11 @@
   height: 40px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__boarding__true__label {
+.FirstForms-Form-Boarding-True-Label {
   margin: 0 !important;
 }
 
-.RegisterPharmacyFirstFormContainer__form__boarding__true-active {
+.FirstForms-Form-Boarding-True-Active {
   border: 1px solid #1894FF;
   font-size: 14px;
   color: #1894FF;
@@ -2504,7 +2592,7 @@
   height: 40px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__boarding__false {
+.FirstForms-Form-Boarding-False {
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 14px;
   border-radius: 10px;
@@ -2527,11 +2615,11 @@
   height: 40px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__boarding__false__label {
+.FirstForms-Form-Boarding-False-Label {
   margin: 0 !important;
 }
 
-.RegisterPharmacyFirstFormContainer__form__boarding__false-active {
+.FirstForms-Form-Boarding-False-Active {
   border: 1px solid #1894FF;
   font-size: 14px;
   color: #1894FF;
@@ -2554,7 +2642,7 @@
   height: 40px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__workTimeRange {
+.FirstForms-Form-WorkTime {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2564,11 +2652,11 @@
           flex-direction: column;
 }
 
-.RegisterPharmacyFirstFormContainer__form__workTimeRange__label {
+.FirstForms-Form-WorkTime-Label {
   font-size: 13px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__workTimeRange__fromInput {
+.FirstForms-Form-WorkTime-FromInput {
   width: 168px;
   height: 46px;
   margin: 0 0 0 16px;
@@ -2576,19 +2664,24 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.RegisterPharmacyFirstFormContainer__form__workTimeRange__toInput {
+.FirstForms-Form-WorkTime-FromInput:focus {
+  border: 1px solid #1894FF;
+  outline: none;
+}
+
+.FirstForms-Form-WorkTime-ToInput {
   width: 168px;
   height: 46px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.RegisterPharmacyFirstFormContainer__form__workTimeRange__fromInput:focus, .RegisterPharmacyFirstFormContainer__form__workTimeRange__toInput:focus {
+.FirstForms-Form-WorkTime-ToInput:focus {
   border: 1px solid #1894FF;
   outline: none;
 }
 
-.RegisterPharmacyFirstFormContainer__form__button {
+.FirstForms-Form-Button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2602,7 +2695,7 @@
   margin: 1rem 0;
 }
 
-.RegisterPharmacyFirstFormContainer__form__nextButton {
+.FirstForms-Form-NextButton {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -2612,10 +2705,10 @@
   display: flex;
 }
 
-.RegisterPharmacyFirstFormContainer__form__nextButton__button {
+.FirstForms-Form-NextButton-Button {
   width: 170px;
   height: 52px;
-  color: white;
+  color: #ffffff;
   background-color: #1894FF;
   border: none;
   cursor: pointer;
@@ -2626,11 +2719,11 @@
   font-weight: bold;
 }
 
-.RegisterPharmacyFirstFormContainer__form__nextButton__button:focus {
+.FirstForms-Form-NextButton-Button:focus {
   outline: none;
 }
 
-.RegisterPharmacyFirstFormContainer__form__uploadButton {
+.FirstForms-Form-UploadButton {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -2640,15 +2733,15 @@
   display: flex;
 }
 
-.RegisterPharmacyFirstFormContainer__form__uploadButton__button {
+.FirstForms-Form-UploadButton-Button {
   font-size: 14px;
 }
 
-.RegisterPharmacyFirstFormContainer__form__uploadButton__button::-webkit-file-upload-button {
+.FirstForms-Form-UploadButton-Button::-webkit-file-upload-button {
   visibility: hidden;
 }
 
-.RegisterPharmacyFirstFormContainer__form__uploadButton__button::before {
+.FirstForms-Form-UploadButton-Button::before {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2666,7 +2759,7 @@
   width: 170px;
   height: 52px;
   color: #1894FF;
-  background-color: white;
+  background-color: #ffffff;
   border: none;
   cursor: pointer;
   font-size: 14px;
@@ -2675,25 +2768,24 @@
   font-weight: bold;
 }
 
-.RegisterPharmacyFirstFormContainer__form__uploadButton__button:focus {
+.FirstForms-Form-UploadButton-Button:focus {
   outline: none;
 }
 
-.borderError,
-.borderError:focus {
+.Error,
+.Error:focus {
   border: 1px solid red;
 }
 
-.RegisterPharmacyThirdFormContainer {
+.ThirdForms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: right;
 }
 
-.RegisterPharmacyThirdFormContainer__cards {
+.ThirdForms-Cards {
   width: 50%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2711,7 +2803,7 @@
   padding: 145px 95px 85px;
 }
 
-.RegisterPharmacyThirdFormContainer__preview {
+.ThirdForms-Preview {
   width: 50%;
   direction: rtl;
   display: -webkit-box;
@@ -2723,51 +2815,110 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 145px 95px 85px;
+  padding: 80px 145px 80px 60px;
 }
 
-.RegisterPharmacyThirdFormContainer__preview__placeName, .RegisterPharmacyThirdFormContainer__preview__placePhone, .RegisterPharmacyThirdFormContainer__preview__city, .RegisterPharmacyThirdFormContainer__preview__district, .RegisterPharmacyThirdFormContainer__preview__workingHours, .RegisterPharmacyThirdFormContainer__preview__fullAddress, .RegisterPharmacyThirdFormContainer__preview__fullName, .RegisterPharmacyThirdFormContainer__preview__medicId {
+.ThirdForms-Preview-PlaceName, .ThirdForms-Preview-PlacePhone, .ThirdForms-Preview-City, .ThirdForms-Preview-District, .ThirdForms-Preview-WorkingHours, .ThirdForms-Preview-FullAddress, .ThirdForms-Preview-FullName, .ThirdForms-Preview-MedicId {
   width: 30%;
   direction: rtl;
   margin: 1rem 0;
 }
 
-.RegisterPharmacyThirdFormContainer__preview__fullAddress {
+.ThirdForms-Preview-PlaceName-Label, .ThirdForms-Preview-PlacePhone-Label, .ThirdForms-Preview-City-Label, .ThirdForms-Preview-District-Label, .ThirdForms-Preview-WorkingHours-Label, .ThirdForms-Preview-FullAddress-Label, .ThirdForms-Preview-FullName-Label, .ThirdForms-Preview-MedicId-Label {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.ThirdForms-Preview-PlaceName-Value, .ThirdForms-Preview-PlacePhone-Value, .ThirdForms-Preview-City-Value, .ThirdForms-Preview-District-Value, .ThirdForms-Preview-WorkingHours-Value, .ThirdForms-Preview-FullAddress-Value, .ThirdForms-Preview-FullName-Value, .ThirdForms-Preview-MedicId-Value {
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.ThirdForms-Preview-FullAddress {
   width: 90%;
   text-align: right;
 }
 
-.RegisterPharmacyThirdFormContainer__preview__fullName, .RegisterPharmacyThirdFormContainer__preview__medicId {
-  text-align: center;
+.ThirdForms-Preview-FullName, .ThirdForms-Preview-MedicId {
+  text-align: right;
   width: 50%;
 }
 
-.RegisterPharmacyThirdFormContainer__preview__line {
-  width: 95%;
-  height: 2px;
-  margin: 1rem auto;
-  background-color: lightgray;
+.ThirdForms-Preview-Line {
+  height: 0px;
+  margin: 5px 0 17px 0;
   border-radius: 5px;
+  width: 491px;
+  border: solid 0.5px rgba(0, 0, 0, 0.16);
 }
 
-.RegisterPharmacyThirdFormContainer__preview__form {
+.ThirdForms-Preview-Form {
   width: 90%;
-  margin: 2rem auto;
+  margin: 80px 0 0 0;
 }
 
-.RegisterPharmacyThirdFormContainer__preview__form__buttons {
-  width: 100%;
-  margin: 2rem auto;
+.ThirdForms-Preview-Form-Buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.RegisterPharmacySecondFormContainer {
+.ThirdForms-Preview-Form-Buttons-Submit {
+  width: 170px;
+  height: 52px;
+  color: #ffffff;
+  background-color: #1894FF;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #1894FF;
+  font-weight: bold;
+  margin: 0 15px 0 0;
+}
+
+.ThirdForms-Preview-Form-Buttons-Submit:focus {
+  outline: none;
+}
+
+.ThirdForms-Preview-Form-Buttons-EditButton {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 52px;
+  color: #1894FF;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #1894FF;
+  font-weight: bold;
+}
+
+.ThirdForms-Preview-Form-Buttons-EditButton:focus {
+  outline: none;
+}
+
+.SecoundForms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: right;
 }
 
-.RegisterPharmacySecondFormContainer__cards {
+.SecoundForms-Cards {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2786,7 +2937,7 @@
   padding: 145px 95px 85px;
 }
 
-.RegisterPharmacySecondFormContainer__form {
+.SecoundForms-Form {
   width: 50%;
   direction: rtl;
   display: -webkit-box;
@@ -2799,12 +2950,12 @@
   padding: 45px 140px 35px 100px;
 }
 
-.RegisterPharmacySecondFormContainer__form__title {
+.SecoundForms-Form-Title {
   font-size: 16px;
   font-weight: bold;
 }
 
-.RegisterPharmacySecondFormContainer__form__head {
+.SecoundForms-Form-Titles {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2817,7 +2968,7 @@
           justify-content: space-between;
 }
 
-.RegisterPharmacySecondFormContainer__form__city {
+.SecoundForms-Form-City {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2828,12 +2979,12 @@
   margin: 60px 0 0 0;
 }
 
-.RegisterPharmacySecondFormContainer__form__city__label {
+.SecoundForms-Form-City-Label {
   font-size: 13px;
   font-weight: normal;
 }
 
-.RegisterPharmacySecondFormContainer__form__city__select {
+.SecoundForms-Form-City-Select {
   width: 352px;
   height: 46px;
   border-radius: 10px;
@@ -2841,11 +2992,11 @@
   font-size: 1rem;
 }
 
-.RegisterPharmacySecondFormContainer__form__city__select:focus {
+.SecoundForms-Form-City-Select:focus {
   outline: none;
 }
 
-.RegisterPharmacySecondFormContainer__form__district {
+.SecoundForms-Form-District {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2856,12 +3007,12 @@
   margin: 25px 0 0 0;
 }
 
-.RegisterPharmacySecondFormContainer__form__district__label {
+.SecoundForms-Form-District-Label {
   font-size: 13px;
   font-weight: normal;
 }
 
-.RegisterPharmacySecondFormContainer__form__district__select {
+.SecoundForms-Form-District-Select {
   width: 352px;
   height: 46px;
   border-radius: 10px;
@@ -2869,11 +3020,11 @@
   font-size: 1rem;
 }
 
-.RegisterPharmacySecondFormContainer__form__district__select:focus {
+.SecoundForms-Form-District-Select:focus {
   outline: none;
 }
 
-.RegisterPharmacySecondFormContainer__form__button {
+.SecoundForms-Form-Button {
   width: 170px;
   height: 52px;
   color: #ffffff;
@@ -2887,7 +3038,7 @@
   font-weight: bold;
 }
 
-.RegisterPharmacySecondFormContainer__form__button:focus {
+.SecoundForms-Form-Button:focus {
   outline: none;
 }
 /*# sourceMappingURL=index.css.map */

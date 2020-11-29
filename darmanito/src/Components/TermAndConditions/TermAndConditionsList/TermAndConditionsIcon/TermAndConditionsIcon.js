@@ -2,11 +2,13 @@ import React from 'react';
 
 const TermAndConditionsIcon = (props) => {
     return (
-        <div onClick={props.click} className={props.active
-                        ? "TermAndConditionsIconContainer TermAndConditionsIconContainer__active"
-                        : "TermAndConditionsIconContainer"}>
-            <p className={props.active ? "TermAndConditionsIconContainer__text TermAndConditionsIconContainer__active" 
-                                       : "TermAndConditionsIconContainer__text" }>{props.title}</p>
+        <div onClick={props.click} 
+             className={props.active
+                        ? "TermAndConditionsIcon TermAndConditionsIcon-Active"
+                        : "TermAndConditionsIcon"}>
+            <p className={props.active 
+                        ? "TermAndConditionsIcon-Text TermAndConditionsIcon-Active" 
+                        : "TermAndConditionsIcon-Text" }>{props.title}</p>
         </div>
     );
 }
