@@ -12,14 +12,14 @@
         justify-content: center;
         align-items: center;
         background-color: $cloudy-color;
-        padding: 145px 95px 85px;
+        padding: 220px 95px 85px;
     }
     &-Form {
         width: 50%;
         direction: rtl;
         display: flex;
         flex-direction: column;
-        padding: 45px 140px 35px 100px;
+        padding: 160px 140px 35px 100px;
         &-Title {
             font-size: 16px;
             font-weight: bold;
@@ -77,7 +77,7 @@
                 font-size: 1rem;
                 border-radius: 10px;
                 border: 2px solid $blue-color;
-                margin: 275px .2rem 2rem .2rem;
+                margin: 220px .2rem 2rem .2rem;
                 font-weight: bold;
                 &:focus {
                     outline: none;

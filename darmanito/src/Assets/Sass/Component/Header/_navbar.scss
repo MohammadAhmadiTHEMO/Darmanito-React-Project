@@ -1,11 +1,13 @@
 @import '../../Foundation/colors';
 
 // Navbar :
-
+.onScroll {
+  box-shadow: 0 1px 4px 0 $headerBorder-color; 
+}
 .navbar {
     height: 110px;
     width: 100%;
-    // position: fixed;
+    position: fixed !important;
     display: flex;
     direction: rtl;
     top: 0;
@@ -13,13 +15,13 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 30px 1rem 0 0;
-    box-shadow: 0 1px 4px 0 $headerBorder-color;
     align-items: center;
     z-index: 100;
     background-color: $white-color;
+    z-index: 1000000;
     &-Content {
       display: flex;
-  }
+    }
   &-Navigation {
     list-style: none;
     display: flex;

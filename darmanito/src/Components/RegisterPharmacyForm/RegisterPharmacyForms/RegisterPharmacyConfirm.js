@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {useHistory} from 'react-router-dom';
 
 import shortid from 'short-id';
 
@@ -12,9 +13,17 @@ const RegisterPharmacyConfirm = (props) => {
     const SubmitHandler = () => {
        return setPurchasing({...purchasing , Purchasing : true})
     }
+
+    const purchaseCanceleHandler = () => {
+        return setPurchasing({...purchasing , Purchasing : false})
+    }
+
+    const history = useHistory();
+    const handleClick = () => history.push('/');
+
     return(
         <div className="ThirdForms">
-            <Modal show={purchasing.Purchasing} />
+            <Modal show={purchasing.Purchasing } modalClose={purchaseCanceleHandler} buttonClick={handleClick} />
             <div className="ThirdForms-Cards">
                 <Card
                 name= {props.formik.values.placeName}

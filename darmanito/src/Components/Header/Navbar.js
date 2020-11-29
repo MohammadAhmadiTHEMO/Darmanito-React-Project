@@ -5,14 +5,25 @@ import 'tachyons';
 import Logo from '../UI/Logo';
 import navigationItems from './NavbarNavigationListItems/NavbarNavigationListItems';
 
-
 const Navbar = () => {
     const [sideDrawer, setSideDrawer] = useState({ Open: false });
     const drawgerToggle = () =>
     setSideDrawer((sideDrawer) => ({ Open: !sideDrawer.Open }));
 
+    const [navbar,setNavbar] = useState(false);
+
+    const onScroll = () => {
+        if(window.scrollY >= 100) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    }
+
+    window.addEventListener('scroll',onScroll);
+
     return (
-        <header className='navbar'>
+        <header className={navbar ? 'navbar onScroll' : 'navbar'}>
             <Logo/>
             <div className={
                  sideDrawer.Open
