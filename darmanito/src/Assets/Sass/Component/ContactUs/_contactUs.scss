@@ -76,3 +76,101 @@
 }
 
 // Responsive :
+
+@media(min-width:700px) and (max-width:1270px) {
+    
+    .contactUs {
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        place-content: center;
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:700px) {
+    
+    .contactUs {
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        place-content: center;
+    }
+    .map-Texts {
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        align-items: center;
+        width: 474px !important;
+        height: 267px !important;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);;
+        top: 544px !important;
+        left: 60px !important;
+        z-index: 1000000 !important;
+        &-Address {
+            width: 377px !important;
+        }
+    }
+    .map-Items {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: auto;
+        padding: 18px;
+        &-email {
+            padding: 0 0 0 20px;
+        }
+    }
+    .message-Form {
+        place-items: center;
+        &-Button {
+            margin: 36.5px 0 0 0;
+        }
+    }
+}
+ 
+// ------------------------------------------- // 
+
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .contactUs {
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        place-content: center;
+    }
+    .map-Texts {
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        align-items: center;
+        width: 474px !important;
+        height: 267px !important;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);;
+        top: 544px !important;
+        left: 60px !important;
+        z-index: 1000000 !important;
+        // width: 290px !important;
+        // height: 219px !important;
+        &-Address {
+            width: 377px !important;
+        }
+    }
+    .map-Items {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: auto;
+        padding: 18px;
+        &-email {
+            padding: 0 0 0 20px;
+        }
+    }
+    .message-Form {
+        place-items: center;
+        &-Button {
+            margin: 36.5px 0 0 0;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+}

@@ -14,16 +14,7 @@ function LocationMap() {
           center: [35.715300, 51.419945],
           zoom: 13
       }}
-      className={"testClass"}
-      style= {{
-
-        width: '605px',
-        height: '490px',
-        margin: 0,
-        padding: 0,
-        borderRadius: '10px',
-        background: '#eee'
-      }}
+      className={"map-Container"}
 
       onInit={(L, myMap) => {
           let marker = L.marker([35.715300, 51.419945])

@@ -30,11 +30,15 @@ const ContactUs = () => {
                             <p className='map-Texts-Titles'>آدرس</p>
                             <div className='map-Texts-Address'>تهران طرشت خیابان شهید چوب تراش <br/> خیابان شهید حسین مردی بن بست پنجم پلاک 15 واحد 1</div>
                         </div>
-                        <div className="">
-                            <div className='map-Texts-Titles'>ایمیل</div>
-                            <div className="map-Texts-Email">info@nahiraTech.com</div>
-                            <div className='map-Texts-Titles'>شماره ثابت</div>
-                            <p className="map-Texts-Phone">09912515020</p>
+                        <div className="map-Items">
+                            <div className='map-Items-email'>
+                                <div className='map-Texts-Titles'>ایمیل</div>
+                                <div className="map-Texts-Email">info@nahiraTech.com</div>
+                            </div>
+                            <div className='map-Items-number'>
+                                <div className='map-Texts-Titles'>شماره ثابت</div>
+                                <p className="map-Texts-Phone">09912515020</p>
+                            </div>
                         </div>
                     </div>
                     <SimpleMap/>
