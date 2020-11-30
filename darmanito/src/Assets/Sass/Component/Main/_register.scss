@@ -70,11 +70,134 @@
                 &-Button:focus {
                     outline: none;
                 }
-    
             }
         }
-    
     }
 
-
     // Responsive :
+
+    @media(min-width:1150px) and (max-width:1300px) {
+        
+        .register {
+            flex-wrap: wrap;
+            height: 800px;
+        }
+   }
+   
+   // ------------------------------------------- // 
+   
+   @media(min-width:1000px) and (max-width:1150px) {
+    
+        .register {
+            flex-wrap: wrap;
+            height: 800px;
+        }
+   }
+     
+   // ------------------------------------------- // 
+   
+   @media(min-width:500px) and (max-width:1000px) {
+
+        .register-Container {
+            padding: 0% 2% 100px 0%;
+        }
+        .register {
+            flex-flow: column;;
+            flex-wrap: wrap;
+            height: 700px;
+            place-content: center;
+            &-Image {
+                padding: 0;
+                height: 270px;
+            }
+            &-Info {
+                
+                padding: 70px 0px 60px 0px; 
+                &-Description {
+                    width: 380px;
+                }
+                &-Input {
+                    width: 400px;
+                    padding : 15px;
+                    &-Button {
+                        width: 100px;
+                    }   
+                }
+            }
+        }
+   }
+   
+   // ------------------------------------------- // 
+   
+   @media(min-width:360px) and (max-width:500px) {
+   
+    .register-Container {
+        padding: 0% 2% 100px 0%;
+    }
+    .register {
+        flex-flow: column;;
+        flex-wrap: wrap;
+        width: 350px;
+        height: 631px;
+        place-content: center;
+        &-Image {
+            padding: 0;
+            width: 262.3px;
+            height: 195.7px;
+            align-self: center;
+        }
+        &-Info {
+            padding: 70px 0px 0px 0px;
+            &-Description {
+                width: 262px;
+                height: 73px;
+            }
+            &-Input {
+                width: 302px;
+                height: 55px;
+                padding : 15px;
+                margin: 35px 0 60px 0;
+                &-Input {
+                    font-size: 10px;
+                }
+                &-Button {
+                    width: 93px;
+                    height: 38px;
+                    font-size: 10px;
+                }   
+            }
+        }
+    }
+   }
+   
+   // ------------------------------------------- // 
+   
+   @media(min-width:100px) and (max-width:360px) {
+
+    .register-Container {
+        padding: 0% 2% 100px 0%;
+    }
+    .register {
+        flex-flow: column;;
+        flex-wrap: wrap;
+        width: 350px;
+        height: 631px;
+        place-content: center;
+        &-Image {
+            padding: 0;
+            width: 262.3px;
+            height: 195.7px;
+            align-self: center;
+        }
+        &-Info {
+            padding: 70px 0px 0px 0px;
+            &-Description {
+                width: 262px;
+                height: 73px;
+            }
+            &-Input {
+               display: none;
+            }
+        }
+    }
+   }

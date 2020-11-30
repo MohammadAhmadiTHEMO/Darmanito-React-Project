@@ -16,7 +16,7 @@ const Footer = () => {
             <div className="footer-Main">
                 <Logo />
                 <h3 className="footer-Main-Title">سوپر اپلیکیشن درمان و سلامت</h3>
-                <p className="footer-Main-Texts">تمام حقوق مادی و معنوی این سایت متعلق به درماینیتو است.</p>
+                <p className="footer-Main-Text">تمام حقوق مادی و معنوی این سایت متعلق به درماینیتو است.</p>
                 <div className="footer-Main-SocialNetwork">
                     <i className="footer-Main-SocialNetwork-Linkedin fab fa-linkedin-in"></i>
                     <i className="footer-Main-SocialNetwork-Twitter fab fa-twitter"></i>

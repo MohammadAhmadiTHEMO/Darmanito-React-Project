@@ -53,4 +53,101 @@
 
  // Responsive :
 
- 
+
+@media(min-width:500px) and (max-width:1000px) {
+
+   .application {
+      flex-flow: column;
+      flex-wrap: wrap;
+      align-content: center;
+      &-TextsItems {
+         text-align: center;
+         padding: 0;
+         & h1 {
+            padding: 50px 0px 0px 0px;
+            font-weight: bold;
+         }
+      }
+      &-ButtonItems {
+         flex-flow: column;
+         display: flex;
+         padding: 45px 0 0 0;
+         align-items: center;
+      }
+      &-ButtonsStyleItems {
+         margin: 20px 0 0 0;
+      }
+   }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+   .application {
+      flex-flow: column;
+      flex-wrap: wrap;
+      align-content: center;
+      &-Image {
+         &-Image {
+            width: 302.4px;
+            height: 227.9px;
+        }
+      }
+      &-TextsItems {
+         text-align: center;
+         padding: 0;
+         & h1 {
+            padding: 50px 0px 0px 0px;
+            font-weight: bold;
+         }
+      }
+      &-ButtonItems {
+         flex-flow: column;
+         display: flex;
+         padding: 45px 0 0 0;
+         align-items: center;
+      }
+      &-ButtonsStyleItems {
+         margin: 20px 0 0 0;
+      }
+   }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+   .application {
+      flex-flow: column;
+      flex-wrap: wrap;
+      align-content: center;
+      &-Image {
+         &-Image {
+            width: 273.4px;
+            height: 163.9px;
+        }
+      }
+      &-TextsItems {
+         text-align: center;
+         padding: 0;
+         & h1 {
+            font-size: 25px;
+            padding: 50px 0px 0px 0px;
+            font-weight: bold;
+         }
+         & p {
+            font-size: 13px;;
+         }
+      }
+      &-ButtonItems {
+         flex-flow: column;
+         display: flex;
+         padding: 45px 0 0 0;
+         align-items: center;
+      }
+      &-ButtonsStyleItems {
+         margin: 20px 0 0 0;
+      }
+   }
+}

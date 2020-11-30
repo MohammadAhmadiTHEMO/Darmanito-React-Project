@@ -12,3 +12,12 @@
         margin: auto;
     }
 }
+
+// Responsive : 
+
+@media(min-width:100px) and (max-width:280px) {
+
+    .blueCover {
+        margin: 200px 0 0 0;
+    }
+  }

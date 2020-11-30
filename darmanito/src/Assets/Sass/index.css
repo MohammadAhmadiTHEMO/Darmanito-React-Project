@@ -144,13 +144,13 @@
     padding: 0px 4rem 34px 0px;
   }
   .navbar-Navigation {
-    padding: 15px 0px 25px 7rem;
+    padding: 25px 0px 0px 7rem;
   }
   .navbar-Navigation-Items {
     padding: 0px 15px;
   }
   .navbar-Button {
-    margin: 0px 0px 0px 5rem;
+    margin: 10px 0px 40px 5rem;
   }
 }
 
@@ -159,13 +159,13 @@
     padding: 0px 4rem 34px 0px;
   }
   .navbar-Navigation {
-    padding: 15px 0px 25px 6rem;
+    padding: 25px 0px 0px 6rem;
   }
   .navbar-Navigation-Items {
     padding: 0px 15px;
   }
   .navbar-Button {
-    margin: 0px 0px 0px 3rem;
+    margin: 10px 0px 40px 3rem;
   }
 }
 
@@ -249,7 +249,7 @@
   .navbar-BurgerCross, .navbar-BurgerBars {
     display: block;
     cursor: pointer;
-    padding: 0px 0px 18px 38px;
+    padding: 0px 0px 25px 38px;
     font-size: 32px;
     color: #1894ff;
     -webkit-transition: 0.3s;
@@ -264,19 +264,19 @@
 
 @media (min-width: 500px) and (max-width: 1000px) {
   .navbar .logo {
-    padding: 0px 20px 34px 0px;
+    padding: 5px 20px 34px 0px;
   }
 }
 
 @media (min-width: 360px) and (max-width: 500px) {
   .navbar .logo {
-    padding: 0px 5px 34px 0px;
+    padding: 5px 5px 34px 0px;
   }
 }
 
 @media (min-width: 280px) and (max-width: 360px) {
   .navbar .logo {
-    padding: 0px 5px 34px 0px;
+    padding: 5px 5px 34px 0px;
   }
   .navbar-Content {
     font-size: 1rem;
@@ -285,7 +285,7 @@
     padding: 15px 0px 0px 1rem;
   }
   .navbar-BurgerCross, .navbar-BurgerBars {
-    padding: 0px 0px 25px 5px;
+    padding: 0px 0px 25px 15px;
   }
 }
 
@@ -300,9 +300,10 @@
             flex-flow: column;
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
-    height: 220px;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
+    height: 200px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .navbar-Content {
     font-size: 1rem;
@@ -561,6 +562,132 @@
   color: #1894FF;
 }
 
+@media (min-width: 500px) and (max-width: 1000px) {
+  .application {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .application-TextsItems {
+    text-align: center;
+    padding: 0;
+  }
+  .application-TextsItems h1 {
+    padding: 50px 0px 0px 0px;
+    font-weight: bold;
+  }
+  .application-ButtonItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 45px 0 0 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .application-ButtonsStyleItems, .application-ButtonsStyleItems-withoutColor,
+  .withoutColor {
+    margin: 20px 0 0 0;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .application {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .application-Image-Image {
+    width: 302.4px;
+    height: 227.9px;
+  }
+  .application-TextsItems {
+    text-align: center;
+    padding: 0;
+  }
+  .application-TextsItems h1 {
+    padding: 50px 0px 0px 0px;
+    font-weight: bold;
+  }
+  .application-ButtonItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 45px 0 0 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .application-ButtonsStyleItems, .application-ButtonsStyleItems-withoutColor,
+  .withoutColor {
+    margin: 20px 0 0 0;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .application {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .application-Image-Image {
+    width: 273.4px;
+    height: 163.9px;
+  }
+  .application-TextsItems {
+    text-align: center;
+    padding: 0;
+  }
+  .application-TextsItems h1 {
+    font-size: 25px;
+    padding: 50px 0px 0px 0px;
+    font-weight: bold;
+  }
+  .application-TextsItems p {
+    font-size: 13px;
+  }
+  .application-ButtonItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 45px 0 0 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .application-ButtonsStyleItems, .application-ButtonsStyleItems-withoutColor,
+  .withoutColor {
+    margin: 20px 0 0 0;
+  }
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,6 +761,134 @@
 
 .ic {
   margin: 0 0 0 73px;
+}
+
+@media (min-width: 1500px) and (max-width: 2000px) {
+  .about {
+    padding-right: 300px;
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .about {
+    padding: 350px 70px 0 0;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .about {
+    padding: 350px 40px 0 0;
+  }
+  .about-Image {
+    padding: 0 0 0 50px;
+  }
+  .about-ImageStyle {
+    margin: 50px 0 13.5px 58px;
+  }
+  .about-TextsItems p {
+    width: 480px;
+  }
+  .ic {
+    margin: 0 0 0 58px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .about {
+    place-content: center;
+    padding: 100px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-Image {
+    padding: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .about-ImagesItems {
+    display: none;
+  }
+  .about-Items {
+    padding: 35px 0 25 0;
+  }
+  .about-TextsItems p {
+    width: 450px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .about {
+    padding: 100px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-Image {
+    padding: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .about-Image-Image {
+    width: 300.7px;
+    height: 300.7px;
+  }
+  .about-ImagesItems {
+    display: none;
+  }
+  .about-Items {
+    padding: 35px 0 25px 0;
+  }
+  .about-TextsItems {
+    padding: 30px 40px 0 0;
+  }
+  .about-TextsItems p {
+    width: 302px;
+    height: 121px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .about {
+    padding: 100px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-Image {
+    padding: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .about-Image-Image {
+    width: 267.7px;
+    height: 233.7px;
+  }
+  .about-ImagesItems {
+    display: none;
+  }
+  .about-Items {
+    padding: 35px 0 25px 0;
+  }
+  .about-TextsItems {
+    padding: 30px 10px 0 0;
+  }
+  .about-TextsItems p {
+    width: 241px;
+    height: 121px;
+  }
 }
 
 .possibilities {
@@ -824,6 +1079,27 @@
   padding: 8px 0 0 0;
 }
 
+@media (min-width: 1650px) and (max-width: 2000px) {
+  .possibilities {
+    padding-right: 300px;
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .possibilities {
+    padding: 225px 70px 0 0;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .possibilities {
+    padding: 225px 70px 0 0;
+  }
+  .possibilities-Info {
+    padding: 0 50px 0 0;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .possibilities {
     display: -webkit-box;
@@ -833,9 +1109,9 @@
         flex-wrap: wrap;
     direction: rtl;
     text-align: right;
-    padding: 225px 0px 0 0;
+    padding: 85px 0 0 0;
   }
-  .possibilitiesIcons {
+  .possibilities-Icons {
     direction: rtl;
     -ms-grid-row: 2;
     -ms-grid-column: 2;
@@ -846,7 +1122,105 @@
     -webkit-column-gap: 1rem;
             column-gap: 1rem;
     row-gap: 1rem;
-    padding: 50px 0 0 0;
+    padding: 40px 45px 40px 0;
+    overflow: visible;
+  }
+  .possibilities-Title {
+    margin: 0 50px 0 0;
+  }
+  .possibilities-Info {
+    padding: 0 50px 0 0;
+  }
+  .possibilities-Info-Description {
+    width: 410px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .possibilities {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    direction: rtl;
+    text-align: right;
+    padding: 85px 0 0 0;
+  }
+  .possibilities-Icons {
+    direction: rtl;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: possibilities-icons;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 40px 37px 40px 0;
+    overflow: visible;
+  }
+  .possibilities-Icon {
+    width: 130px;
+    height: 130px;
+  }
+  .possibilities-Icon-Title {
+    margin: 0;
+  }
+  .possibilities-Title {
+    margin: 0 37px 0 0;
+  }
+  .possibilities-Info {
+    padding: 0 37px 0 0;
+  }
+  .possibilities-Info-Description {
+    width: 303px;
+    height: 94px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .possibilities {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    direction: rtl;
+    text-align: right;
+    padding: 85px 0 0 0;
+  }
+  .possibilities-Icons {
+    direction: rtl;
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: possibilities-icons;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 40px 10px 40px 0;
+    overflow: visible;
+  }
+  .possibilities-Icon {
+    width: 130px;
+    height: 130px;
+  }
+  .possibilities-Icon-Title {
+    margin: 0;
+  }
+  .possibilities-Title {
+    margin: 0 10px 0 0;
+  }
+  .possibilities-Info {
+    padding: 0 10px 0 0;
+  }
+  .possibilities-Info-Description {
+    width: 239px;
+    height: 94px;
   }
 }
 
@@ -938,6 +1312,303 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 1rem;
+}
+
+@media (min-width: 1150px) and (max-width: 1270px) {
+  .appDownload-Container {
+    height: 930px;
+  }
+  .appDownload {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .appDownload-Image {
+    padding: 20px 0 0 0;
+  }
+  .appDownload-Info {
+    padding: 50px 0px 40px 0;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .appDownload-Container {
+    height: 930px;
+  }
+  .appDownload {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .appDownload-Image {
+    padding: 20px 0 0 0;
+  }
+  .appDownload-Info {
+    padding: 50px 0px 40px 0;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+  .appDownload .androidButton {
+    display: none;
+  }
+  .appDownload-Container {
+    height: 1000px;
+    margin: 65px 0 100px 0;
+  }
+  .appDownload {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Icons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Info {
+    padding: 50px 0px 40px 0;
+  }
+  .appDownload-Info-Input {
+    width: 450px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 650px) {
+  .appDownload .androidButton {
+    display: none;
+  }
+  .appDownload-Container {
+    height: 985px;
+    margin: 65px 0 100px 0;
+  }
+  .appDownload {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Icons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Info {
+    padding: 50px 0px 40px 0;
+  }
+  .appDownload-Info-Input {
+    width: 450px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 600px) {
+  .appDownload .androidButton {
+    display: none;
+  }
+  .appDownload-Container {
+    height: 940px;
+    margin: 65px 0 100px 0;
+  }
+  .appDownload {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Icons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Info {
+    padding: 50px 0px 40px 0;
+  }
+  .appDownload-Info-Input {
+    width: 450px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 550px) {
+  .appDownload .androidButton {
+    display: none;
+  }
+  .appDownload-Container {
+    height: 890px;
+    margin: 65px 0 100px 0;
+  }
+  .appDownload {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Icons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Info {
+    padding: 50px 0px 40px 0;
+  }
+  .appDownload-Info-Input {
+    width: 450px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 500px) {
+  .appDownload .androidButton {
+    display: none;
+  }
+  .appDownload-Container {
+    height: 840px;
+    margin: 65px 0 100px 0;
+  }
+  .appDownload {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Icons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Info {
+    padding: 50px 0px 40px 0;
+  }
+  .appDownload-Info-Input {
+    width: 335.7px;
+    height: 54.5px;
+    padding: 8px 16.3px 8.5px 13px;
+  }
+  .appDownload-Info-Input-Buttpn {
+    width: 84px;
+    height: 38px;
+    font-size: 13px;
+  }
+  .appDownload-Info-Input-Input {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 460px) {
+  .appDownload .androidButton {
+    display: none;
+  }
+  .appDownload-Container {
+    height: 783px;
+    margin: 65px 0 100px 0;
+  }
+  .appDownload {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Icons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Info {
+    padding: 50px 0px 40px 0;
+  }
+  .appDownload-Info-Input {
+    width: 335.7px;
+    height: 54.5px;
+    padding: 8px 16.3px 8.5px 13px;
+  }
+  .appDownload-Info-Input-Buttpn {
+    width: 84px;
+    height: 38px;
+    font-size: 13px;
+  }
+  .appDownload-Info-Input-Input {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .appDownload .androidButton {
+    display: none;
+  }
+  .appDownload-Container {
+    height: 394px;
+    margin: 65px 0 100px 0;
+  }
+  .appDownload {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Icons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .appDownload-Info {
+    padding: 50px 0px 40px 0;
+  }
+  .appDownload-Info-Input {
+    display: none;
+  }
+  .appDownload-Image {
+    display: none;
+  }
 }
 
 .sibAppButton-Container {
@@ -1133,6 +1804,136 @@
   outline: none;
 }
 
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .register {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 800px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .register {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 800px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .register-Container {
+    padding: 0% 2% 100px 0%;
+  }
+  .register {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 700px;
+    place-content: center;
+  }
+  .register-Image {
+    padding: 0;
+    height: 270px;
+  }
+  .register-Info {
+    padding: 70px 0px 60px 0px;
+  }
+  .register-Info-Description {
+    width: 380px;
+  }
+  .register-Info-Input {
+    width: 400px;
+    padding: 15px;
+  }
+  .register-Info-Input-Button {
+    width: 100px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .register-Container {
+    padding: 0% 2% 100px 0%;
+  }
+  .register {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 350px;
+    height: 631px;
+    place-content: center;
+  }
+  .register-Image {
+    padding: 0;
+    width: 262.3px;
+    height: 195.7px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .register-Info {
+    padding: 70px 0px 0px 0px;
+  }
+  .register-Info-Description {
+    width: 262px;
+    height: 73px;
+  }
+  .register-Info-Input {
+    width: 302px;
+    height: 55px;
+    padding: 15px;
+    margin: 35px 0 60px 0;
+  }
+  .register-Info-Input-Input {
+    font-size: 10px;
+  }
+  .register-Info-Input-Button {
+    width: 93px;
+    height: 38px;
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .register-Container {
+    padding: 0% 2% 100px 0%;
+  }
+  .register {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 350px;
+    height: 631px;
+    place-content: center;
+  }
+  .register-Image {
+    padding: 0;
+    width: 262.3px;
+    height: 195.7px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .register-Info {
+    padding: 70px 0px 0px 0px;
+  }
+  .register-Info-Description {
+    width: 262px;
+    height: 73px;
+  }
+  .register-Info-Input {
+    display: none;
+  }
+}
+
 .support {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1309,7 +2110,7 @@
   padding: 0 60px 0 0;
 }
 
-.footer-Main-Texts {
+.footer-Main-Text {
   direction: rtl;
   margin-bottom: 3rem;
   width: 256px;
@@ -2062,6 +2863,12 @@
 
 .blueCover-Text {
   margin: auto;
+}
+
+@media (min-width: 100px) and (max-width: 280px) {
+  .blueCover {
+    margin: 200px 0 0 0;
+  }
 }
 
 .map-Texts {

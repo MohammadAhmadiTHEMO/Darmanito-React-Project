@@ -4,7 +4,7 @@ import applicationDoctorImage from '../../../../Assets/Images/Main/applicationDo
 const ApplicationDoctorImage = () => {
     return (
         <div className="application-Image">
-            <img src={applicationDoctorImage} alt='Doctor'></img>
+            <img className='application-Image-Image' src={applicationDoctorImage} alt='Doctor'></img>
         </div>
     );
 }
