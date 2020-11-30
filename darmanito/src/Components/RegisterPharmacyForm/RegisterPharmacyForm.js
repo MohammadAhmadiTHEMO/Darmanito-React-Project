@@ -8,55 +8,60 @@ import RegisterPharmacyConfirm from './RegisterPharmacyForms/RegisterPharmacyCon
 import RegisterPharmacyDetail  from './RegisterPharmacyForms/RegisterPharmacyDetail';
 
 const RegisterPharmacyForm = () => {
+
+  const initialValues = {
+    fullName: '',
+    medicId: '',
+    placeName: '',
+    placePhone: '',
+    city: '',
+    district: '',
+    fullAddress: '',
+    isBoarding: false,
+    openingHour: 8,
+    closingHour: 20,
+    photo: null
+  }
+
+  const validationSchema = Yup.object({
+    fullName: Yup.string()
+              .min(5, 'نام کوتاه است!')
+              .required("فیلد اجباری است"),
+    medicId: Yup.number()
+              .required("فیلد اجباری است"),
+    placeName: Yup.string()
+              .required("فیلد اجباری است"),
+    placePhone: Yup.number()
+              .required("فیلد اجباری است"),
+    city: Yup.string()
+              .required("فیلد اجباری است"),
+    district: Yup.string()
+              .required("فیلد اجباری است"),
+    fullAddress: Yup.string()
+              .required("فیلد اجباری است"),
+    isBoarding: Yup.boolean()
+              .required("فیلد اجباری است"),
+    photo: Yup.number()
+              .required("فیلد اجباری است")
+  })
+
   const [info, setInfo] = useState(
     {
       step:0,
     });
-    const formik = useFormik({
-      initialValues: {
-          fullName: '',
-          medicId: '',
-          placeName: '',
-          placePhone: '',
-          city: '',
-          district: '',
-          fullAddress: '',
-          isBoarding: false,
-          openingHour: 8,
-          closingHour: 20,
-          photo: null
-      },
-      validationSchema: Yup.object({
-        fullName: Yup.string()
-                  .min(5, 'نام کوتاه است!')
-                  .required("فیلد اجباری است"),
-        medicId: Yup.number()
-                 .required("فیلد اجباری است"),
-        placeName: Yup.string()
-                   .required("فیلد اجباری است"),
-        placePhone: Yup.number()
-                    .required("فیلد اجباری است"),
-        city: Yup.string()
-              .required("فیلد اجباری است"),
-        district: Yup.string()
-                  .required("فیلد اجباری است"),
-        fullAddress: Yup.string()
-                     .required("فیلد اجباری است"),
-        isBoarding: Yup.boolean()
-                    .required("فیلد اجباری است"),
-        photo: Yup.number()
-                .required("فیلد اجباری است")
-      }),
+  const formik = useFormik({
+      initialValues,
+      validationSchema,
       onSubmit: values => alert(JSON.stringify(values)),
   });
 
-    const nextStep = (state) => {
-      let {step} = state;
-      step = step >= 2 || step < 0
-             ? 2
-             : step+1;
-      return(setInfo({...state, step:step}));
-    }
+  const nextStep = (state) => {
+    let {step} = state;
+    step = step >= 2 || step < 0
+            ? 2
+            : step+1;
+    return(setInfo({...state, step:step}));
+  }
 
     const prevStep = (state) => {
       let {step} = state;

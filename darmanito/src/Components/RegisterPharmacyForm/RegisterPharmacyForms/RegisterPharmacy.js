@@ -16,7 +16,7 @@ const RegisterPharmacy = (props) => {
                     <label className="FirstForms-Form-FullName-Label"
                     htmlFor="fullName"> نام و نام خانوادگی موسس</label>
                     <input className={Control(props.formik.errors.fullName,"FirstForms-Form-FullName-Input")}
-                    value={props.formik.values.fullName} onChange={props.formik.handleChange} type="text" name="fullName"/>
+                    value={props.formik.values.fullName} onChange={props.formik.handleChange} type="text" name="fullName" />
                     <p className="FirstForms-Form-Error">{props.formik.errors.fullName}</p>
                 </div>
 

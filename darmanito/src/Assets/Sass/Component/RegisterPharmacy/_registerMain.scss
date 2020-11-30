@@ -6,7 +6,7 @@
     &-Main {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: space-evenly;
         text-align: right;
         margin: 240px 140px 180px 0;
         &-Items {

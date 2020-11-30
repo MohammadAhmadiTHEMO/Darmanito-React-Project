@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import 'tachyons';
 
@@ -22,6 +23,7 @@ const Navbar = () => {
 
     window.addEventListener('scroll',onScroll);
 
+
     return (
         <header className={navbar ? 'navbar onScroll' : 'navbar'}>
             <Logo/>
@@ -34,14 +36,13 @@ const Navbar = () => {
                     {navigationItems.map((navigationItems, index) => {
                         return (
                             <li className="navbar-Navigation-Items" key={index}>
-                                <a  href={navigationItems.href}
-                                    className={
-                                        navigationItems.active
-                                        ? "navbar-Navigation-Items active"
-                                        : "navbar-Navigation-Items "}
+                                <NavLink  
+                                    to={navigationItems.href}
+                                    exact
+                                    activeClassName= "navbar-Navigation-Items active"
                                     key={index}>
                                         {navigationItems.title}
-                                </a>
+                                </NavLink>
                             </li>
                         );
                     })}

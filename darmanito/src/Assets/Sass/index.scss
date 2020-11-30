@@ -3,7 +3,7 @@
     font-family: Yekan;
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,11 +11,12 @@
     font-family: Yekan;
 }
 
-@import './Component/Header/navbar';
+@import './Component/Navbar/navbar';
 
 @import './Component//UI/backDrop';
 @import './Component/UI/modal';
 @import './Component/UI/logo';
+@import './Component/UI/errorPage';
 
 @import './Component/Main/application';
 @import './Component/Main/about';

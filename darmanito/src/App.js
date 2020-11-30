@@ -14,6 +14,7 @@ import RegisterPharmacy from './Components/RegisterPharmacy/RegisterPharmacy';
 import FAQ from './Components/FAQ/FAQ';
 import TermAndConditions from './Components/TermAndConditions/TermAndConditions';
 import RegisterPharmacyForm from './Components/RegisterPharmacyForm/RegisterPharmacyForm';
+import ErrorPage from './Components/UI/ErrorPage';
 
 
 
@@ -30,7 +31,11 @@ class App extends Component {
           <Route exact path="/RegisterPharmacy" component={RegisterPharmacy}/>
           <Route exact path="/faq" component={FAQ}/>
           <Route exact path="/TermAndConditions" component={TermAndConditions}/>
-          <Route exact path="/OnlinePharmacy" component={RegisterPharmacyForm}/>
+          <Route exact path="/OnlineRegisterPharmacy" component={RegisterPharmacyForm}/>
+          <Route exact path="/OnlineVisit" component={ErrorPage}/>
+          <Route exact path="/OnlinePharmacy" component={ErrorPage}/>
+          <Route exact path="/OnlineMarket" component={ErrorPage}/>
+          <Route exact path="/HealthRecord" component={ErrorPage}/>
           </Switch>
       </Fragment>
     );

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 @font-face {
   src: url("../Fonts/Yekan.ttf");
   font-family: Yekan;
@@ -66,8 +67,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
   padding: 0px 26px;
 }
 
@@ -87,6 +86,8 @@
   padding-bottom: 17px;
   text-decoration: none;
   font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .navbar-Navigation-Items a.not-active {
@@ -434,6 +435,67 @@
 
 .logo p {
   margin: 10px 10px;
+}
+
+.errorPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 30%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.errorPage-Image {
+  padding: 50px;
+  width: 45%;
+  height: 50%;
+}
+
+.errorPage-Texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: left;
+  padding: 120px 0 0 0;
+  width: 50%;
+  height: 50%;
+}
+
+.errorPage-Texts-Title {
+  font-family: 'Bangers', cursive;
+  font-size: 60px;
+  color: #1894FF;
+}
+
+.errorPage-Texts-Text {
+  font-family: 'Bangers', cursive;
+  font-size: 35px;
+  color: #1894FF;
+}
+
+.errorPage-Texts-Text-Click {
+  padding: 0 30px;
+  font-family: 'Bangers', cursive;
+  color: #2361B5;
+}
+
+.errorPage-Texts-Text-Click-Span {
+  font-family: 'Bangers', cursive;
+  color: Red;
+}
+
+.errorPage-Texts-Text-Click:hover {
+  text-decoration: none;
+  padding: 0 40px;
 }
 
 .application {
@@ -1247,7 +1309,7 @@
   padding: 0 60px 0 0;
 }
 
-.footer-Main-Text {
+.footer-Main-Texts {
   direction: rtl;
   margin-bottom: 3rem;
   width: 256px;
@@ -1494,8 +1556,9 @@
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: right;
   margin: 240px 140px 180px 0;
 }
@@ -2309,7 +2372,7 @@
       flex-wrap: wrap;
   direction: rtl;
   width: 60%;
-  margin: 180px 0 50px 0;
+  margin: 140px 0 50px 0;
   text-align: right;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -2342,6 +2405,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
+  padding: 15px;
 }
 
 .FirstForms-Form-FullName-Input:focus {
@@ -2373,6 +2437,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
+  padding: 15px;
 }
 
 .FirstForms-Form-MedicId-Input:focus {
@@ -2400,6 +2465,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
+  padding: 15px;
 }
 
 .FirstForms-Form-PlaceName-Input:focus {
@@ -2427,6 +2493,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
+  padding: 15px;
 }
 
 .FirstForms-Form-PlacePhone-Input:focus {
@@ -2454,6 +2521,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
+  padding: 15px;
 }
 
 .FirstForms-Form-City-Input:focus {
@@ -2481,6 +2549,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
+  padding: 15px;
 }
 
 .FirstForms-Form-District-Input:focus {
@@ -2508,6 +2577,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 720px;
   height: 46px;
+  padding: 15px;
 }
 
 .FirstForms-Form-FullAddress-Input:focus {
@@ -2669,6 +2739,7 @@
   margin: 0 0 0 16px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
 .FirstForms-Form-WorkTime-FromInput:focus {
@@ -2681,6 +2752,7 @@
   height: 46px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
 .FirstForms-Form-WorkTime-ToInput:focus {
@@ -2807,7 +2879,7 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #E6F3FF;
-  padding: 235px 100px 85px;
+  padding: 210px 100px 85px;
 }
 
 .ThirdForms-Preview {
@@ -2822,7 +2894,7 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 190px 145px 80px 60px;
+  padding: 140px 145px 80px 60px;
 }
 
 .ThirdForms-Preview-PlaceName, .ThirdForms-Preview-PlacePhone, .ThirdForms-Preview-City, .ThirdForms-Preview-District, .ThirdForms-Preview-WorkingHours, .ThirdForms-Preview-FullAddress, .ThirdForms-Preview-FullName, .ThirdForms-Preview-MedicId {
@@ -2861,7 +2933,7 @@
 
 .ThirdForms-Preview-Form {
   width: 90%;
-  margin: 80px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .ThirdForms-Preview-Form-Buttons {
@@ -2997,6 +3069,7 @@
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 1rem;
+  padding: 0 15px;
 }
 
 .SecoundForms-Form-City-Select:focus {
@@ -3025,6 +3098,7 @@
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 1rem;
+  padding: 0 15px;
 }
 
 .SecoundForms-Form-District-Select:focus {
