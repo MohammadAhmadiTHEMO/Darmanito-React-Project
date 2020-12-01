@@ -324,3 +324,221 @@
 {
     border: 1px solid red;
 }
+
+// Responsive :
+
+@media(min-width:1800px) and (max-width:2000px) {
+    
+    .FirstForms {
+        &-Form {
+            justify-content: space-between;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:850px) and (max-width:1200px) {
+    
+    .FirstForms {
+        &-Form {
+            width: 85%;
+        }
+    }
+    
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:850px) {
+
+    .FirstForms {
+        &-Form {
+            &-FullAddress-Input {
+                width: 352px;
+            }
+            &-TimeSection {
+                flex-direction: column;
+            }
+            &-Button {
+                flex-direction: column-reverse;
+                margin: 32px 0 0 0;
+                gap: 65px;
+                align-items: center;
+            }
+            &-UploadButton {
+                width: 200px;
+            }
+            &-NextButton-Button {
+                margin: 0 170px 0 0;
+            }
+        }
+    }
+    
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .FirstForms {
+        &-Form {
+            &-FullName {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-PlaceName {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-PlacePhone {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-MedicId {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-City {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-District {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-FullAddress {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-Boarding {
+                margin: 0 0 0 80px;
+            }
+            &-TimeSection {
+                flex-direction: column;
+            }
+            &-Button {
+                flex-direction: column-reverse;
+                margin: 32px 0 0 0;
+                gap: 65px;
+                align-items: center;
+            }
+            &-UploadButton {
+                width: 268px;
+            }
+            &-NextButton-Button {
+                margin: 0 130px 0 0;
+            }
+            &-WorkTime {
+                &-FromInput,
+                &-ToInput {
+                    width: 140px;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .FirstForms {
+        &-Form {
+            &-FullName {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-PlaceName {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-PlacePhone {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-MedicId {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-City {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-District {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-FullAddress {
+                margin: 0;
+                &-Input {
+                    width: 303px;
+                    height: 46px;
+                }
+            }
+            &-Boarding {
+                margin: 0 0 0 80px;
+            }
+            &-TimeSection {
+                flex-direction: column;
+            }
+            &-Button {
+                flex-direction: column-reverse;
+                margin: 32px 0 0 0;
+                gap: 65px;
+                align-items: center;
+            }
+            &-UploadButton {
+                width: 268px;
+            }
+            &-NextButton-Button {
+                margin: 0 130px 0 0;
+            }
+            &-WorkTime {
+                &-FromInput,
+                &-ToInput {
+                    width: 140px;
+                }
+            }
+        }
+    }
+}

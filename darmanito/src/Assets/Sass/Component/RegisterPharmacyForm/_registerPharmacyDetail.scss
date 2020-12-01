@@ -89,3 +89,144 @@
 }
 
 // Responsive :
+
+@media(min-width:1150px) and (max-width:1300px) {
+    
+    .SecoundForms {
+        &-Form {
+            padding: 160px 70px 35px 80px;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1000px) and (max-width:1150px) {
+
+    .SecoundForms .directionLeft {
+        margin: 36px 100px 0 0;
+    }
+    .SecoundForms .registerMainCards {
+        margin: 0 0 36px 36px;
+    }
+    .SecoundForms {
+        &-Form {
+            padding: 160px 40px 35px 50px;
+        }
+    }
+    
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:1000px) {
+
+    .SecoundForms .directionLeft {
+        display: none;
+    }
+    .SecoundForms .registerMainCards {
+        margin: 0;
+    }
+    .SecoundForms .registerMainCards-NotActive {
+        display: none;
+    }
+    .SecoundForms {
+        flex-flow: column;
+        flex-wrap: wrap;
+        &-Cards {
+            width: 100%;
+            padding: 200px 95px 85px;
+        }
+        &-Form {
+            width: 100%;
+            padding: 100px 50px 35px 40px;
+        }
+    }
+    
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:280px) and (max-width:500px) {
+
+    .SecoundForms .directionLeft {
+        display: none;
+    }
+    .SecoundForms .registerMainCards {
+        margin: 0;
+    }
+    .SecoundForms .registerMainCards-NotActive {
+        display: none;
+    }
+    .SecoundForms {
+        flex-flow: column;
+        flex-wrap: wrap;
+        &-Cards {
+            width: 100%;
+            padding: 180px 95px 70px;
+        }
+        &-Form {
+            width: 100%;
+            align-items: center;
+            padding: 50px 15px 35px 15px;
+            &-Titles {
+                flex-direction: column-reverse;
+                gap: 4rem;
+            }
+            &-City-Select {
+                width: 303px;
+                height: 46px;
+            }
+            &-District-Select {
+                width: 303px;
+                height: 46px;
+            }
+            &-Button {
+                margin: 120px .2rem 2rem .2rem;
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:280px) {
+
+    .SecoundForms .directionLeft {
+        display: none;
+    }
+    .SecoundForms .registerMainCards {
+        margin: 0;
+    }
+    .SecoundForms .registerMainCards-NotActive {
+        display: none;
+    }
+    .SecoundForms {
+        flex-flow: column;
+        flex-wrap: wrap;
+        &-Cards {
+            width: 100%;
+            padding: 250px 95px 70px;
+        }
+        &-Form {
+            width: 100%;
+            align-items: center;
+            padding: 50px 5px 35px 5px;
+            &-Titles {
+                flex-direction: column-reverse;
+                gap: 4rem;
+            }
+            &-City-Select {
+                width: 203px;
+                height: 46px;
+            }
+            &-District-Select {
+                width: 203px;
+                height: 46px;
+            }
+            &-Button {
+                margin: 120px .2rem 2rem .2rem;
+            }
+        }
+    }
+}

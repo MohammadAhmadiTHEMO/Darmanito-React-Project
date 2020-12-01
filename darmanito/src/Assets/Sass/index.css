@@ -2912,7 +2912,7 @@
 
 @media (min-width: 1500px) and (max-width: 2000px) {
   .pharmacyServices {
-    margin: 100px 250px;
+    margin: 100px 180px;
   }
 }
 
@@ -4404,6 +4404,211 @@
   border: 1px solid red;
 }
 
+@media (min-width: 1800px) and (max-width: 2000px) {
+  .FirstForms-Form {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1200px) {
+  .FirstForms-Form {
+    width: 85%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 850px) {
+  .FirstForms-Form-FullAddress-Input {
+    width: 352px;
+  }
+  .FirstForms-Form-TimeSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .FirstForms-Form-Button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 32px 0 0 0;
+    gap: 65px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .FirstForms-Form-UploadButton {
+    width: 200px;
+  }
+  .FirstForms-Form-NextButton-Button {
+    margin: 0 170px 0 0;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .FirstForms-Form-FullName {
+    margin: 0;
+  }
+  .FirstForms-Form-FullName-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-PlaceName {
+    margin: 0;
+  }
+  .FirstForms-Form-PlaceName-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-PlacePhone {
+    margin: 0;
+  }
+  .FirstForms-Form-PlacePhone-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-MedicId {
+    margin: 0;
+  }
+  .FirstForms-Form-MedicId-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-City {
+    margin: 0;
+  }
+  .FirstForms-Form-City-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-District {
+    margin: 0;
+  }
+  .FirstForms-Form-District-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-FullAddress {
+    margin: 0;
+  }
+  .FirstForms-Form-FullAddress-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-Boarding {
+    margin: 0 0 0 80px;
+  }
+  .FirstForms-Form-TimeSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .FirstForms-Form-Button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 32px 0 0 0;
+    gap: 65px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .FirstForms-Form-UploadButton {
+    width: 268px;
+  }
+  .FirstForms-Form-NextButton-Button {
+    margin: 0 130px 0 0;
+  }
+  .FirstForms-Form-WorkTime-FromInput, .FirstForms-Form-WorkTime-ToInput {
+    width: 140px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .FirstForms-Form-FullName {
+    margin: 0;
+  }
+  .FirstForms-Form-FullName-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-PlaceName {
+    margin: 0;
+  }
+  .FirstForms-Form-PlaceName-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-PlacePhone {
+    margin: 0;
+  }
+  .FirstForms-Form-PlacePhone-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-MedicId {
+    margin: 0;
+  }
+  .FirstForms-Form-MedicId-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-City {
+    margin: 0;
+  }
+  .FirstForms-Form-City-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-District {
+    margin: 0;
+  }
+  .FirstForms-Form-District-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-FullAddress {
+    margin: 0;
+  }
+  .FirstForms-Form-FullAddress-Input {
+    width: 303px;
+    height: 46px;
+  }
+  .FirstForms-Form-Boarding {
+    margin: 0 0 0 80px;
+  }
+  .FirstForms-Form-TimeSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .FirstForms-Form-Button {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 32px 0 0 0;
+    gap: 65px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .FirstForms-Form-UploadButton {
+    width: 268px;
+  }
+  .FirstForms-Form-NextButton-Button {
+    margin: 0 130px 0 0;
+  }
+  .FirstForms-Form-WorkTime-FromInput, .FirstForms-Form-WorkTime-ToInput {
+    width: 140px;
+  }
+}
+
 .ThirdForms {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4538,6 +4743,242 @@
   outline: none;
 }
 
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .ThirdForms .directionLeft {
+    margin: 36px 80px 0 0;
+  }
+  .ThirdForms .registerMainCards {
+    margin: 0 0 36px 25px;
+  }
+  .ThirdForms-Preview {
+    padding: 140px 70px 80px 60px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+  .ThirdForms .directionLeft {
+    display: none;
+  }
+  .ThirdForms .registerMainCards {
+    margin: 0;
+  }
+  .ThirdForms .registerMainCards-NotActive {
+    display: none;
+  }
+  .ThirdForms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ThirdForms-Cards {
+    width: 100%;
+    padding: 200px 95px 85px;
+  }
+  .ThirdForms-Preview {
+    width: 100%;
+    padding: 80px 180px 35px 40px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 750px) {
+  .ThirdForms .directionLeft {
+    display: none;
+  }
+  .ThirdForms .registerMainCards {
+    margin: 0;
+  }
+  .ThirdForms .registerMainCards-NotActive {
+    display: none;
+  }
+  .ThirdForms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ThirdForms-Cards {
+    width: 100%;
+    padding: 200px 95px 85px;
+  }
+  .ThirdForms-Preview {
+    width: 100%;
+    padding: 80px 80px 35px 40px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .ThirdForms .Modal {
+    left: 9%;
+    top: 33%;
+    width: 375px;
+    height: 352px;
+    padding: 20px 11px 0px 12px;
+  }
+  .ThirdForms .Modal-Image {
+    width: 182.9px;
+    height: 129.8px;
+    margin: auto;
+  }
+  .ThirdForms .Modal-Items {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ThirdForms .Modal-Items-Title {
+    font-size: 16px;
+  }
+  .ThirdForms .Modal-Items-Text {
+    font-size: 14px;
+  }
+  .ThirdForms .Modal-Items-Button {
+    width: 170px;
+    height: 52px;
+    padding: 0;
+    margin: 0 0 25px 0;
+  }
+  .ThirdForms .directionLeft {
+    display: none;
+  }
+  .ThirdForms .registerMainCards {
+    margin: 0;
+  }
+  .ThirdForms .registerMainCards-NotActive {
+    display: none;
+  }
+  .ThirdForms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ThirdForms-Cards {
+    width: 100%;
+    padding: 200px 95px 85px;
+  }
+  .ThirdForms-Preview {
+    width: 100%;
+    padding: 80px 40px 35px 40px;
+    text-align: center;
+    text-align-last: center;
+  }
+  .ThirdForms-Preview-FullAddress {
+    width: 45%;
+  }
+  .ThirdForms-Preview-Line {
+    width: 376px;
+  }
+  .ThirdForms-Preview-Form-Buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ThirdForms-Preview-Form-Buttons-Submit {
+    margin: 0;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .ThirdForms .Modal {
+    left: 5%;
+    top: 33%;
+    width: 320px;
+    height: 320px;
+    padding: 20px 11px 0px 12px;
+  }
+  .ThirdForms .Modal-Image {
+    width: 182.9px;
+    height: 129.8px;
+    margin: auto;
+  }
+  .ThirdForms .Modal-Items {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ThirdForms .Modal-Items-Title {
+    font-size: 16px;
+  }
+  .ThirdForms .Modal-Items-Text {
+    font-size: 14px;
+  }
+  .ThirdForms .Modal-Items-Button {
+    width: 170px;
+    height: 52px;
+    padding: 0;
+    margin: 0 0 25px 0;
+  }
+  .ThirdForms .directionLeft {
+    display: none;
+  }
+  .ThirdForms .registerMainCards {
+    margin: 0;
+  }
+  .ThirdForms .registerMainCards-NotActive {
+    display: none;
+  }
+  .ThirdForms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .ThirdForms-Cards {
+    width: 100%;
+    padding: 200px 95px 85px;
+  }
+  .ThirdForms-Preview {
+    width: 100%;
+    padding: 80px 5px 35px 5px;
+    text-align: center;
+    text-align-last: center;
+  }
+  .ThirdForms-Preview-FullAddress {
+    width: 45%;
+  }
+  .ThirdForms-Preview-Line {
+    width: 276px;
+  }
+  .ThirdForms-Preview-Form-Buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ThirdForms-Preview-Form-Buttons-Submit {
+    margin: 0;
+  }
+}
+
 .SecoundForms {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4669,5 +5110,149 @@
 
 .SecoundForms-Form-Button:focus {
   outline: none;
+}
+
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .SecoundForms-Form {
+    padding: 160px 70px 35px 80px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .SecoundForms .directionLeft {
+    margin: 36px 100px 0 0;
+  }
+  .SecoundForms .registerMainCards {
+    margin: 0 0 36px 36px;
+  }
+  .SecoundForms-Form {
+    padding: 160px 40px 35px 50px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .SecoundForms .directionLeft {
+    display: none;
+  }
+  .SecoundForms .registerMainCards {
+    margin: 0;
+  }
+  .SecoundForms .registerMainCards-NotActive {
+    display: none;
+  }
+  .SecoundForms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .SecoundForms-Cards {
+    width: 100%;
+    padding: 200px 95px 85px;
+  }
+  .SecoundForms-Form {
+    width: 100%;
+    padding: 100px 50px 35px 40px;
+  }
+}
+
+@media (min-width: 280px) and (max-width: 500px) {
+  .SecoundForms .directionLeft {
+    display: none;
+  }
+  .SecoundForms .registerMainCards {
+    margin: 0;
+  }
+  .SecoundForms .registerMainCards-NotActive {
+    display: none;
+  }
+  .SecoundForms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .SecoundForms-Cards {
+    width: 100%;
+    padding: 180px 95px 70px;
+  }
+  .SecoundForms-Form {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 15px 35px 15px;
+  }
+  .SecoundForms-Form-Titles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 4rem;
+  }
+  .SecoundForms-Form-City-Select {
+    width: 303px;
+    height: 46px;
+  }
+  .SecoundForms-Form-District-Select {
+    width: 303px;
+    height: 46px;
+  }
+  .SecoundForms-Form-Button {
+    margin: 120px .2rem 2rem .2rem;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 280px) {
+  .SecoundForms .directionLeft {
+    display: none;
+  }
+  .SecoundForms .registerMainCards {
+    margin: 0;
+  }
+  .SecoundForms .registerMainCards-NotActive {
+    display: none;
+  }
+  .SecoundForms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .SecoundForms-Cards {
+    width: 100%;
+    padding: 250px 95px 70px;
+  }
+  .SecoundForms-Form {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 5px 35px 5px;
+  }
+  .SecoundForms-Form-Titles {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 4rem;
+  }
+  .SecoundForms-Form-City-Select {
+    width: 203px;
+    height: 46px;
+  }
+  .SecoundForms-Form-District-Select {
+    width: 203px;
+    height: 46px;
+  }
+  .SecoundForms-Form-Button {
+    margin: 120px .2rem 2rem .2rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */
