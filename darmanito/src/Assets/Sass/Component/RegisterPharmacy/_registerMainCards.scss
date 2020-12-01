@@ -1,7 +1,6 @@
 @import '../../Foundation/colors';
 
-//
-
+// Register Main Cards :
 
 .registerMainCards {
     display: flex;
@@ -110,4 +109,83 @@
 }
 .directionLeft {
     margin: 36px 198px 0 0;
+}
+
+// REsponsive :
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .registerMainCards-NotActive {
+        display: none;
+    }
+    .registerMainCards  {
+        width: 293px;
+        height: 84px;
+        padding: 15px 16px 17px 11px;
+        margin: auto;
+        &-Image {
+            width: 50px;
+            height: 50px;
+            
+        }
+        &-Boarding {
+            width: 53px;
+            height: 18px;
+            font-size: 8px;
+            padding: 2.5px 9px 5px 1px;
+        }
+        &-Name {
+            font-size: 13px;
+            padding: 31px 13px 23px 0px;
+        }
+        &-Address {
+            &-Text {
+                font-size: 8px;
+                width: 143px;
+            }
+            &-Icon {
+                width: 8px;
+                height: 11.5px;
+                margin: 1px 4px 0 7px;
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .registerMainCards-NotActive {
+        display: none;
+    }
+    .registerMainCards  {
+        width: 250px;
+        height: 84px;
+        padding: 15px 16px 17px 11px;
+        margin: auto;
+        &-Image {
+            width: 50px;
+            height: 50px;
+            
+        }
+        &-Boarding {
+            display: none;
+        }
+        &-Name {
+            font-size: 13px;
+            padding: 31px 13px 23px 0px;
+        }
+        &-Address {
+            &-Text {
+                font-size: 8px;
+                width: 143px;
+            }
+            &-Icon {
+                width: 8px;
+                height: 11.5px;
+                margin: 1px 4px 0 7px;
+            }
+        }
+    }
 }

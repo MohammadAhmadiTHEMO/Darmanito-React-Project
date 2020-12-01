@@ -2436,6 +2436,92 @@
   outline: none;
 }
 
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .register-Main {
+    margin: 240px 70px 180px 0;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .register-Main {
+    margin: 240px 10px 180px 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .register-Main {
+    margin: 240px 0 180px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    place-content: center;
+  }
+  .register-Main-Items {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .register-Main {
+    margin: 180px 0 75px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    place-content: center;
+  }
+  .register-Main-Items {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+  }
+  .register-Main-Items-Inputs {
+    width: 302px;
+    height: 55px;
+    padding: 9px 14.3px 8px 12.5px;
+  }
+  .register-Main-Items-Inputs-Button {
+    width: 93px;
+    height: 38px;
+    font-size: 12px;
+  }
+  .register-Main-Items-Title {
+    width: 275px;
+    height: 77px;
+    font-size: 24px;
+  }
+  .register-Main-Items-Description {
+    width: 302px;
+    font-size: 14px;
+    height: 85px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .register-Main {
+    margin: 220px 0 75px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    place-content: center;
+  }
+  .register-Main-Items {
+    display: none;
+  }
+}
+
 .registerMainCards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2586,6 +2672,73 @@
   margin: 36px 198px 0 0;
 }
 
+@media (min-width: 360px) and (max-width: 500px) {
+  .registerMainCards-NotActive {
+    display: none;
+  }
+  .registerMainCards {
+    width: 293px;
+    height: 84px;
+    padding: 15px 16px 17px 11px;
+    margin: auto;
+  }
+  .registerMainCards-Image {
+    width: 50px;
+    height: 50px;
+  }
+  .registerMainCards-Boarding {
+    width: 53px;
+    height: 18px;
+    font-size: 8px;
+    padding: 2.5px 9px 5px 1px;
+  }
+  .registerMainCards-Name {
+    font-size: 13px;
+    padding: 31px 13px 23px 0px;
+  }
+  .registerMainCards-Address-Text {
+    font-size: 8px;
+    width: 143px;
+  }
+  .registerMainCards-Address-Icon {
+    width: 8px;
+    height: 11.5px;
+    margin: 1px 4px 0 7px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .registerMainCards-NotActive {
+    display: none;
+  }
+  .registerMainCards {
+    width: 250px;
+    height: 84px;
+    padding: 15px 16px 17px 11px;
+    margin: auto;
+  }
+  .registerMainCards-Image {
+    width: 50px;
+    height: 50px;
+  }
+  .registerMainCards-Boarding {
+    display: none;
+  }
+  .registerMainCards-Name {
+    font-size: 13px;
+    padding: 31px 13px 23px 0px;
+  }
+  .registerMainCards-Address-Text {
+    font-size: 8px;
+    width: 143px;
+  }
+  .registerMainCards-Address-Icon {
+    width: 8px;
+    height: 11.5px;
+    margin: 1px 4px 0 7px;
+  }
+}
+
 .pharmacyCounter {
   width: 100%;
   height: 150px;
@@ -2623,6 +2776,35 @@
 .pharmacyCounter-Items-Number {
   direction: ltr;
   font-size: 36px;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .pharmacyCounter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: 555px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .pharmacyCounter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    height: 450px;
+  }
+  .pharmacyCounter-Items {
+    margin: 0;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .pharmacyCounter {
+    display: none;
+  }
 }
 
 .pharmacyServices {
@@ -2726,6 +2908,93 @@
 
 .pharmacyServices-Items-Card-Button:focus {
   outline: none;
+}
+
+@media (min-width: 1500px) and (max-width: 2000px) {
+  .pharmacyServices {
+    margin: 100px 250px;
+  }
+}
+
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .pharmacyServices {
+    margin: 100px 70px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .pharmacyServices {
+    margin: 100px 20px;
+  }
+  .pharmacyServices-Items {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .pharmacyServices {
+    margin: 100px 20px;
+  }
+  .pharmacyServices-Items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .pharmacyServices {
+    margin: 100px 5px;
+  }
+  .pharmacyServices-Title {
+    margin: 0 25px 0 0;
+    font-size: 16px;
+  }
+  .pharmacyServices-Description {
+    font-size: 13px;
+    padding: 0 35px 0 0;
+  }
+  .pharmacyServices-Items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  .pharmacyServices-Items-Card {
+    width: 303px;
+    height: 342px;
+    padding: 112px 21px 16px 22px;
+  }
+  .pharmacyServices-Items-Card-Title {
+    font-size: 16px;
+  }
+  .pharmacyServices-Items-Card-Image {
+    display: none;
+  }
+  .pharmacyServices-Items-Card-Description {
+    width: 260px;
+    height: 73px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .pharmacyServices {
+    display: none;
+  }
 }
 
 .contactUs {
@@ -2859,9 +3128,92 @@
         flex-wrap: wrap;
     place-content: center;
   }
+  .message-Form {
+    place-items: center;
+  }
+  .message-Form-Button {
+    margin: 36.5px 0 0 0;
+  }
+  .message-Form-Label {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    padding: 0 85px 0 0;
+  }
 }
 
-@media (min-width: 500px) and (max-width: 700px) {
+@media (min-width: 550px) and (max-width: 700px) {
+  .contactUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    place-content: center;
+  }
+  .map-Container {
+    width: 500px !important;
+    height: 350px !important;
+  }
+  .map-Texts {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-flow: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+            flex-flow: column-reverse;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+            align-items: center;
+    width: 418px !important;
+    height: 314px !important;
+    -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
+    top: 580px !important;
+    left: 42px !important;
+    z-index: 1000000 !important;
+  }
+  .map-Texts-Address {
+    width: 353px !important;
+  }
+  .map-Items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    margin-left: auto;
+    padding: 18px 0 0 0;
+  }
+  .map-Items-email {
+    padding: 0 0 0 20px;
+  }
+  .message-Form {
+    place-items: center;
+    padding: 350px 0 0 0;
+  }
+  .message-Form-Button {
+    margin: 36.5px 0 0 0;
+  }
+  .message-Form-Label {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    padding: 0 30px 0 0;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 550px) {
+  .Map {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .map-Container {
+    width: 302px !important;
+    height: 245px !important;
+  }
   .contactUs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2881,16 +3233,30 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 474px !important;
-    height: 267px !important;
     -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
             box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
-    top: 544px !important;
-    left: 60px !important;
+    top: 424px !important;
+    left: 0px !important;
     z-index: 1000000 !important;
+    width: 290px !important;
+    height: 219px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .map-Texts-Email {
+    font-size: 12px !important;
+  }
+  .map-Texts-Phone {
+    font-size: 12px !important;
   }
   .map-Texts-Address {
-    width: 377px !important;
+    width: 255px !important;
+    height: 55px !important;
+    font-size: 12px !important;
+  }
+  .map-Texts-Titles {
+    font-size: 12px;
   }
   .map-Items {
     display: -webkit-box;
@@ -2901,20 +3267,47 @@
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     margin-left: auto;
-    padding: 18px;
+    padding: 18px 0 0 0;
   }
   .map-Items-email {
-    padding: 0 0 0 20px;
+    padding: 0;
   }
   .message-Form {
     place-items: center;
+    padding: 260px 0 0 0;
   }
   .message-Form-Button {
+    width: 302px;
     margin: 36.5px 0 0 0;
+    padding: 14.5px 120px 15.5px 116px;
+  }
+  .message-Form-Label {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    padding: 0 2px 0 0;
+  }
+  .message-Form-Input {
+    width: 303px;
+    height: 46px;
+    padding: 10px;
+  }
+  .message-Form-Textarea {
+    width: 302px;
+    height: 150px;
+    padding: 10px;
   }
 }
 
-@media (min-width: 360px) and (max-width: 500px) {
+@media (min-width: 100px) and (max-width: 360px) {
+  .Map {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .map-Container {
+    width: 202px !important;
+    height: 145px !important;
+  }
   .contactUs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2934,16 +3327,30 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 474px !important;
-    height: 267px !important;
     -webkit-box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
             box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.16);
-    top: 544px !important;
-    left: 60px !important;
+    top: 224px !important;
+    left: 0px !important;
     z-index: 1000000 !important;
+    width: 190px !important;
+    height: 119px !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .map-Texts-Email {
+    font-size: 12px !important;
+  }
+  .map-Texts-Phone {
+    font-size: 12px !important;
   }
   .map-Texts-Address {
-    width: 377px !important;
+    width: 155px !important;
+    height: 55px !important;
+    font-size: 12px !important;
+  }
+  .map-Texts-Titles {
+    font-size: 12px;
   }
   .map-Items {
     display: -webkit-box;
@@ -2954,16 +3361,38 @@
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     margin-left: auto;
-    padding: 18px;
+    padding: 18px 0 0 0;
   }
   .map-Items-email {
-    padding: 0 0 0 20px;
+    display: none;
+  }
+  .map-Items-number {
+    display: none;
   }
   .message-Form {
     place-items: center;
+    padding: 160px 0 0 0;
   }
   .message-Form-Button {
+    width: 202px;
     margin: 36.5px 0 0 0;
+    padding: 14px;
+    text-align: center;
+  }
+  .message-Form-Label {
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    padding: 0 55px 0 0;
+  }
+  .message-Form-Input {
+    width: 203px;
+    height: 46px;
+    padding: 10px;
+  }
+  .message-Form-Textarea {
+    width: 202px;
+    height: 150px;
+    padding: 10px;
   }
 }
 
@@ -2989,6 +3418,16 @@
   }
 }
 
+.Map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
 .map-Container {
   width: 605px;
   height: 490px;
@@ -3006,7 +3445,7 @@
   display: flex;
   width: 545px;
   height: 170px;
-  top: 425px;
+  top: 450px;
   left: 30px;
   border-radius: 10px;
   z-index: 450;
@@ -3063,6 +3502,40 @@
   font-size: 20px;
   font-weight: bold;
   margin: 90px 140px 0px 0;
+}
+
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .FAQ-Title {
+    margin: 90px 70px 0px 0;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .FAQ-Title {
+    margin: 90px 40px 0px 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .FAQ-Title {
+    margin: 90px 20px 0px 0;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .FAQ-Title {
+    margin: 90px 10px 0px 0;
+    font-size: 16px;
+    width: 253px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .FAQ-Title {
+    margin: 90px 10px 0px 0;
+    font-size: 16px;
+    width: 253px;
+  }
 }
 
 .FAQIcon {
@@ -3124,6 +3597,47 @@
   padding: 0 50px 0px 0;
 }
 
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .FAQIcon-List {
+    padding: 0;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .FAQIcon-List {
+    padding: 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .FAQIcon-List {
+    padding: 0;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .FAQIcon {
+    width: 120px;
+    height: 120px;
+  }
+  .FAQIcon-List {
+    padding: 0;
+    overflow: visible;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .FAQIcon {
+    width: 120px;
+    height: 120px;
+  }
+  .FAQIcon-List {
+    padding: 0;
+    overflow: visible;
+  }
+}
+
 .FAQQuestion {
   direction: rtl;
   cursor: pointer;
@@ -3165,6 +3679,42 @@
 .FAQQuestion-List {
   margin: 80px 170px 140px 0;
   text-align: right;
+}
+
+@media (min-width: 1150px) and (max-width: 1300px) {
+  .FAQQuestion-List {
+    margin: 80px 90px 140px 0;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1150px) {
+  .FAQQuestion-List {
+    margin: 80px 50px 140px 0;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .FAQQuestion-List {
+    margin: 80px 30px 140px 0;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .FAQQuestion-List {
+    margin: 80px 10px 140px 0;
+  }
+  .FAQQuestion-Title {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 360px) {
+  .FAQQuestion-List {
+    margin: 80px 10px 140px 0;
+  }
+  .FAQQuestion-Title {
+    font-size: 14px;
+  }
 }
 
 .TermAndConditionsIcon {
@@ -3255,6 +3805,70 @@
   height: 373px;
   margin: 0 215px 0 215px;
   text-align: right;
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+  .TermAndConditionsList-Title {
+    margin: 90px 70px 0px 0;
+  }
+  .TermAndConditionsList-Icon {
+    margin: 0 150px;
+  }
+  .TermAndConditionsList-Description-Text {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+  .TermAndConditionsList-Title {
+    margin: 90px 40px 0px 0;
+  }
+  .TermAndConditionsList-Icon {
+    margin: 0 100px;
+  }
+  .TermAndConditionsList-Description-Text {
+    width: 60%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .TermAndConditionsList-Title {
+    margin: 70px 30px 0px 0;
+  }
+  .TermAndConditionsList-Icon {
+    margin: 0 80px;
+    overflow: visible;
+    gap: 2rem;
+  }
+  .TermAndConditionsList-Description-Text {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+  .TermAndConditionsList-Title {
+    margin: 35px 10px 35px 0;
+    width: 291px;
+    height: 28px;
+    line-height: 34px;
+  }
+  .TermAndConditionsList-Icon {
+    margin: 0 30px;
+    overflow: visible;
+    gap: 1rem;
+  }
+  .TermAndConditionsList-Description-Text {
+    width: 60%;
+    margin: 0 auto 150px auto;
+  }
+  .TermAndConditionsIcon {
+    width: 120px;
+    height: 120px;
+  }
+  .TermAndConditionsIcon-Text {
+    font-size: 13px;
+  }
 }
 
 .progressBar {

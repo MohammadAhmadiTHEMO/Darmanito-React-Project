@@ -24,7 +24,7 @@ const ContactUs = () => {
                         </button>
                     </form>
                 </div>
-                <div> 
+                <div className='Map'> 
                     <div className="map-Texts">
                         <div>
                             <p className='map-Texts-Titles'>آدرس</p>

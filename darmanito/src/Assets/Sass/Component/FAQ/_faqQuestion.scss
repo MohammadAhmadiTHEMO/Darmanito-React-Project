@@ -38,3 +38,67 @@
 }
 
 // Responsive :
+
+
+@media(min-width:1150px) and (max-width:1300px) {
+    
+    .FAQQuestion {
+        &-List {
+            margin: 80px 90px 140px 0;
+        }
+    }
+    
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1000px) and (max-width:1150px) {
+
+    .FAQQuestion {
+        &-List {
+            margin: 80px 50px 140px 0;
+        }
+    }
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:1000px) {
+
+    .FAQQuestion {
+        &-List {
+            margin: 80px 30px 140px 0;
+        }
+    }
+   
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .FAQQuestion {
+        &-List {
+            margin: 80px 10px 140px 0;
+        }
+        &-Title {
+            font-size: 14px;
+        }
+    }
+   
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .FAQQuestion {
+        &-List {
+            margin: 80px 10px 140px 0;
+        }
+        &-Title {
+            font-size: 14px;
+        }
+    }
+    
+}

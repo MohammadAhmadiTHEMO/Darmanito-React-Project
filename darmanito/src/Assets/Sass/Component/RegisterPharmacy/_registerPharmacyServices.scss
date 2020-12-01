@@ -79,3 +79,94 @@
 }
 
 // Responsive :
+
+@media(min-width:1500px) and (max-width:2000px) {
+   
+    .pharmacyServices {
+        margin: 100px 250px;
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1150px) and (max-width:1300px) {
+    
+    .pharmacyServices {
+        margin: 100px 70px;
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1000px) and (max-width:1150px) {
+
+    .pharmacyServices {
+        margin: 100px 20px;
+        &-Items {
+            justify-content: space-around;
+        }
+    }
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:1000px) {
+
+    .pharmacyServices {
+        margin: 100px 20px;
+        &-Items {
+            flex-wrap: wrap;
+            flex-flow: column-reverse;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .pharmacyServices {
+        margin: 100px 5px;
+        &-Title {
+            margin: 0 25px 0 0;
+            font-size: 16px;
+        }
+        &-Description {
+            font-size: 13px;
+            padding: 0 35px 0 0;
+        }
+        &-Items {
+            flex-wrap: wrap;
+            flex-flow: column-reverse;
+            align-items: center;
+            gap: 2rem;
+            &-Card {
+                width: 303px;
+                height: 342px;
+                padding: 112px 21px 16px 22px;
+                &-Title {
+                    font-size: 16px;
+                }
+                &-Image {
+                    display: none;
+                }
+                &-Description {
+                    width: 260px;
+                    height: 73px;
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .pharmacyServices {
+        display: none;
+    }
+    
+}

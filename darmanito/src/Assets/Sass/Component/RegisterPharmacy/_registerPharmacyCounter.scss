@@ -26,3 +26,33 @@
 }
 
 // Responsive :
+
+@media(min-width:500px) and (max-width:1000px) {
+
+    .pharmacyCounter {
+        flex-flow: column;
+        height: 555px;
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .pharmacyCounter {
+        flex-flow: column;
+        height: 450px;
+        &-Items {
+            margin: 0;
+        }
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .pharmacyCounter {
+        display: none;
+    }
+}

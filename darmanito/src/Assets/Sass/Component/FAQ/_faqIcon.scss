@@ -41,3 +41,65 @@
 }
 
 // Responsive :
+
+
+@media(min-width:1150px) and (max-width:1300px) {
+    
+    .FAQIcon {
+        &-List {
+            padding: 0;
+        }   
+    }
+  
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:1000px) and (max-width:1150px) {
+
+    .FAQIcon {
+        &-List {
+            padding: 0;
+        }   
+    }
+}
+ 
+// ------------------------------------------- // 
+
+@media(min-width:500px) and (max-width:1000px) {
+
+    .FAQIcon {
+        &-List {
+            padding: 0;
+            overflow: visible;
+        }   
+    }
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:360px) and (max-width:500px) {
+
+    .FAQIcon {
+        width: 120px;
+        height: 120px;
+        &-List {
+            padding: 0;
+            overflow: visible;
+        }   
+    }   
+}
+
+// ------------------------------------------- // 
+
+@media(min-width:100px) and (max-width:360px) {
+
+    .FAQIcon {
+        width: 120px;
+        height: 120px;
+        &-List {
+            padding: 0;
+            overflow: visible;
+        }   
+    }   
+}
