@@ -16,6 +16,7 @@
     "react-neshan-map-leaflet": "^1.0.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "1.1.5",
+    "redux": "^4.0.5",
     "short-id": "0.1.0-1",
     "styled-components": "^5.2.1",
     "tachyons": "^4.12.0",

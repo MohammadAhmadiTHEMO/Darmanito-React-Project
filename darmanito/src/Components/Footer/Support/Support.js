@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import support from '../../../Assets/Images/Footer/support.svg';
 
@@ -12,7 +13,7 @@ const Support = () => {
             <button className='support-Button'>
                 <img className='support-Button-Image' src={support} alt='Support Icon' />
                 <p className='support-Button-Text'>
-                    <a className='support-Button-Text-Texts' href='#Support'> پشتیبانی : 02144219671 </a>
+                    <Link className='support-Button-Text-Texts' to='#Support'> پشتیبانی : 02144219671 </Link>
                 </p>
             </button>
         </div>

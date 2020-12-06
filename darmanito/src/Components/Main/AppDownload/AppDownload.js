@@ -24,11 +24,13 @@ const AppDownload = () => {
                     </div>
                     <div className="appDownload-Icons">
                         <AndroidLogoButton
-                        backgroundColor={Style.backgroundColor}/>
+                            backgroundColor={Style.backgroundColor}/>
                         <BazarLogoButton
-                        backgroundColor={Style.backgroundColor}/>
+                            href='https://cafebazaar.ir/install'
+                            backgroundColor={Style.backgroundColor}/>
                         <SibAppLogoButton
-                        backgroundColor={Style.backgroundColor}/>
+                            href='https://sibapp.com'
+                            backgroundColor={Style.backgroundColor}/>
                     </div>
                 </div>
                 <img className="appDownload-Image" src={appDownload} alt="Mobile Application"/>

@@ -50,7 +50,6 @@ const RegisterPharmacyDetail = (props) => {
                     className="SecoundForms-Form-City-Select" name="city">
                     <option value={props.formik.values.city}>
                         {props.formik.values.city}</option>
-                        <input type='checkbox'value=''/>
                         <option value="تهران">
                             تهران</option>
                         <option value="البرز">

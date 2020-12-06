@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import pageNotFound from '../../Assets/Images/UI/pageNotFound.svg';
 
@@ -9,9 +10,9 @@ const ErrorPage = () => {
                 <div className='errorPage-Texts'>
                     <p className='errorPage-Texts-Title' > 404 Not Found </p>
                     <p className='errorPage-Texts-Text' > Sorry This Page Does Not Exist !     
-                        <a className='errorPage-Texts-Text-Click' href='/'> Click 
+                        <Link className='errorPage-Texts-Text-Click' to='/'> Click 
                             <span className='errorPage-Texts-Text-Click-Span'> Here </span>
-                        </a> 
+                        </Link> 
                     </p>
                 </div>
             </div>

@@ -45,10 +45,27 @@ const RegisterPharmacy = (props) => {
                 </div>
                 
                 <div className="FirstForms-Form-City">
-                    <label className="FirstForms-Form-City-Label"
+                    {/* <label className="FirstForms-Form-City-Label"
                     htmlFor="city">شهر</label>
                     <input className={Control(props.formik.errors.city, "FirstForms-Form-City-Input")}
-                    value={props.formik.values.city} onChange={props.formik.handleChange} type="text" name="city"/>
+                    value={props.formik.values.city} type="text" name="city"/> */}
+                    
+
+                    <label className="FirstForms-Form-City-Label"
+                    htmlFor="city">شهر</label>
+                    <select onChange={props.formik.handleChange}
+                            className={Control(props.formik.errors.city, "FirstForms-Form-City-Input")} name="city">
+                    <option value={props.formik.values.city} >
+                        {props.formik.values.city}</option>
+                        <option value="تهران">
+                            تهران</option>
+                        <option value="البرز">
+                            البرز</option>
+                        <option value="تهران">
+                            تهران</option>
+                        <option value="البرز">
+                            البرز</option>
+                    </select>
                     <p className="FirstForms-Form-Error">{props.formik.errors.city}</p>
                 </div>
 
@@ -92,10 +109,28 @@ const RegisterPharmacy = (props) => {
                         <label className="FirstForms-Form-WorkTime-Label"
                         htmlFor="workTimeRange">ساعات کاری</label>
                         <div>
-                            <input className="FirstForms-Form-WorkTime-FromInput"
-                            type="text" name="workTimeRangeFrom"/>
-                            <input className="FirstForms-Form-WorkTime-ToInput"
-                            type="text" name="workTimeRangeTo"/>
+                            <select
+                            className="FirstForms-Form-WorkTime-FromInput" name="workTimeRangeFrom">
+                            <option value=''></option>
+                                <option value="7 صبح">
+                                    7 صبح</option>
+                                <option value="8 صبح">
+                                    8 صبح</option>
+                                <option value="9 صبح">
+                                    9 صبح</option>
+                                <option value="10 صبح">
+                                    10 صبح</option>
+                            </select>
+                            <select
+                            className="FirstForms-Form-WorkTime-FromInput" name="workTimeRangeTo">
+                            <option value=''></option>
+                                <option value="10 شب">
+                                    10 شب</option>
+                                <option value="11 شب">
+                                    11 شب</option>
+                                <option value="12 شب">
+                                    12 شب</option>
+                            </select>
                         </div>
                     </div>
                 </div>

@@ -72,6 +72,10 @@
         &-List {
             padding: 0;
             overflow: visible;
+            gap: 2rem;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            margin: 45px 60px 70px 200px;
         }   
     }
 }
@@ -86,6 +90,10 @@
         &-List {
             padding: 0;
             overflow: visible;
+            gap: 2rem;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            margin: 45px 50px 70px 200px;
         }   
     }   
 }
@@ -100,6 +108,10 @@
         &-List {
             padding: 0;
             overflow: visible;
+            gap: 2rem;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            margin: 45px 40px 70px 200px;
         }   
     }   
 }

@@ -30,7 +30,7 @@
             width: 444px;
             height: 46px;
             margin: 0 0 25px;
-            padding: 13px 10px 12px 309px;
+            padding: 13px 10px 12px 0;
             border-radius: 10px;
             border: solid 1px $separator-color;
             &:focus {
@@ -45,7 +45,7 @@
             width: 444px;
             height: 174px;
             margin: 12px 0 0;
-            padding: 13px 0px 142px 264px;
+            padding: 13px 0 142px 100px;
             border-radius: 10px;
             border: solid 1px $separator-color;
             &::placeholder {

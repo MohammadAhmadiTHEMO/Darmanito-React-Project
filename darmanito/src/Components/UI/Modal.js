@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import { Link } from 'react-router-dom';
 
 import success from '../../Assets/Images/UI/success.svg';
 import BackDrop from './BackDrop';
@@ -18,7 +19,7 @@ const Modal = (props) => {
                     <p className='Modal-Items-Title'> ثبت نام با موفقیت انجام شد </p>
                     <p className='Modal-Items-Text'> برای اعلام توضیحات با شما تماس خواهیم گرفت </p>
                     <button className='Modal-Items-Button' onClick={props.buttonClick} >
-                        <a className='Modal-Items-Button-Text' href='/'>بازگشت</a>
+                        <Link className='Modal-Items-Button-Text' to='/'>بازگشت</Link>
                     </button>
                 </div>
             </div>

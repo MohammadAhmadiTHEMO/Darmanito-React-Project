@@ -20,12 +20,12 @@ const RegisterPharmacyForm = () => {
     isBoarding: false,
     openingHour: 8,
     closingHour: 20,
-    photo: null
+    photo: 0
   }
 
   const validationSchema = Yup.object({
     fullName: Yup.string()
-              .min(5, 'نام کوتاه است!')
+              .min(7, 'نام کوتاه است!')
               .required("فیلد اجباری است"),
     medicId: Yup.number()
               .required("فیلد اجباری است"),

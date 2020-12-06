@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import {footerPages, footerServices} from './FooterNavigationItems/FooterNavigationItems';
 
@@ -29,12 +30,12 @@ const Footer = () => {
                 <ul className="footer-Pages-Item">
                 {footerServices.map((footerServices,index) => 
                         <li className='footer-Pages-Item-Items' key={index}>
-                                <a  className={footerServices.active === true 
+                                <Link  className={footerServices.active === true 
                                                 ? "footer-Pages-Item-Items-li Active"
                                                 : "footer-Pages-Item-Items-li"} 
-                                    href={footerServices.href}> 
+                                       to={footerServices.href}> 
                                         {footerServices.title} 
-                                </a>
+                                </Link>
                         </li>)}
                 </ul>
             </div>
@@ -44,9 +45,10 @@ const Footer = () => {
                 <ul className="footer-Services-Item">
                     {footerPages.map((footerPages,index) => 
                         <li className='footer-Services-Item-Items' key={index}>
-                                <a className="footer-Services-Item-Items-li" href={footerPages.href}>
+                                <Link className="footer-Services-Item-Items-li" 
+                                      to={footerPages.href}>
                                     {footerPages.title}
-                                </a>
+                                </Link>
                         </li>)}
                 </ul>
             </div>

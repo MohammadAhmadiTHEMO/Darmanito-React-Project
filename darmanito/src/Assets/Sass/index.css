@@ -1612,7 +1612,7 @@
 }
 
 .sibAppButton-Container {
-  text-decoration: none;
+  text-decoration: none !important;
   margin: 0;
 }
 
@@ -1644,8 +1644,8 @@
   font-size: 12px;
 }
 
-.bazarButtonContainer {
-  text-decoration: none;
+.bazarButton-Container {
+  text-decoration: none !important;
 }
 
 .bazarButton {
@@ -1676,7 +1676,7 @@
 }
 
 .androidButton-Container {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .androidButton {
@@ -3044,7 +3044,7 @@
   width: 444px;
   height: 46px;
   margin: 0 0 25px;
-  padding: 13px 10px 12px 309px;
+  padding: 13px 10px 12px 0;
   border-radius: 10px;
   border: solid 1px rgba(0, 0, 0, 0.1);
 }
@@ -3074,7 +3074,7 @@
   width: 444px;
   height: 174px;
   margin: 12px 0 0;
-  padding: 13px 0px 142px 264px;
+  padding: 13px 0 142px 100px;
   border-radius: 10px;
   border: solid 1px rgba(0, 0, 0, 0.1);
 }
@@ -3613,6 +3613,11 @@
   .FAQIcon-List {
     padding: 0;
     overflow: visible;
+    gap: 2rem;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    margin: 45px 60px 70px 200px;
   }
 }
 
@@ -3624,6 +3629,11 @@
   .FAQIcon-List {
     padding: 0;
     overflow: visible;
+    gap: 2rem;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    margin: 45px 50px 70px 200px;
   }
 }
 
@@ -3635,6 +3645,11 @@
   .FAQIcon-List {
     padding: 0;
     overflow: visible;
+    gap: 2rem;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-box;
+    display: inline-flex;
+    margin: 45px 40px 70px 200px;
   }
 }
 
@@ -3677,31 +3692,31 @@
 }
 
 .FAQQuestion-List {
-  margin: 80px 170px 140px 0;
+  margin: 80px 170px 140px 90px;
   text-align: right;
 }
 
 @media (min-width: 1150px) and (max-width: 1300px) {
   .FAQQuestion-List {
-    margin: 80px 90px 140px 0;
+    margin: 80px 90px 140px 90px;
   }
 }
 
 @media (min-width: 1000px) and (max-width: 1150px) {
   .FAQQuestion-List {
-    margin: 80px 50px 140px 0;
+    margin: 80px 50px 140px 90px;
   }
 }
 
 @media (min-width: 500px) and (max-width: 1000px) {
   .FAQQuestion-List {
-    margin: 80px 30px 140px 0;
+    margin: 80px 30px 140px 70px;
   }
 }
 
 @media (min-width: 360px) and (max-width: 500px) {
   .FAQQuestion-List {
-    margin: 80px 10px 140px 0;
+    margin: 80px 10px 140px 40px;
   }
   .FAQQuestion-Title {
     font-size: 14px;
@@ -3710,7 +3725,7 @@
 
 @media (min-width: 100px) and (max-width: 360px) {
   .FAQQuestion-List {
-    margin: 80px 10px 140px 0;
+    margin: 80px 10px 140px 20px;
   }
   .FAQQuestion-Title {
     font-size: 14px;
@@ -4069,7 +4084,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 352px;
   height: 46px;
-  padding: 15px;
+  padding: 9px;
 }
 
 .FirstForms-Form-City-Input:focus {
@@ -4287,7 +4302,7 @@
   margin: 0 0 0 16px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 15px;
+  padding: 5px;
 }
 
 .FirstForms-Form-WorkTime-FromInput:focus {
@@ -4300,7 +4315,7 @@
   height: 46px;
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 15px;
+  padding: 5px;
 }
 
 .FirstForms-Form-WorkTime-ToInput:focus {

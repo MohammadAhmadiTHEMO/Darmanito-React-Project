@@ -7,7 +7,7 @@ import drugStore from '../../../Assets/Images/RegisterPharmacy/registerDrugStore
 const RegisterPharmacyServices = () => {
 
     const history = useHistory();
-    const clickHandler = () => history.push('/OnlineRegisterPharmacy');
+    const clickHandler = () => history.push('/RegisterPharmacy/Register');
 
     return(
         <div className="pharmacyServices">
