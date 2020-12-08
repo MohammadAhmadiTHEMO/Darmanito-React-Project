@@ -16,8 +16,8 @@ const Modal = (props) => {
                     <img src={success} alt='Succes Icon'></img>
                 </div>
                 <div className='Modal-Items'>
-                    <p className='Modal-Items-Title'> ثبت نام با موفقیت انجام شد </p>
-                    <p className='Modal-Items-Text'> برای اعلام توضیحات با شما تماس خواهیم گرفت </p>
+                    <p className='Modal-Items-Title'> {props.title} </p>
+                    <p className='Modal-Items-Text'> {props.text} </p>
                     <button className='Modal-Items-Button' onClick={props.buttonClick} >
                         <Link className='Modal-Items-Button-Text' to='/'>بازگشت</Link>
                     </button>

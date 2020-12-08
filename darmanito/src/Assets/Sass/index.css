@@ -340,7 +340,7 @@
   z-index: 5000000;
   background-color: #ffffff;
   left: 33%;
-  top: 15%;
+  top: 20%;
   width: 536px;
   height: 536px;
   padding: 70px 92px 70.4px 87.5px;
@@ -1312,6 +1312,17 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 1rem;
+}
+
+.Input-Active {
+  margin: 1rem 0 1rem 0;
+}
+
+.error {
+  margin: 0 5px 15px 0;
+  direction: rtl;
+  color: yellow;
+  font-weight: bold;
 }
 
 @media (min-width: 1150px) and (max-width: 1270px) {
@@ -2434,6 +2445,13 @@
 
 .register-Main-Items-Inputs-Button:focus {
   outline: none;
+}
+
+.errors {
+  color: red;
+  margin: 15px 5px 0 0;
+  direction: rtl;
+  font-weight: bold;
 }
 
 @media (min-width: 1150px) and (max-width: 1300px) {

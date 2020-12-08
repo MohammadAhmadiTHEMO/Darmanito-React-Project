@@ -23,7 +23,11 @@ const RegisterPharmacyConfirm = (props) => {
 
     return(
         <div className="ThirdForms">
-            <Modal show={purchasing.Purchasing } modalClose={purchaseCanceleHandler} buttonClick={handleClick} />
+            <Modal show={purchasing.Purchasing } 
+                   modalClose={purchaseCanceleHandler} 
+                   buttonClick={handleClick}
+                   title = 'ثبت نام با موفقیت انجام شد '
+                   text = 'برای اعلام توضیحات با شما تماس خواهیم گرفت ' />
             <div className="ThirdForms-Cards">
                 <Card
                 name= {props.formik.values.placeName}

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
 
 import BlueCover from '../UI/BlueCover';
 import SimpleMap from '../UI/Map';
@@ -36,18 +35,17 @@ const ContactUs = () => {
 
     const [purchasing,setPurchasing] = useState ({ Purchasing : false })
 
-    
-
     const purchaseCanceleHandler = () => {
         return setPurchasing({...purchasing , Purchasing : false})
     }
 
-    const history = useHistory();
-    const handleClick = () => history.push('/');
-
     return (
         <div>
-            <Modal show={purchasing.Purchasing } modalClose={purchaseCanceleHandler} buttonClick={handleClick} />
+            <Modal show={purchasing.Purchasing } 
+                   modalClose={purchaseCanceleHandler} 
+                   buttonClick={purchaseCanceleHandler}
+                   title = ' پیام ارسال شد '
+                   text = ' پیام شما با موفقیت ارسال گردید ' />
             <BlueCover text="تماس با ما"/>
             <div className="contactUs">
                 <div className="message">

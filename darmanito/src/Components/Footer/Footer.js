@@ -8,9 +8,14 @@ import BazarLogoButton from '../UI/BazzarLogoButton';
 import SibAppLogoButton from '../UI/SibAppLogoButton';
 
 const Footer = () => {
+
     const Style = {
         backgroundColor: "#000000"
     };
+
+    const scrollTopHandler = () => {
+        return window.scrollTo(0, 0)
+    }
     return(
         <div className="footer">
         
@@ -33,7 +38,8 @@ const Footer = () => {
                                 <Link  className={footerServices.active === true 
                                                 ? "footer-Pages-Item-Items-li Active"
                                                 : "footer-Pages-Item-Items-li"} 
-                                       to={footerServices.href}> 
+                                       to={footerServices.href}
+                                       onClick={scrollTopHandler}> 
                                         {footerServices.title} 
                                 </Link>
                         </li>)}
@@ -46,7 +52,8 @@ const Footer = () => {
                     {footerPages.map((footerPages,index) => 
                         <li className='footer-Services-Item-Items' key={index}>
                                 <Link className="footer-Services-Item-Items-li" 
-                                      to={footerPages.href}>
+                                      to={footerPages.href}
+                                      onClick={scrollTopHandler}>
                                     {footerPages.title}
                                 </Link>
                         </li>)}

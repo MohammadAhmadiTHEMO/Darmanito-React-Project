@@ -23,6 +23,10 @@ const Navbar = () => {
 
     window.addEventListener('scroll',onScroll);
 
+    const scrollTopHandler = () => {
+        return window.scrollTo(0, 0)
+    }
+
 
     return (
         <header className={navbar ? 'navbar onScroll' : 'navbar'}>
@@ -40,7 +44,8 @@ const Navbar = () => {
                                     to={navigationItems.href}
                                     exact
                                     activeClassName= "navbar-Navigation-Items active"
-                                    key={index}>
+                                    key={index}
+                                    onClick={scrollTopHandler}>
                                         {navigationItems.title}
                                 </NavLink>
                             </li>
