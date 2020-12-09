@@ -56,7 +56,10 @@ const Possibilities = () => {
             id: shortid.generate(),
         },
     ]);
-    const switchPossibilities = (id) => (
+    const switchPossibilities = (id) => {
+        possibilities.map((possibilities) => {
+            return(possibilities);
+        })
         setPossibilities(
             possibilities.map((possibilities) => {
             possibilities.id === id
@@ -65,7 +68,7 @@ const Possibilities = () => {
             return(possibilities);
         })
         )
-    )
+    }
     return(
         <div className="possibilities">
             <h2 className="possibilities-Title">امکانات درمانیتو</h2>
